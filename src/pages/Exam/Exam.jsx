@@ -115,7 +115,7 @@ function Exam() {
 
     return (
         <>
-            <Question question_data={question_data[0]} />
+            <Question question_data={question_data[4]} />
         </>
     );
 }

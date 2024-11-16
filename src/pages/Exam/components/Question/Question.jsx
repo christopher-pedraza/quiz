@@ -31,29 +31,32 @@ function Question({ question_data }) {
                     <p>
                         <strong>{question}</strong>
                     </p>
-                    <CheckboxGroup onValueChange={onAnswerChange}>
-                        {answers.map((answer, index) => (
-                            <Checkbox key={index} value={index}>
-                                {showAnswerStatus &&
-                                selectedAnswers.includes(index) ? (
-                                    answer.is_correct ? (
-                                        <span className="text-green-500">
-                                            {answer.answer}
-                                        </span>
+                    {answers && (
+                        <CheckboxGroup onValueChange={onAnswerChange}>
+                            {answers.map((answer, index) => (
+                                <Checkbox key={index} value={index}>
+                                    {showAnswerStatus &&
+                                    selectedAnswers.includes(index) ? (
+                                        answer.is_correct ? (
+                                            <span className="text-green-500">
+                                                {answer.answer}
+                                            </span>
+                                        ) : (
+                                            <span className="text-red-500">
+                                                {answer.answer}
+                                            </span>
+                                        )
                                     ) : (
-                                        <span className="text-red-500">
-                                            {answer.answer}
-                                        </span>
-                                    )
-                                ) : (
-                                    answer.answer
-                                )}
-                            </Checkbox>
-                        ))}
-                    </CheckboxGroup>
+                                        answer.answer
+                                    )}
+                                </Checkbox>
+                            ))}
+                        </CheckboxGroup>
+                    )}
                 </CardBody>
             </Card>
             <Button onPress={checkAnswers}>Checar</Button>
+            <Button>Imagenes</Button>
         </>
     );
 }
