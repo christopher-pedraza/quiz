@@ -1,7 +1,16 @@
-import { Card, CardHeader, CardBody, CardFooter } from "@nextui-org/react";
+import {
+    Card,
+    CardHeader,
+    CardBody,
+    CardFooter,
+    Button,
+} from "@nextui-org/react";
+import Question from "./components/Question/Question";
+
+import { useState } from "react";
 
 function Exam() {
-    const json = [
+    const question_data = [
         {
             question:
                 "1. Which two statements are characteristics of a virus? (Choose two.)",
@@ -105,14 +114,9 @@ function Exam() {
     ];
 
     return (
-        <Card>
-            <CardBody>
-                <p>
-                    Make beautiful websites regardless of your design
-                    experience.
-                </p>
-            </CardBody>
-        </Card>
+        <>
+            <Question question_data={question_data[0]} />
+        </>
     );
 }
 
