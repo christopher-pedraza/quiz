@@ -21,7 +21,17 @@ function Question({ question_data, nextQuestion }) {
     const [selectedAnswers, setSelectedAnswers] = useState([]);
     const [showAnswerStatus, setShowAnswerStatus] = useState(false);
 
-    const { isOpen, onOpen, onOpenChange } = useDisclosure();
+    const {
+        isOpen: isOpenImages,
+        onOpen: onOpenImages,
+        onOpenChange: onOpenChangeImages,
+    } = useDisclosure();
+
+    const {
+        isOpen: isOpenExplanation,
+        onOpen: onOpenExplanation,
+        onOpenChange: onOpenChangeExplanation,
+    } = useDisclosure();
 
     const checkAnswers = () => {
         setShowAnswerStatus(true);
@@ -72,12 +82,12 @@ function Question({ question_data, nextQuestion }) {
                 </CardBody>
             </Card>
             <Button onPress={checkAnswers}>Checar</Button>
-            <Button onPress={onOpen} isDisabled={!images}>
+            <Button onPress={onOpenImages} isDisabled={!images}>
                 Imagenes
             </Button>
             <Modal
-                isOpen={isOpen}
-                onOpenChange={onOpenChange}
+                isOpen={isOpenImages}
+                onOpenChange={onOpenChangeImages}
                 size="3xl"
                 className="dark text-foreground bg-background border border-white"
             >
@@ -87,6 +97,21 @@ function Question({ question_data, nextQuestion }) {
                             <EmblaCarousel images={images} />
                         </div>
                     )}
+                </ModalContent>
+            </Modal>
+            <Button onPress={onOpenChangeExplanation} isDisabled={!explanation}>
+                Explicación
+            </Button>
+            <Modal
+                isOpen={isOpenExplanation}
+                onOpenChange={onOpenChangeExplanation}
+                size="3xl"
+                className="dark text-foreground bg-background border border-white"
+            >
+                <ModalContent>
+                    <ModalBody>
+                        <p>{explanation}</p>
+                    </ModalBody>
                 </ModalContent>
             </Modal>
             <Button onPress={nextQuestion}>Siguiente</Button>
