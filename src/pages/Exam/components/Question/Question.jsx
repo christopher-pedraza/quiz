@@ -45,7 +45,10 @@ function Question({ question_data, nextQuestion }) {
                         <strong>{question}</strong>
                     </p>
                     {answers && (
-                        <CheckboxGroup onValueChange={onAnswerChange}>
+                        <CheckboxGroup
+                            value={selectedAnswers}
+                            onValueChange={onAnswerChange}
+                        >
                             {answers.map((answer, index) => (
                                 <Checkbox key={index} value={index}>
                                     {showAnswerStatus &&
