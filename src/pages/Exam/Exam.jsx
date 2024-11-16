@@ -10,7 +10,7 @@ import Question from "./components/Question/Question";
 import { useState } from "react";
 
 function Exam() {
-    const question_data = [
+    const questions = [
         {
             question:
                 "1. Which two statements are characteristics of a virus? (Choose two.)",
@@ -113,9 +113,36 @@ function Exam() {
         },
     ];
 
+    const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
+    const [answeredQuestions, setAnsweredQuestions] = useState([]);
+
+    const nextQuestion = () => {
+        const newAnsweredQuestions = [
+            ...answeredQuestions,
+            currentQuestionIndex,
+        ];
+        setAnsweredQuestions(newAnsweredQuestions);
+        const remainingQuestions = questions.filter(
+            (_, index) => !newAnsweredQuestions.includes(index)
+        );
+        if (remainingQuestions.length > 0) {
+            const nextIndex = questions.indexOf(
+                remainingQuestions[
+                    Math.floor(Math.random() * remainingQuestions.length)
+                ]
+            );
+            setCurrentQuestionIndex(nextIndex);
+        } else {
+            alert("No more questions available.");
+        }
+    };
+
     return (
         <>
-            <Question question_data={question_data[4]} />
+            <Question
+                question_data={questions[currentQuestionIndex]}
+                nextQuestion={nextQuestion}
+            />
         </>
     );
 }

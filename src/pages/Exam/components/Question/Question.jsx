@@ -12,20 +12,16 @@ import {
     useDisclosure,
 } from "@nextui-org/react";
 
-import { useState } from "react";
-
-import ImageGallery from "react-image-gallery";
+import { useState, useEffect } from "react";
 
 import { EmblaCarousel } from "./components/EmblaCarousel/EmblaCarousel";
 
-function Question({ question_data }) {
+function Question({ question_data, nextQuestion }) {
     const { question, answers, explanation, images } = question_data;
     const [selectedAnswers, setSelectedAnswers] = useState([]);
     const [showAnswerStatus, setShowAnswerStatus] = useState(false);
 
     const { isOpen, onOpen, onOpenChange } = useDisclosure();
-
-    let galleryImages = null;
 
     const checkAnswers = () => {
         setShowAnswerStatus(true);
@@ -36,15 +32,10 @@ function Question({ question_data }) {
         setSelectedAnswers(newSelectedValues);
     };
 
-    // if (images) {
-    //     // Create an array of objects with the key original and the value the
-    //     // src of the image
-    //     galleryImages = [];
-    //     images.forEach((image) => {
-    //         galleryImages.push({ original: image });
-    //     });
-    //     console.log(galleryImages);
-    // }
+    useEffect(() => {
+        setSelectedAnswers([]);
+        setShowAnswerStatus(false);
+    }, [question_data]);
 
     return (
         <>
@@ -78,7 +69,7 @@ function Question({ question_data }) {
                 </CardBody>
             </Card>
             <Button onPress={checkAnswers}>Checar</Button>
-            <Button onPress={onOpen} disabled={!galleryImages}>
+            <Button onPress={onOpen} isDisabled={!images}>
                 Imagenes
             </Button>
             <Modal
@@ -95,6 +86,7 @@ function Question({ question_data }) {
                     )}
                 </ModalContent>
             </Modal>
+            <Button onPress={nextQuestion}>Siguiente</Button>
         </>
     );
 }
