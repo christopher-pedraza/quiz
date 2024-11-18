@@ -107,7 +107,11 @@ function Question({ question_data, nextQuestion }) {
                     )}
                 </CardBody>
             </Card>
-            <Button onPress={checkAnswers} className="mr-4 mt-4 mb-4">
+            <Button
+                onPress={checkAnswers}
+                isDisabled={!answers}
+                className="mr-4 mt-4 mb-4"
+            >
                 Checar
             </Button>
             <Button
@@ -125,7 +129,11 @@ function Question({ question_data, nextQuestion }) {
             >
                 Explicación
             </Button>
-            <Button onPress={seeAnswers} className="mr-4 mt-4 mb-4">
+            <Button
+                onPress={seeAnswers}
+                isDisabled={!answers}
+                className="mr-4 mt-4 mb-4"
+            >
                 Ver respuestas
             </Button>
             <Modal
