@@ -31,6 +31,9 @@ function Exam() {
         importAll().then(({ context, files }) => {
             setFiles(files);
             window.context = context; // Save context to window for later use
+            if (files.length > 0) {
+                setSelectedFile(files[0]); // Set the first file as the default selected file
+            }
         });
     }, []);
 
@@ -75,14 +78,9 @@ function Exam() {
                 <DropdownTrigger>
                     <Button className="mb-4">Select Exam File</Button>
                 </DropdownTrigger>
-                <DropdownMenu>
+                <DropdownMenu onAction={(key) => setSelectedFile(key)}>
                     {files.map((file) => (
-                        <DropdownItem
-                            key={file}
-                            onClick={() => setSelectedFile(file)}
-                        >
-                            {file}
-                        </DropdownItem>
+                        <DropdownItem key={file}>{file}</DropdownItem>
                     ))}
                 </DropdownMenu>
             </Dropdown>
