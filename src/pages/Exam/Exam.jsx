@@ -38,7 +38,11 @@ function Exam() {
         if (selectedFile) {
             window.context[`../../exams_questions/${selectedFile}.json`]().then(
                 (module) => {
-                    setQuestions(module.default);
+                    const questionsData = module.default;
+                    setQuestions(questionsData);
+                    setCurrentQuestionIndex(
+                        Math.floor(Math.random() * questionsData.length)
+                    );
                 }
             );
         }
