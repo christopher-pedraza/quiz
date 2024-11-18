@@ -1,11 +1,5 @@
 [
     {
-        "question": "How to find:",
-        "answers": null,
-        "explanation": null,
-        "images": null
-    },
-    {
         "question": "1. Which two statements are characteristics of a virus? (Choose two.)",
         "answers": [
             {
@@ -790,12 +784,6 @@
         "images": null
     },
     {
-        "question": "ping 127.0.0.1",
-        "answers": null,
-        "explanation": null,
-        "images": null
-    },
-    {
         "question": "37. What characterizes a threat actor?",
         "answers": [
             {
@@ -819,7 +807,7 @@
         "images": null
     },
     {
-        "question": "38. A computer is presenting a user with a screen requesting payment before the user data is allowed to be accessed by the same user. What type of malware is this?",
+        "question": "38. A computer is presenting a user with a screen requesting payment before the user data is allowed to be accessed by the same user. What type of malware is this?A computer is presenting a user with a screen requesting payment before the user data is allowed to be accessed  by the same user. What type of malware is this?",
         "answers": [
             {
                 "answer": "a type of logic bomb",
@@ -1369,16 +1357,10 @@
     },
     {
         "question": "66. An administrator wants to create four subnetworks from the network address 192.168.1.0/24. What is the network address and subnet mask of the second useable subnet?",
-        "answers": null,
-        "explanation": null,
-        "images": null
-    },
-    {
-        "question": "subnetwork 192.168.1.64subnet mask 255.255.255.192",
         "answers": [
             {
                 "answer": "subnetwork 192.168.1.64subnet mask 255.255.255.240",
-                "is_correct": false
+                "is_correct": true
             },
             {
                 "answer": "subnetwork 192.168.1.32subnet mask 255.255.255.240",
@@ -1396,6 +1378,7 @@
         "explanation": "Explanation:The number of bits that are borrowed would be two, thus giving a total of 4 useable subnets:192.168.1.0192.168.1.64192.168.1.128192.168.1.192Because 2 bits are borrowed, the new subnet mask would be /26 or 255.255.255.192",
         "images": null
     },
+
     {
         "question": "67. What term describes a set of software tools designed to increase the privileges of a user or to grant access to the user to portions of the operating system that should not normally be allowed?",
         "answers": [
@@ -1440,30 +1423,6 @@
             }
         ],
         "explanation": "Explanation:There are four potential strategies for responding to risks that have been identified:Risk avoidance– Stop performing the activities that create risk.Risk reduction– Decrease the risk by taking measures to reduce vulnerability.Risk sharing– Shift some of the risk to other parties.Risk retention– Accept the risk and its consequences.",
-        "images": null
-    },
-    {
-        "question": "Risk avoidance",
-        "answers": null,
-        "explanation": null,
-        "images": null
-    },
-    {
-        "question": "Risk reduction",
-        "answers": null,
-        "explanation": null,
-        "images": null
-    },
-    {
-        "question": "Risk sharing",
-        "answers": null,
-        "explanation": null,
-        "images": null
-    },
-    {
-        "question": "Risk retention",
-        "answers": null,
-        "explanation": null,
         "images": null
     },
     {
@@ -3867,12 +3826,6 @@
             }
         ],
         "explanation": "Explain:The destination multicast IPv4 address is a group address, which is a single IP multicast address within the Class D range.",
-        "images": null
-    },
-    {
-        "question": "Explain:",
-        "answers": null,
-        "explanation": null,
         "images": null
     },
     {
