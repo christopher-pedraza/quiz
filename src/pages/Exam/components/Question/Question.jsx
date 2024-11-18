@@ -28,6 +28,7 @@ function Question({ question_data, nextQuestion }) {
     const { question, answers, explanation, images } = question_data;
     const [selectedAnswers, setSelectedAnswers] = useState([]);
     const [showAnswerStatus, setShowAnswerStatus] = useState(false);
+    const [showAnswerOverwrite, setShowAnswerOverwrite] = useState(false);
     const [shuffledAnswers, setShuffledAnswers] = useState([]);
 
     const {
@@ -46,15 +47,25 @@ function Question({ question_data, nextQuestion }) {
         setShowAnswerStatus(true);
     };
 
+    const seeAnswers = () => {
+        setShowAnswerOverwrite(true);
+    };
+
     const onAnswerChange = (newSelectedValues) => {
         setShowAnswerStatus(false);
+        setShowAnswerOverwrite(false);
         setSelectedAnswers(newSelectedValues);
     };
 
     useEffect(() => {
         setSelectedAnswers([]);
         setShowAnswerStatus(false);
-        setShuffledAnswers(shuffleArray([...question_data.answers]));
+        setShowAnswerOverwrite(false);
+        if (question_data.answers) {
+            setShuffledAnswers(shuffleArray([...question_data.answers]));
+        } else {
+            setShuffledAnswers([]);
+        }
     }, [question_data]);
 
     return (
@@ -71,8 +82,9 @@ function Question({ question_data, nextQuestion }) {
                         >
                             {shuffledAnswers.map((answer, index) => (
                                 <Checkbox key={index} value={index}>
-                                    {showAnswerStatus &&
-                                    selectedAnswers.includes(index) ? (
+                                    {(showAnswerStatus &&
+                                        selectedAnswers.includes(index)) ||
+                                    showAnswerOverwrite ? (
                                         answer.is_correct ? (
                                             <span className="text-green-500">
                                                 {answer.answer}
@@ -95,6 +107,11 @@ function Question({ question_data, nextQuestion }) {
             <Button onPress={onOpenImages} isDisabled={!images}>
                 Imagenes
             </Button>
+
+            <Button onPress={onOpenChangeExplanation} isDisabled={!explanation}>
+                Explicación
+            </Button>
+            <Button onPress={seeAnswers}>Ver respuestas</Button>
             <Modal
                 isOpen={isOpenImages}
                 onOpenChange={onOpenChangeImages}
@@ -109,9 +126,6 @@ function Question({ question_data, nextQuestion }) {
                     )}
                 </ModalContent>
             </Modal>
-            <Button onPress={onOpenChangeExplanation} isDisabled={!explanation}>
-                Explicación
-            </Button>
             <Modal
                 isOpen={isOpenExplanation}
                 onOpenChange={onOpenChangeExplanation}
