@@ -1,4 +1,4 @@
-import Exam from "./pages/exam/exam";
+import Exam from "./pages/Exam/Exam";
 import "./App.css";
 
 function App() {
