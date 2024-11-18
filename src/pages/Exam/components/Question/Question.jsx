@@ -70,9 +70,9 @@ function Question({ question_data, nextQuestion }) {
 
     return (
         <>
-            <Card>
+            <Card className="p-4">
                 <CardBody>
-                    <p>
+                    <p className="mb-4">
                         <strong>{question}</strong>
                     </p>
                     {shuffledAnswers && (
@@ -81,7 +81,11 @@ function Question({ question_data, nextQuestion }) {
                             onValueChange={onAnswerChange}
                         >
                             {shuffledAnswers.map((answer, index) => (
-                                <Checkbox key={index} value={index}>
+                                <Checkbox
+                                    key={index}
+                                    value={index}
+                                    className="mb-2"
+                                >
                                     {(showAnswerStatus &&
                                         selectedAnswers.includes(index)) ||
                                     showAnswerOverwrite ? (
@@ -103,15 +107,27 @@ function Question({ question_data, nextQuestion }) {
                     )}
                 </CardBody>
             </Card>
-            <Button onPress={checkAnswers}>Checar</Button>
-            <Button onPress={onOpenImages} isDisabled={!images}>
+            <Button onPress={checkAnswers} className="mr-4 mt-4 mb-4">
+                Checar
+            </Button>
+            <Button
+                onPress={onOpenImages}
+                isDisabled={!images}
+                className="mr-4 mt-4 mb-4"
+            >
                 Imagenes
             </Button>
 
-            <Button onPress={onOpenChangeExplanation} isDisabled={!explanation}>
+            <Button
+                onPress={onOpenChangeExplanation}
+                isDisabled={!explanation}
+                className="mr-4 mt-4 mb-4"
+            >
                 Explicación
             </Button>
-            <Button onPress={seeAnswers}>Ver respuestas</Button>
+            <Button onPress={seeAnswers} className="mr-4 mt-4 mb-4">
+                Ver respuestas
+            </Button>
             <Modal
                 isOpen={isOpenImages}
                 onOpenChange={onOpenChangeImages}

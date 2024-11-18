@@ -26,8 +26,12 @@ export function EmblaCarousel({ images }) {
             <div className="embla__viewport" ref={emblaRef}>
                 <div className="embla__container">
                     {images.map((image, index) => (
-                        <div className="embla__slide" key={index}>
-                            <img src={image} alt={`Image ${index}`} />
+                        <div className="embla__slide p-4" key={index}>
+                            <img
+                                src={image}
+                                alt={`Image ${index}`}
+                                className="embla__slide__img"
+                            />
                         </div>
                     ))}
                 </div>
