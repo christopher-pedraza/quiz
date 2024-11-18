@@ -16,10 +16,19 @@ import { useState, useEffect } from "react";
 
 import { EmblaCarousel } from "./components/EmblaCarousel/EmblaCarousel";
 
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+}
+
 function Question({ question_data, nextQuestion }) {
     const { question, answers, explanation, images } = question_data;
     const [selectedAnswers, setSelectedAnswers] = useState([]);
     const [showAnswerStatus, setShowAnswerStatus] = useState(false);
+    const [shuffledAnswers, setShuffledAnswers] = useState([]);
 
     const {
         isOpen: isOpenImages,
@@ -45,6 +54,7 @@ function Question({ question_data, nextQuestion }) {
     useEffect(() => {
         setSelectedAnswers([]);
         setShowAnswerStatus(false);
+        setShuffledAnswers(shuffleArray([...question_data.answers]));
     }, [question_data]);
 
     return (
@@ -54,12 +64,12 @@ function Question({ question_data, nextQuestion }) {
                     <p>
                         <strong>{question}</strong>
                     </p>
-                    {answers && (
+                    {shuffledAnswers && (
                         <CheckboxGroup
                             value={selectedAnswers}
                             onValueChange={onAnswerChange}
                         >
-                            {answers.map((answer, index) => (
+                            {shuffledAnswers.map((answer, index) => (
                                 <Checkbox key={index} value={index}>
                                     {showAnswerStatus &&
                                     selectedAnswers.includes(index) ? (
