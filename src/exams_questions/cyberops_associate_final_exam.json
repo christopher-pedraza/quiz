@@ -23,7 +23,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:The type of end user interaction required to launch a virus is typically opening an application, opening a web page, or powering on the computer. Once activated, a virus may infect other files located on the computer or other computers on the same network.",
+        "explanation": "Explicación: The type of end user interaction required to launch a virus is typically opening an application, opening a web page, or powering on the computer. Once activated, a virus may infect other files located on the computer or other computers on the same network.",
         "images": null
     },
     {
@@ -46,7 +46,7 @@
                 "is_correct": true
             }
         ],
-        "explanation": "Explanation:A Trojan horse carries out malicious operations under the guise of a legitimate program. Denial of service attacks send extreme quantities of data to a particular host or network device interface. Password attacks use electronic dictionaries in an attempt to learn passwords. Buffer overflow attacks exploit memory buffers by sending too much information to a host to render the system inoperable.",
+        "explanation": "Explicación: A Trojan horse carries out malicious operations under the guise of a legitimate program. Denial of service attacks send extreme quantities of data to a particular host or network device interface. Password attacks use electronic dictionaries in an attempt to learn passwords. Buffer overflow attacks exploit memory buffers by sending too much information to a host to render the system inoperable.",
         "images": null
     },
     {
@@ -69,7 +69,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:A threat actor sends fraudulent email which is disguised as being from a legitimate, trusted source to trick the recipient into installing malware on their device, or to share personal or financial information.",
+        "explanation": "Explicación: A threat actor sends fraudulent email which is disguised as being from a legitimate, trusted source to trick the recipient into installing malware on their device, or to share personal or financial information.",
         "images": null
     },
     {
@@ -92,7 +92,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:VLANs are used on a network to separate user traffic based on factors such as function, project team, or application, without regard for the physical location of the user or device.",
+        "explanation": "Explicación: VLANs are used on a network to separate user traffic based on factors such as function, project team, or application, without regard for the physical location of the user or device.",
         "images": null
     },
     {
@@ -115,7 +115,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:When a message sent from PCA to PCB reaches router R2, some frame header fields will be rewritten by R2 before forwarding to switch S2. The frames will contain the source MAC address of router R2 and the destination MAC address of PCB. The frames will retain the original IPv4 addressing applied by PCA which is the IPv4 address of PCA as the source address and the IPv4 address of PCB as the destination.",
+        "explanation": "Explicación: When a message sent from PCA to PCB reaches router R2, some frame header fields will be rewritten by R2 before forwarding to switch S2. The frames will contain the source MAC address of router R2 and the destination MAC address of PCB. The frames will retain the original IPv4 addressing applied by PCA which is the IPv4 address of PCA as the source address and the IPv4 address of PCB as the destination.",
         "images": [
             "https://itexamanswers.net/wp-content/uploads/2020/09/5Q.jpg"
         ]
@@ -148,7 +148,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:A Security Onion Architecture:Detection tools in Security Onion Architecture include: CapME, Snort, Zeek, OSSEC, Wazuh, Suricata.",
+        "explanation": "Explicación: A Security Onion Architecture:Detection tools in Security Onion Architecture include: CapME, Snort, Zeek, OSSEC, Wazuh, Suricata.",
         "images": null
     },
     {
@@ -179,13 +179,13 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:A risk analysis includes assessment of the likelihood of attacks, identifies types of likely threat actors, and evaluates the impact of successful exploits on the organization.",
+        "explanation": "Explicación: A risk analysis includes assessment of the likelihood of attacks, identifies types of likely threat actors, and evaluates the impact of successful exploits on the organization.",
         "images": null
     },
     {
         "question": "9. Match the server profile element to the description. (Not all options are used.)",
         "answers": null,
-        "explanation": "Explanation:The elements of a server profile include the following:Listening ports – the TCP and UDP daemons and ports that are allowed to be open on the serverUser accounts – the parameters defining user access and behaviorService accounts – the definitions of the type of service that an application is allowed to run on a given hostSoftware environment – the tasks, processes, and applications that are permitted to run on the server",
+        "explanation": "Explicación: The elements of a server profile include the following:Listening ports – the TCP and UDP daemons and ports that are allowed to be open on the serverUser accounts – the parameters defining user access and behaviorService accounts – the definitions of the type of service that an application is allowed to run on a given hostSoftware environment – the tasks, processes, and applications that are permitted to run on the server",
         "images": [
             "https://itexamanswers.net/wp-content/uploads/2020/09/Q9CyberOps-Associate.jpg"
         ]
@@ -210,7 +210,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:There are four potential strategies for responding to risks that have been identified:Risk avoidance – Stop performing the activities that create risk.Risk reduction – Decrease the risk by taking measures to reduce vulnerability.Risk sharing – Shift some of the risk to other parties.Risk retention – Accept the risk and its consequences.",
+        "explanation": "Explicación: There are four potential strategies for responding to risks that have been identified:Risk avoidance – Stop performing the activities that create risk.Risk reduction – Decrease the risk by taking measures to reduce vulnerability.Risk sharing – Shift some of the risk to other parties.Risk retention – Accept the risk and its consequences.",
         "images": null
     },
     {
@@ -233,7 +233,7 @@
                 "is_correct": true
             }
         ],
-        "explanation": "Explanation:A network tap is used to capture traffic for monitoring the network. The tap is typically a passive splitting device implemented inline on the network and forwards all traffic, including physical layer errors, to an analysis device.",
+        "explanation": "Explicación: A network tap is used to capture traffic for monitoring the network. The tap is typically a passive splitting device implemented inline on the network and forwards all traffic, including physical layer errors, to an analysis device.",
         "images": null
     },
     {
@@ -264,7 +264,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:Within a year, there are 365 days x 24 hours a day x 60 minutes per hour = 525,600 minutes. With the goal of uptime 99.999% of time, the downtime needs to be controlled under 525,600 x (1-0.99999) = 5.256 minutes a year.",
+        "explanation": "Explicación: Within a year, there are 365 days x 24 hours a day x 60 minutes per hour = 525,600 minutes. With the goal of uptime 99.999% of time, the downtime needs to be controlled under 525,600 x (1-0.99999) = 5.256 minutes a year.",
         "images": null
     },
     {
@@ -310,7 +310,7 @@
                 "is_correct": true
             }
         ],
-        "explanation": "Explanation:IMAP and POP are protocols that are used to retrieve email messages. The advantage of using IMAP instead of POP is that when the user connects to an IMAP-capable server, copies of the messages are downloaded to the client application. IMAP then stores the email messages on the server until the user manually deletes those messages.",
+        "explanation": "Explicación: IMAP and POP are protocols that are used to retrieve email messages. The advantage of using IMAP instead of POP is that when the user connects to an IMAP-capable server, copies of the messages are downloaded to the client application. IMAP then stores the email messages on the server until the user manually deletes those messages.",
         "images": null
     },
     {
@@ -368,7 +368,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:When a node encapsulates a data packet into a frame, it needs the destination MAC address. First it determines if the destination device is on the local network or on a remote network. Then it checks the ARP table (not the MAC table) to see if a pair of IP address and MAC address exists for either the destination IP address (if the destination host is on the local network) or the default gateway IP address (if the destination host is on a remote network). If the match does not exist, it generates an ARP broadcast to seek the IP address to MAC address resolution. Because the destination MAC address is unknown, the ARP request is broadcast with the MAC address FFFF.FFFF.FFFF. Either the destination device or the default gateway will respond with its MAC address, which enables the sending node to assemble the frame. If no device responds to the ARP request, then the originating node will discard the packet because a frame cannot be created.",
+        "explanation": "Explicación: When a node encapsulates a data packet into a frame, it needs the destination MAC address. First it determines if the destination device is on the local network or on a remote network. Then it checks the ARP table (not the MAC table) to see if a pair of IP address and MAC address exists for either the destination IP address (if the destination host is on the local network) or the default gateway IP address (if the destination host is on a remote network). If the match does not exist, it generates an ARP broadcast to seek the IP address to MAC address resolution. Because the destination MAC address is unknown, the ARP request is broadcast with the MAC address FFFF.FFFF.FFFF. Either the destination device or the default gateway will respond with its MAC address, which enables the sending node to assemble the frame. If no device responds to the ARP request, then the originating node will discard the packet because a frame cannot be created.",
         "images": null
     },
     {
@@ -414,7 +414,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:Tor is a software platform and network of peer-to-peer (P2P) hosts that function as routers. Users access the Tor network by using a special browserthat allows them to browse anonymously.",
+        "explanation": "Explicación: Tor is a software platform and network of peer-to-peer (P2P) hosts that function as routers. Users access the Tor network by using a special browserthat allows them to browse anonymously.",
         "images": null
     },
     {
@@ -464,7 +464,7 @@
                 "is_correct": true
             }
         ],
-        "explanation": "Explanation:Wireshark captures the entire contents of a packet. NetFlow does not. Instead, NetFlow collects metadata, or data about the flow.",
+        "explanation": "Explicación: Wireshark captures the entire contents of a packet. NetFlow does not. Instead, NetFlow collects metadata, or data about the flow.",
         "images": null
     },
     {
@@ -487,7 +487,7 @@
                 "is_correct": true
             }
         ],
-        "explanation": "Explanation:The command-line tool tcpdump is a packet analyzer. Wireshark is a packet analyzer with a GUI interface.",
+        "explanation": "Explicación: The command-line tool tcpdump is a packet analyzer. Wireshark is a packet analyzer with a GUI interface.",
         "images": null
     },
     {
@@ -510,7 +510,7 @@
                 "is_correct": true
             }
         ],
-        "explanation": "Explanation:The basic best practices for device hardening are as follows:Ensure physical security.Minimize installed packages.Disable unused services.Use SSH and disable the root account login over SSH.Keep the system updated.Disable USB auto-detection.Enforce strong passwords.Force periodic password changes.Keep users from re-using old passwords.Review logs regularly.",
+        "explanation": "Explicación: The basic best practices for device hardening are as follows:Ensure physical security.Minimize installed packages.Disable unused services.Use SSH and disable the root account login over SSH.Keep the system updated.Disable USB auto-detection.Enforce strong passwords.Force periodic password changes.Keep users from re-using old passwords.Review logs regularly.",
         "images": null
     },
     {
@@ -560,7 +560,7 @@
                 "is_correct": true
             }
         ],
-        "explanation": "Explanation:RADIUS authentication supports the following features:RADIUS authentication and authorization as one processEncrypts only the passwordUtilizes UDPSupports remote-access technologies, 802.1X, and Session Initiation Protocol (SIP)",
+        "explanation": "Explicación: RADIUS authentication supports the following features:RADIUS authentication and authorization as one processEncrypts only the passwordUtilizes UDPSupports remote-access technologies, 802.1X, and Session Initiation Protocol (SIP)",
         "images": null
     },
     {
@@ -583,7 +583,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:With privilege escalation, vulnerabilities are exploited to grant higher levels of privilege. After the privilege is granted, the threat actor can access sensitive information or take control of the system.",
+        "explanation": "Explicación: With privilege escalation, vulnerabilities are exploited to grant higher levels of privilege. After the privilege is granted, the threat actor can access sensitive information or take control of the system.",
         "images": null
     },
     {
@@ -610,7 +610,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:Digitally signing code provides several assurances about the code:The code is authentic and is actually sourced by the publisher.The code has not been modified since it left the software publisher.The publisher undeniably published the code. This provides nonrepudiation of the act of publishing.",
+        "explanation": "Explicación: Digitally signing code provides several assurances about the code:The code is authentic and is actually sourced by the publisher.The code has not been modified since it left the software publisher.The publisher undeniably published the code. This provides nonrepudiation of the act of publishing.",
         "images": null
     },
     {
@@ -637,7 +637,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:The Public Key Infrastructure (PKI) is a third party-system referred to as a certificate authority or CA. The PKI is the framework used to securely exchange information between parties. Common PKI applications are as follows:SSL/TLS certificate-based peer authenticationSecure network traffic using IPsec VPNsHTTPS Web trafficControl access to the network using 802.1x authenticationSecure email using the S/MIME protocolSecure instant messagingApprove and authorize applications with Code SigningProtect user data with the Encryption File System (EFS)Implement two-factor authentication with smart cardsSecuring USB storage devices",
+        "explanation": "Explicación: The Public Key Infrastructure (PKI) is a third party-system referred to as a certificate authority or CA. The PKI is the framework used to securely exchange information between parties. Common PKI applications are as follows:SSL/TLS certificate-based peer authenticationSecure network traffic using IPsec VPNsHTTPS Web trafficControl access to the network using 802.1x authenticationSecure email using the S/MIME protocolSecure instant messagingApprove and authorize applications with Code SigningProtect user data with the Encryption File System (EFS)Implement two-factor authentication with smart cardsSecuring USB storage devices",
         "images": null
     },
     {
@@ -660,7 +660,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:Deploy a Cisco SSL Appliance to decrypt SSL traffic and send it to intrusion prevention system (IPS) appliances to identify risks normally hidden by SSL.",
+        "explanation": "Explicación: Deploy a Cisco SSL Appliance to decrypt SSL traffic and send it to intrusion prevention system (IPS) appliances to identify risks normally hidden by SSL.",
         "images": null
     },
     {
@@ -730,7 +730,7 @@
                 "is_correct": true
             }
         ],
-        "explanation": "Explanation:A criminal can insert a malicious SQL statement in an entry field on a website where the system does not filter the user input correctly.",
+        "explanation": "Explicación: A criminal can insert a malicious SQL statement in an entry field on a website where the system does not filter the user input correctly.",
         "images": null
     },
     {
@@ -780,7 +780,7 @@
                 "is_correct": true
             }
         ],
-        "explanation": "Explanation:Theping 127.0.0.1command is used to verify that the TCP/IP stack is functional. It verifies the proper operation of the protocol stack from the network layer to physical layer, without sending a signal on the media. That is, this test does not go beyond the PC itself. For example, it does not detect whether a cable is connected to the PC or not.",
+        "explanation": "Explicación: Theping 127.0.0.1command is used to verify that the TCP/IP stack is functional. It verifies the proper operation of the protocol stack from the network layer to physical layer, without sending a signal on the media. That is, this test does not go beyond the PC itself. For example, it does not detect whether a cable is connected to the PC or not.",
         "images": null
     },
     {
@@ -826,7 +826,7 @@
                 "is_correct": true
             }
         ],
-        "explanation": "Explanation:Ransomware commonly encrypts data on a computer and makes the data unavailable until the computer user pays a specific sum of money",
+        "explanation": "Explicación: Ransomware commonly encrypts data on a computer and makes the data unavailable until the computer user pays a specific sum of money",
         "images": null
     },
     {
@@ -849,7 +849,7 @@
                 "is_correct": true
             }
         ],
-        "explanation": "Explanation:IPv6-enabled router interfaces send periodic router advertisement messages that provide addressing information to hosts that perform SLAAC.",
+        "explanation": "Explicación: IPv6-enabled router interfaces send periodic router advertisement messages that provide addressing information to hosts that perform SLAAC.",
         "images": null
     },
     {
@@ -899,7 +899,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:To reduce the huge amount of data collected so that cybersecurity analysts can focus on critical threats, some less important or unusable data could be eliminated from the datasets. For example, encrypted data, such as IPsec and SSL traffic, could be eliminated because it is unreadable in a reasonable time frame.",
+        "explanation": "Explicación: To reduce the huge amount of data collected so that cybersecurity analysts can focus on critical threats, some less important or unusable data could be eliminated from the datasets. For example, encrypted data, such as IPsec and SSL traffic, could be eliminated because it is unreadable in a reasonable time frame.",
         "images": null
     },
     {
@@ -953,7 +953,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:Common attack vectors include media, attrition, impersonation, and loss or theft. Attrition attacks are any attacks that use brute force. Media attacks are those initiated from storage devices. Impersonation attacks occur when something or someone is replaced for the purpose of the attack, and loss or theft attacks are initiated by equipment inside the organization.",
+        "explanation": "Explicación: Common attack vectors include media, attrition, impersonation, and loss or theft. Attrition attacks are any attacks that use brute force. Media attacks are those initiated from storage devices. Impersonation attacks occur when something or someone is replaced for the purpose of the attack, and loss or theft attacks are initiated by equipment inside the organization.",
         "images": null
     },
     {
@@ -984,7 +984,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:CybOX is an open standards set of standardized schemata for specifying, capturing, characterizing, and communicating events and properties of network operations that support many cybersecurity functions.",
+        "explanation": "Explicación: CybOX is an open standards set of standardized schemata for specifying, capturing, characterizing, and communicating events and properties of network operations that support many cybersecurity functions.",
         "images": null
     },
     {
@@ -1019,7 +1019,7 @@
                 "is_correct": true
             }
         ],
-        "explanation": "Explanation:ICMP can be used as a conduit for DoS attacks. It can be used to collect information about a network such as the identification of hosts and network structure, and by determining the operating systems being used on the network.",
+        "explanation": "Explicación: ICMP can be used as a conduit for DoS attacks. It can be used to collect information about a network such as the identification of hosts and network structure, and by determining the operating systems being used on the network.",
         "images": null
     },
     {
@@ -1050,7 +1050,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:Unlike IPv4, IPv6 routers do not perform fragmentation. Therefore, all three fields supporting fragmentation in the IPv4 header are removed and have no equivalent in the IPv6 header. These three fields are fragment offset, flag, and identification. IPv6 does support host packet fragmentation through the use of extension headers, which are not part of the IPv6 header.",
+        "explanation": "Explicación: Unlike IPv4, IPv6 routers do not perform fragmentation. Therefore, all three fields supporting fragmentation in the IPv4 header are removed and have no equivalent in the IPv6 header. These three fields are fragment offset, flag, and identification. IPv6 does support host packet fragmentation through the use of extension headers, which are not part of the IPv6 header.",
         "images": null
     },
     {
@@ -1077,7 +1077,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:Thenetcommand is a very important command. Some commonnetcommands include these:net accounts– sets password and logon requirements for usersnet session– lists or disconnects sessions between a computer and other computers on the networknet share– creates, removes, or manages shared resourcesnet start– starts a network service or lists running network servicesnet stop– stops a network servicenet use– connects, disconnects, and displays information about shared network resourcesnet view– shows a list of computers and network devices on the network",
+        "explanation": "Explicación: Thenetcommand is a very important command. Some commonnetcommands include these:net accounts– sets password and logon requirements for usersnet session– lists or disconnects sessions between a computer and other computers on the networknet share– creates, removes, or manages shared resourcesnet start– starts a network service or lists running network servicesnet stop– stops a network servicenet use– connects, disconnects, and displays information about shared network resourcesnet view– shows a list of computers and network devices on the network",
         "images": null
     },
     {
@@ -1108,7 +1108,7 @@
                 "is_correct": true
             }
         ],
-        "explanation": "Explanation:When received at the physical layer of a host, the bits are formatted into a frame at the data link layer. A packet is the PDU at the network layer. A segment is the PDU at the transport layer. A file is a data structure that may be used at the application layer.",
+        "explanation": "Explicación: When received at the physical layer of a host, the bits are formatted into a frame at the data link layer. A packet is the PDU at the network layer. A segment is the PDU at the transport layer. A file is a data structure that may be used at the application layer.",
         "images": null
     },
     {
@@ -1135,7 +1135,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:When a router receives a traceroute packet, the value in the TTL field is decremented by 1. When the value in the field reaches zero, the receiving router will not forward the packet, and will send an ICMP Time Exceeded message back to the source.",
+        "explanation": "Explicación: When a router receives a traceroute packet, the value in the TTL field is decremented by 1. When the value in the field reaches zero, the receiving router will not forward the packet, and will send an ICMP Time Exceeded message back to the source.",
         "images": null
     },
     {
@@ -1158,7 +1158,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:A Generic Routing Encapsulation (GRE) tunnel is a non-secure, site-to-site VPN tunneling solution that is capable of encapsulating any Layer 3 protocol between multiple sites across over an IP internetwork.",
+        "explanation": "Explicación: A Generic Routing Encapsulation (GRE) tunnel is a non-secure, site-to-site VPN tunneling solution that is capable of encapsulating any Layer 3 protocol between multiple sites across over an IP internetwork.",
         "images": [
             "https://itexamanswers.net/wp-content/uploads/2020/09/Q54CyberOps-Associate.jpg"
         ]
@@ -1183,7 +1183,7 @@
                 "is_correct": true
             }
         ],
-        "explanation": "Explanation:Nmap allows an administrator to perform port scanning to probe computers and the network for open ports. This helps the administrator verify that network security policies are in place.",
+        "explanation": "Explicación: Nmap allows an administrator to perform port scanning to probe computers and the network for open ports. This helps the administrator verify that network security policies are in place.",
         "images": null
     },
     {
@@ -1238,7 +1238,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:DCHP starvation attacks are launched by an attacker with the intent to create a DoS for DHCP clients. To accomplish this goal, the attacker uses a tool that sends many DHCPDISCOVER messages in order to lease the entire pool of available IP addresses, thus denying them to legitimate hosts.",
+        "explanation": "Explicación: DCHP starvation attacks are launched by an attacker with the intent to create a DoS for DHCP clients. To accomplish this goal, the attacker uses a tool that sends many DHCPDISCOVER messages in order to lease the entire pool of available IP addresses, thus denying them to legitimate hosts.",
         "images": null
     },
     {
@@ -1269,7 +1269,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:The TCP/IP model contains the application, transport, internet, and network access layers. A file transfer uses the FTP application layer protocol. The data would move from the application layer through all of the layers of the model and across the network to the file server.",
+        "explanation": "Explicación: The TCP/IP model contains the application, transport, internet, and network access layers. A file transfer uses the FTP application layer protocol. The data would move from the application layer through all of the layers of the model and across the network to the file server.",
         "images": [
             "https://itexamanswers.net/wp-content/uploads/2020/10/i275370v1n1_275370-2.png"
         ]
@@ -1294,7 +1294,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:After a user is successfully authenticated (logged into the server), the authorization is the process of determining what network resources the user can access and what operations (such as read or edit) the user can perform.",
+        "explanation": "Explicación: After a user is successfully authenticated (logged into the server), the authorization is the process of determining what network resources the user can access and what operations (such as read or edit) the user can perform.",
         "images": null
     },
     {
@@ -1325,7 +1325,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:In order for wireless devices to communicate on a wireless network, management frames are used to complete a three-stage process:Discover the APAuthenticate with the APAssociate with the AP",
+        "explanation": "Explicación: In order for wireless devices to communicate on a wireless network, management frames are used to complete a three-stage process:Discover the APAuthenticate with the APAssociate with the AP",
         "images": null
     },
     {
@@ -1352,7 +1352,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:The address has a prefix length of /64. Thus the first 64 bits represent the network portion, whereas the last 64 bits represent the host portion of the IPv6 address.",
+        "explanation": "Explicación: The address has a prefix length of /64. Thus the first 64 bits represent the network portion, whereas the last 64 bits represent the host portion of the IPv6 address.",
         "images": null
     },
     {
@@ -1375,7 +1375,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:The number of bits that are borrowed would be two, thus giving a total of 4 useable subnets:192.168.1.0192.168.1.64192.168.1.128192.168.1.192Because 2 bits are borrowed, the new subnet mask would be /26 or 255.255.255.192",
+        "explanation": "Explicación: The number of bits that are borrowed would be two, thus giving a total of 4 useable subnets:192.168.1.0192.168.1.64192.168.1.128192.168.1.192Because 2 bits are borrowed, the new subnet mask would be /26 or 255.255.255.192",
         "images": null
     },
 
@@ -1399,7 +1399,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:A rootkit is used by an attacker to secure a backdoor to a compromised computer, grant access to portions of the operating system normally not permitted, or increase the privileges of a user.",
+        "explanation": "Explicación: A rootkit is used by an attacker to secure a backdoor to a compromised computer, grant access to portions of the operating system normally not permitted, or increase the privileges of a user.",
         "images": null
     },
     {
@@ -1422,7 +1422,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:There are four potential strategies for responding to risks that have been identified:Risk avoidance– Stop performing the activities that create risk.Risk reduction– Decrease the risk by taking measures to reduce vulnerability.Risk sharing– Shift some of the risk to other parties.Risk retention– Accept the risk and its consequences.",
+        "explanation": "Explicación: There are four potential strategies for responding to risks that have been identified:Risk avoidance– Stop performing the activities that create risk.Risk reduction– Decrease the risk by taking measures to reduce vulnerability.Risk sharing– Shift some of the risk to other parties.Risk retention– Accept the risk and its consequences.",
         "images": null
     },
     {
@@ -1453,7 +1453,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:An Information Security Management System (ISMS) consists of a management framework through which an organization identifies, analyzes, and addresses information security risks. ISMSs are not based in servers or security devices. Instead, an ISMS consists of a set of practices that are systematically applied by an organization to ensure continuous improvement in information security. ISMSs provide conceptual models that guide organizations in planning, implementing, governing, and evaluating information security programs.ISMSs are a natural extension of the use of popular business models, such as Total Quality Management (TQM) and Control Objectives for Information and Related Technologies (COBIT), into the realm of cybersecurity.An ISMS is a systematic, multi-layered approach to cybersecurity. The approach includes people, processes, technologies, and the cultures in which they interact in a process of risk management.",
+        "explanation": "Explicación: An Information Security Management System (ISMS) consists of a management framework through which an organization identifies, analyzes, and addresses information security risks. ISMSs are not based in servers or security devices. Instead, an ISMS consists of a set of practices that are systematically applied by an organization to ensure continuous improvement in information security. ISMSs provide conceptual models that guide organizations in planning, implementing, governing, and evaluating information security programs.ISMSs are a natural extension of the use of popular business models, such as Total Quality Management (TQM) and Control Objectives for Information and Related Technologies (COBIT), into the realm of cybersecurity.An ISMS is a systematic, multi-layered approach to cybersecurity. The approach includes people, processes, technologies, and the cultures in which they interact in a process of risk management.",
         "images": null
     },
     {
@@ -1484,7 +1484,7 @@
                 "is_correct": true
             }
         ],
-        "explanation": "Explanation:Technologies in a SOC should include the following:• Event collection, correlation, and analysis• Security monitoring• Security control• Log management• Vulnerability assessment• Vulnerability tracking• Threat intelligenceProxy server, VPN, and IPS are security devices deployed in the network infrastructure.",
+        "explanation": "Explicación: Technologies in a SOC should include the following:• Event collection, correlation, and analysis• Security monitoring• Security control• Log management• Vulnerability assessment• Vulnerability tracking• Threat intelligenceProxy server, VPN, and IPS are security devices deployed in the network infrastructure.",
         "images": null
     },
     {
@@ -1507,7 +1507,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:The components of the URL http://www.cisco.com/index.htm are as follows:http = protocolwww = part of the server namecisco = part of the domain nameindex = file namecom = the top-level domain",
+        "explanation": "Explicación: The components of the URL http://www.cisco.com/index.htm are as follows:http = protocolwww = part of the server namecisco = part of the domain nameindex = file namecom = the top-level domain",
         "images": null
     },
     {
@@ -1553,7 +1553,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:Only disable Windows Firewall if other firewall software is installed. Use the Windows Firewall (Windows 7 or 8) or the Windows Defender Firewall (Windows 10) Control Panel to enable or disable the Windows Firewall.",
+        "explanation": "Explicación: Only disable Windows Firewall if other firewall software is installed. Use the Windows Firewall (Windows 7 or 8) or the Windows Defender Firewall (Windows 10) Control Panel to enable or disable the Windows Firewall.",
         "images": null
     },
     {
@@ -1607,7 +1607,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:SPAN is a Cisco technology that allows all of the traffic from one port to be redirected to another port.",
+        "explanation": "Explicación: SPAN is a Cisco technology that allows all of the traffic from one port to be redirected to another port.",
         "images": null
     },
     {
@@ -1630,7 +1630,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:A playbook is an automated query that can add efficiency to the cyberoperations workflow.",
+        "explanation": "Explicación: A playbook is an automated query that can add efficiency to the cyberoperations workflow.",
         "images": null
     },
     {
@@ -1653,7 +1653,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:Source quench ICMP messages provide the ability to have the sender throttle down the rate of messages when necessary. These messages should be allowed through the firewall in both inbound and outbound directions.",
+        "explanation": "Explicación: Source quench ICMP messages provide the ability to have the sender throttle down the rate of messages when necessary. These messages should be allowed through the firewall in both inbound and outbound directions.",
         "images": null
     },
     {
@@ -1676,7 +1676,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:General security monitoring can identify when a malware attachment enters a network and which host is first infected. Retrospective analysis takes the next step and is the tracking of the behavior of the malware from that point forward.",
+        "explanation": "Explicación: General security monitoring can identify when a malware attachment enters a network and which host is first infected. Retrospective analysis takes the next step and is the tracking of the behavior of the malware from that point forward.",
         "images": null
     },
     {
@@ -1730,7 +1730,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:Botnets can be used to perform DDoS attacks, obtain data, or transmit malware to other devices on the network.",
+        "explanation": "Explicación: Botnets can be used to perform DDoS attacks, obtain data, or transmit malware to other devices on the network.",
         "images": null
     },
     {
@@ -1757,7 +1757,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:Asymmetric algorithms use two keys: a public key and a private key. Both keys are capable of the encryption process, but the complementary matched key is required for decryption. If a public key encrypts the data, the matching private key decrypts the data. The opposite is also true. If a private key encrypts the data, the corresponding public key decrypts the data.",
+        "explanation": "Explicación: Asymmetric algorithms use two keys: a public key and a private key. Both keys are capable of the encryption process, but the complementary matched key is required for decryption. If a public key encrypts the data, the matching private key decrypts the data. The opposite is also true. If a private key encrypts the data, the corresponding public key decrypts the data.",
         "images": null
     },
     {
@@ -1788,7 +1788,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:Digital signatures are a mathematical technique used to provide three basic security services. Digital signatures have specific properties that enable entity authentication and data integrity. In addition, digital signatures provide nonrepudiation of the transaction. In other words, the digital signature serves as legal proof that the data exchange did take place.",
+        "explanation": "Explicación: Digital signatures are a mathematical technique used to provide three basic security services. Digital signatures have specific properties that enable entity authentication and data integrity. In addition, digital signatures provide nonrepudiation of the transaction. In other words, the digital signature serves as legal proof that the data exchange did take place.",
         "images": null
     },
     {
@@ -1815,7 +1815,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:A digital certificate might need to be revoked if its key is compromised or it is no longer needed. The certificate revocation list (CRL) and Online Certificate Status Protocol (OCSP), are two common methods to check a certificate revocation status.",
+        "explanation": "Explicación: A digital certificate might need to be revoked if its key is compromised or it is no longer needed. The certificate revocation list (CRL) and Online Certificate Status Protocol (OCSP), are two common methods to check a certificate revocation status.",
         "images": null
     },
     {
@@ -1842,7 +1842,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:ACLs can be used for the following:Limit network traffic in order to provide adequate network performanceRestrict the delivery of routing updatesProvide a basic level of securityFilter traffic based on the type of traffic being sentFilter traffic based on IP addressing",
+        "explanation": "Explicación: ACLs can be used for the following:Limit network traffic in order to provide adequate network performanceRestrict the delivery of routing updatesProvide a basic level of securityFilter traffic based on the type of traffic being sentFilter traffic based on IP addressing",
         "images": null
     },
     {
@@ -1865,7 +1865,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:Stateless DHCPv6 or stateful DHCPv6 uses a DHCP server, but Stateless Address Autoconfiguration (SLAAC) does not. A SLAAC client can automatically generate an address that is based on information from local routers via Router Advertisement (RA) messages. Once an address has been assigned to an interface via SLAAC, the client must ensure via Duplicate Address Detection (DAD) that the address is not already in use. It does this by sending out an ICMPv6 Neighbor Solicitation message and listening for a response. If a response is received, then it means that another device is already using this address.",
+        "explanation": "Explicación: Stateless DHCPv6 or stateful DHCPv6 uses a DHCP server, but Stateless Address Autoconfiguration (SLAAC) does not. A SLAAC client can automatically generate an address that is based on information from local routers via Router Advertisement (RA) messages. Once an address has been assigned to an interface via SLAAC, the client must ensure via Duplicate Address Detection (DAD) that the address is not already in use. It does this by sending out an ICMPv6 Neighbor Solicitation message and listening for a response. If a response is received, then it means that another device is already using this address.",
         "images": null
     },
     {
@@ -1888,7 +1888,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:The tracert utlility (also known as the tracert command or tracert tool) will enable the technician to locate the link to the server that is down. The ipconfig command displays the computer network configuration details. The ipconfig/renew command requests an IP address from a DHCP server. Msconfig is not a network troubleshooting command.",
+        "explanation": "Explicación: The tracert utlility (also known as the tracert command or tracert tool) will enable the technician to locate the link to the server that is down. The ipconfig command displays the computer network configuration details. The ipconfig/renew command requests an IP address from a DHCP server. Msconfig is not a network troubleshooting command.",
         "images": null
     },
     {
@@ -1915,7 +1915,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:The following methods are used by hackers to avoid detection:Encryption and tunneling – hide or scramble the malware contentResource exhaustion – keeps the host device too busy to detect the invasionTraffic fragmentation – splits the malware into multiple packetsProtocol-level misinterpretation – sneaks by the firewallPivot – uses a compromised network device to attempt access to another deviceRootkit – allows the hacker to be undetected and hides software installed by the hacker",
+        "explanation": "Explicación: The following methods are used by hackers to avoid detection:Encryption and tunneling – hide or scramble the malware contentResource exhaustion – keeps the host device too busy to detect the invasionTraffic fragmentation – splits the malware into multiple packetsProtocol-level misinterpretation – sneaks by the firewallPivot – uses a compromised network device to attempt access to another deviceRootkit – allows the hacker to be undetected and hides software installed by the hacker",
         "images": null
     },
     {
@@ -1942,7 +1942,7 @@
                 "is_correct": true
             }
         ],
-        "explanation": "Explanation:When security professionals are alerted about the system compromises, forensic analysis of endpoints should be performed immediately for rapid triage. In addition, detection efforts for further attacking activities such as data exfiltration, lateral movement, and unauthorized credential usage should be enhanced to reduce damage to the minimum.",
+        "explanation": "Explicación: When security professionals are alerted about the system compromises, forensic analysis of endpoints should be performed immediately for rapid triage. In addition, detection efforts for further attacking activities such as data exfiltration, lateral movement, and unauthorized credential usage should be enhanced to reduce damage to the minimum.",
         "images": null
     },
     {
@@ -1973,7 +1973,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:The value in the control bits field of theTCP header indicates the progress and status of the connection.",
+        "explanation": "Explicación: The value in the control bits field of theTCP header indicates the progress and status of the connection.",
         "images": null
     },
     {
@@ -1996,7 +1996,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:Each web browser client application opens a randomly generated port number in the range of the registered ports and uses this number as the source port number in the datagram that it sends to a server. The server then uses this port number as the destination port number in the reply datagram that it sends to the web browser. The PC that is running the web browser application receives the datagram and uses the destination port number that is contained in this datagram to identify the client application.",
+        "explanation": "Explicación: Each web browser client application opens a randomly generated port number in the range of the registered ports and uses this number as the source port number in the datagram that it sends to a server. The server then uses this port number as the destination port number in the reply datagram that it sends to the web browser. The PC that is running the web browser application receives the datagram and uses the destination port number that is contained in this datagram to identify the client application.",
         "images": null
     },
     {
@@ -2023,7 +2023,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:Probabilistic analysis relies on statistical techniques that are designed to estimate the probability that an event will occur based on the likelihood that prior events will occur.",
+        "explanation": "Explicación: Probabilistic analysis relies on statistical techniques that are designed to estimate the probability that an event will occur based on the likelihood that prior events will occur.",
         "images": null
     },
     {
@@ -2081,7 +2081,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:With SLAAC, the default gateway for IPv6 clients will be the link-local address of the router interface that is attached to the client LAN. The IPv6 addressing is dynamically assigned via the ICMPv6 protocol. SLAAC is a stateless method of acquiring an IPv6 address, a method that requires no servers. When a client is configured to obtain its addressing information automatically via SLAAC, the client sends a router solicitation message to the IPv6 all-routers multicast address FF02::2. The router advertisement messages are sent by routers to provide addressing information to clients.",
+        "explanation": "Explicación: With SLAAC, the default gateway for IPv6 clients will be the link-local address of the router interface that is attached to the client LAN. The IPv6 addressing is dynamically assigned via the ICMPv6 protocol. SLAAC is a stateless method of acquiring an IPv6 address, a method that requires no servers. When a client is configured to obtain its addressing information automatically via SLAAC, the client sends a router solicitation message to the IPv6 all-routers multicast address FF02::2. The router advertisement messages are sent by routers to provide addressing information to clients.",
         "images": null
     },
     {
@@ -2104,7 +2104,7 @@
                 "is_correct": true
             }
         ],
-        "explanation": "Explanation:Use the Task Manager Performance tab to see a visual representation of CPU and RAM utilization. This is helpful in determining if more memory is needed. Use the Applications tab to halt an application that is not responding.",
+        "explanation": "Explicación: Use the Task Manager Performance tab to see a visual representation of CPU and RAM utilization. This is helpful in determining if more memory is needed. Use the Applications tab to halt an application that is not responding.",
         "images": null
     },
     {
@@ -2127,7 +2127,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:Statistical data is created through the analysis of other forms of network data. Statistical characteristics of normal network behavior can be compared to current network traffic in an effort to detect anomalies. Conclusions resulting from analysis can be used to describe or predict network behavior.",
+        "explanation": "Explicación: Statistical data is created through the analysis of other forms of network data. Statistical characteristics of normal network behavior can be compared to current network traffic in an effort to detect anomalies. Conclusions resulting from analysis can be used to describe or predict network behavior.",
         "images": null
     },
     {
@@ -2150,7 +2150,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:This is a metric that reflects the proximity of the threat actor to the vulnerable component. The more remote the threat actor is to the component, the higher the severity. Threat actors close to your network or inside your network are easier to detect and mitigate.",
+        "explanation": "Explicación: This is a metric that reflects the proximity of the threat actor to the vulnerable component. The more remote the threat actor is to the component, the higher the severity. Threat actors close to your network or inside your network are easier to detect and mitigate.",
         "images": null
     },
     {
@@ -2204,7 +2204,7 @@
                 "is_correct": true
             }
         ],
-        "explanation": "Explanation:A smurf attack uses amplification and reflection techniques to overwhelm a targeted host. The threat actor forwards ICMP echo request messages that contain the source IP address of the victim to a large number of hosts. These hosts all reply to the spoofed IP address of the victim with the intent of overwhelming it.",
+        "explanation": "Explicación: A smurf attack uses amplification and reflection techniques to overwhelm a targeted host. The threat actor forwards ICMP echo request messages that contain the source IP address of the victim to a large number of hosts. These hosts all reply to the spoofed IP address of the victim with the intent of overwhelming it.",
         "images": null
     },
     {
@@ -2227,7 +2227,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:A threat intelligence platform (TIP) centralizes the collection of threat data from numerous data sources and formats. TIP is designed to aggregate the data in one place and present it in a comprehensible and usable format. This is especially important as the volume of threat intelligence data can be overwhelming.",
+        "explanation": "Explicación: A threat intelligence platform (TIP) centralizes the collection of threat data from numerous data sources and formats. TIP is designed to aggregate the data in one place and present it in a comprehensible and usable format. This is especially important as the volume of threat intelligence data can be overwhelming.",
         "images": null
     },
     {
@@ -2250,7 +2250,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:The two scanning or probing modes an access point can be placed into are passive or active. In passive mode, the AP advertises the SSID, supported standards, and security settings in broadcast beacon frames. In active mode, the wireless client must be manually configured for the same wireless parameters as the AP has configured.",
+        "explanation": "Explicación: The two scanning or probing modes an access point can be placed into are passive or active. In passive mode, the AP advertises the SSID, supported standards, and security settings in broadcast beacon frames. In active mode, the wireless client must be manually configured for the same wireless parameters as the AP has configured.",
         "images": null
     },
     {
@@ -2281,7 +2281,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:Configuring the cell phone to act as a wireless access point means that the cell phone is now a rogue access point. The employee unknowingly breached the security of the company network by allowing a user to access the network without connecting through the company access point. Cracking is the process of obtaining passwords from data stored or transmitted on a network. Denial of service attacks refer to sending large amounts of data to a networked device, such as a server, to prevent legitimate access to the server. Spoofing refers to access gained to a network or data by an attacker appearing to be a legitimate network device or user.",
+        "explanation": "Explicación: Configuring the cell phone to act as a wireless access point means that the cell phone is now a rogue access point. The employee unknowingly breached the security of the company network by allowing a user to access the network without connecting through the company access point. Cracking is the process of obtaining passwords from data stored or transmitted on a network. Denial of service attacks refer to sending large amounts of data to a networked device, such as a server, to prevent legitimate access to the server. Spoofing refers to access gained to a network or data by an attacker appearing to be a legitimate network device or user.",
         "images": null
     },
     {
@@ -2327,7 +2327,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:Symmetric encryption algorithms use the same key (also called shared secret) to encrypt and decrypt the data. In contrast, asymmetric encryption algorithms use a pair of keys, one for encryption and another for decryption.",
+        "explanation": "Explicación: Symmetric encryption algorithms use the same key (also called shared secret) to encrypt and decrypt the data. In contrast, asymmetric encryption algorithms use a pair of keys, one for encryption and another for decryption.",
         "images": null
     },
     {
@@ -2354,7 +2354,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:Two disadvantages of deploying HIPS are (1) that it cannot create a complete view of the network or have knowledge of events that might be occurring beyond an individual host and (2) every host operating system within the organization must be supported. However, an advantage of using HIPS is that it can monitor and protect the operating system as well as critical system processes on each network host.",
+        "explanation": "Explicación: Two disadvantages of deploying HIPS are (1) that it cannot create a complete view of the network or have knowledge of events that might be occurring beyond an individual host and (2) every host operating system within the organization must be supported. However, an advantage of using HIPS is that it can monitor and protect the operating system as well as critical system processes on each network host.",
         "images": null
     },
     {
@@ -2385,7 +2385,7 @@
                 "is_correct": true
             }
         ],
-        "explanation": "Explanation:There are three primary functions provided by the syslog service:gathering logging informationselection of the type of information to be loggedselection of the destination of the logged information",
+        "explanation": "Explicación: There are three primary functions provided by the syslog service:gathering logging informationselection of the type of information to be loggedselection of the destination of the logged information",
         "images": null
     },
     {
@@ -2435,7 +2435,7 @@
                 "is_correct": true
             }
         ],
-        "explanation": "Explanation:Threat actors may attempt to attack the NTP infrastructure in order to corrupt time information used to correlate logged network events. This can serve to obfuscate traces of ongoing exploits. In addition, threat actors have been known to use NTP systems to direct DDoS attacks through vulnerabilities in client or server software. While these attacks do not necessarily result in corrupted security monitoring data, they can disrupt network availability.",
+        "explanation": "Explicación: Threat actors may attempt to attack the NTP infrastructure in order to corrupt time information used to correlate logged network events. This can serve to obfuscate traces of ongoing exploits. In addition, threat actors have been known to use NTP systems to direct DDoS attacks through vulnerabilities in client or server software. While these attacks do not necessarily result in corrupted security monitoring data, they can disrupt network availability.",
         "images": null
     },
     {
@@ -2462,7 +2462,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:Both TACACS+ and RADIUS support password encryption (TACACS+ encrypts all communication) and use Layer 4 protocol (TACACS+ uses TCP and RADIUS uses UDP). TACACS+ supports separation of authentication and authorization processes, while RADIUS combines authentication and authorization as one process. RADIUS supports remote access technology, such as 802.1x and SIP; TACACS+ does not.",
+        "explanation": "Explicación: Both TACACS+ and RADIUS support password encryption (TACACS+ encrypts all communication) and use Layer 4 protocol (TACACS+ uses TCP and RADIUS uses UDP). TACACS+ supports separation of authentication and authorization processes, while RADIUS combines authentication and authorization as one process. RADIUS supports remote access technology, such as 802.1x and SIP; TACACS+ does not.",
         "images": null
     },
     {
@@ -2497,7 +2497,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:Three types of attacks used on DNS open resolvers are as follows:DNS cache poisoning – attacker sends spoofed falsified information to redirect users from legitimate sites to malicious sitesDNS amplification and reflection attacks – attacker sends an increased volume of attacks to mask the true source of the attackDNS resource utilization attacks – a denial of service (DoS) attack that consumes server resources",
+        "explanation": "Explicación: Three types of attacks used on DNS open resolvers are as follows:DNS cache poisoning – attacker sends spoofed falsified information to redirect users from legitimate sites to malicious sitesDNS amplification and reflection attacks – attacker sends an increased volume of attacks to mask the true source of the attackDNS resource utilization attacks – a denial of service (DoS) attack that consumes server resources",
         "images": null
     },
     {
@@ -2551,7 +2551,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:Some applications may use both TCP and UDP. DNS uses UDP when clients send requests to a DNS server, and TCP when two DNS serves directly communicate.",
+        "explanation": "Explicación: Some applications may use both TCP and UDP. DNS uses UDP when clients send requests to a DNS server, and TCP when two DNS serves directly communicate.",
         "images": null
     },
     {
@@ -2574,7 +2574,7 @@
                 "is_correct": true
             }
         ],
-        "explanation": "Explanation:Data transfer speeds depend on a number of factors including the amount of traffic, the quality of service imposed, and the network media. Transfer speeds are not dependent on the network model type. File transfers can occur using the client-server model or the peer-to-peer model. A data transfer between a device acting in the client role and a device acting in the server role can occur in both peer-to-peer and client-server networks.",
+        "explanation": "Explicación: Data transfer speeds depend on a number of factors including the amount of traffic, the quality of service imposed, and the network media. Transfer speeds are not dependent on the network model type. File transfers can occur using the client-server model or the peer-to-peer model. A data transfer between a device acting in the client role and a device acting in the server role can occur in both peer-to-peer and client-server networks.",
         "images": null
     },
     {
@@ -2597,7 +2597,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:Network protocols are implemented in hardware, or software, or both. They interact with each other within different layers of a protocol stack. Protocols have nothing to do with the installation of the network equipment. Network protocols are required to exchange information between source and destination devices in both local and remote networks.",
+        "explanation": "Explicación: Network protocols are implemented in hardware, or software, or both. They interact with each other within different layers of a protocol stack. Protocols have nothing to do with the installation of the network equipment. Network protocols are required to exchange information between source and destination devices in both local and remote networks.",
         "images": null
     },
     {
@@ -2620,7 +2620,7 @@
                 "is_correct": true
             }
         ],
-        "explanation": "Explanation:A threat actor may send the weapon through web interfaces to the target server, either in file uploads or coded web requests. By analyzing the infrastructure storage path used for files, security measures can be implemented to monitor and detect malware deliveries through these methods.",
+        "explanation": "Explicación: A threat actor may send the weapon through web interfaces to the target server, either in file uploads or coded web requests. By analyzing the infrastructure storage path used for files, security measures can be implemented to monitor and detect malware deliveries through these methods.",
         "images": null
     },
     {
@@ -2643,7 +2643,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:Methodology – This is used to classify the general type of event, such as port scan, phishing, content delivery attack, syn flood, etc.",
+        "explanation": "Explicación: Methodology – This is used to classify the general type of event, such as port scan, phishing, content delivery attack, syn flood, etc.",
         "images": null
     },
     {
@@ -2666,7 +2666,7 @@
                 "is_correct": true
             }
         ],
-        "explanation": "Explanation:The kill command is used to stop, restart, or pause a process. The chrootkit command is used to check the computer for rootkits, a set of software tools that can increase the privilege level of a user or grant access to portions of software normally not allowed. The grep command is used to look for a file or text within a file. The ls command is used to list files, directories, and file information.",
+        "explanation": "Explicación: The kill command is used to stop, restart, or pause a process. The chrootkit command is used to check the computer for rootkits, a set of software tools that can increase the privilege level of a user or grant access to portions of software normally not allowed. The grep command is used to look for a file or text within a file. The ls command is used to list files, directories, and file information.",
         "images": null
     },
     {
@@ -2689,7 +2689,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:A management and reporting system, such as Cisco Prime, can be used to analyze and present the application analysis data into dashboard reports for use by network monitoring personnel.",
+        "explanation": "Explicación: A management and reporting system, such as Cisco Prime, can be used to analyze and present the application analysis data into dashboard reports for use by network monitoring personnel.",
         "images": null
     },
     {
@@ -2735,13 +2735,13 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:Network data can be encrypted using various cryptography applications so that the data is made unreadable to unauthorized users. Authorized users have the cryptography application so the data can be unencrypted.",
+        "explanation": "Explicación: Network data can be encrypted using various cryptography applications so that the data is made unreadable to unauthorized users. Authorized users have the cryptography application so the data can be unencrypted.",
         "images": null
     },
     {
         "question": "125. Match the tabs of the Windows 10 Task Manager to their functions. (Not all options are used.)",
         "answers": null,
-        "explanation": "Explanation:DetailsAllows for a process to have its affinity set.PerformanceDisplays resource utilization information for CPU, memory, network, disk, and others.StartupAllows programs that are running on system startup to be disabled.ServicesAllows for a start, stop or restart of a particular service.",
+        "explanation": "Explicación: DetailsAllows for a process to have its affinity set.PerformanceDisplays resource utilization information for CPU, memory, network, disk, and others.StartupAllows programs that are running on system startup to be disabled.ServicesAllows for a start, stop or restart of a particular service.",
         "images": [
             "https://itexamanswers.net/wp-content/uploads/2022/07/2024-09-26_105716.jpg"
         ]
@@ -2766,7 +2766,7 @@
                 "is_correct": true
             }
         ],
-        "explanation": "Explanation:Configuration management addresses the inventory and control of hardware and software configurations of network systems.",
+        "explanation": "Explicación: Configuration management addresses the inventory and control of hardware and software configurations of network systems.",
         "images": null
     },
     {
@@ -2805,7 +2805,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:Security Onion is an open source suite of Network Security Monitoring (NSM) tools for evaluating cybersecurity alerts. For cybersecurity analysts the Security Onion provides full packet capture, network-based and host-based intrusion detection systems, and alert analysis tools.",
+        "explanation": "Explicación: Security Onion is an open source suite of Network Security Monitoring (NSM) tools for evaluating cybersecurity alerts. For cybersecurity analysts the Security Onion provides full packet capture, network-based and host-based intrusion detection systems, and alert analysis tools.",
         "images": null
     },
     {
@@ -2828,7 +2828,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:From the perspective of a NAT device, inside global addresses are used by external users to reach internal hosts. Inside local addresses are the addresses assigned to internal hosts. Outside global addresses are the addresses of destinations on the external network. Outside local addresses are the actual private addresses of destination hosts behind other NAT devices.",
+        "explanation": "Explicación: From the perspective of a NAT device, inside global addresses are used by external users to reach internal hosts. Inside local addresses are the addresses assigned to internal hosts. Outside global addresses are the addresses of destinations on the external network. Outside local addresses are the actual private addresses of destination hosts behind other NAT devices.",
         "images": null
     },
     {
@@ -2855,7 +2855,7 @@
                 "is_correct": true
             }
         ],
-        "explanation": "Explanation:An Ethernet frame is not processed and is discarded if it is smaller than the minimum (64 bytes) or if the calculated frame check sequence (FCS) value does not match the received FCS value. Auto-MDIX (automatic medium-dependent interface crossover) is Layer 1 technology that detects cable straight-through or crossover types. The source MAC address is not used to determine how the frame is received. CEF (Cisco Express Forwarding) is a technology used to expedite Layer 3 switching.",
+        "explanation": "Explicación: An Ethernet frame is not processed and is discarded if it is smaller than the minimum (64 bytes) or if the calculated frame check sequence (FCS) value does not match the received FCS value. Auto-MDIX (automatic medium-dependent interface crossover) is Layer 1 technology that detects cable straight-through or crossover types. The source MAC address is not used to determine how the frame is received. CEF (Cisco Express Forwarding) is a technology used to expedite Layer 3 switching.",
         "images": null
     },
     {
@@ -2878,7 +2878,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:Volatile data is data stored in memory such as registers, cache, and RAM, or it is data that exists in transit. Volatile memory is lost when the computer loses power.",
+        "explanation": "Explicación: Volatile data is data stored in memory such as registers, cache, and RAM, or it is data that exists in transit. Volatile memory is lost when the computer loses power.",
         "images": null
     },
     {
@@ -2901,7 +2901,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:After the weapon has been delivered, the threat actor uses it to break the vulnerability and gain control of the target. The threat actor will use an exploit that gains the effect desired, does it quietly, and avoids detections. Establishing a back door in the target system is the phase of installation.",
+        "explanation": "Explicación: After the weapon has been delivered, the threat actor uses it to break the vulnerability and gain control of the target. The threat actor will use an exploit that gains the effect desired, does it quietly, and avoids detections. Establishing a back door in the target system is the phase of installation.",
         "images": null
     },
     {
@@ -2928,7 +2928,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:Tracert is used to trace the path a packet takes. The only successful response was from the first device along the path on the same LAN as the sending host. The first device is the default gateway on router R1. The administrator should therefore start troubleshooting at R1.",
+        "explanation": "Explicación: Tracert is used to trace the path a packet takes. The only successful response was from the first device along the path on the same LAN as the sending host. The first device is the default gateway on router R1. The administrator should therefore start troubleshooting at R1.",
         "images": [
             "https://itexamanswers.net/wp-content/uploads/2020/11/CyberOps-Associate-1.0-Final-exam.jpg"
         ]
@@ -2957,7 +2957,7 @@
                 "is_correct": true
             }
         ],
-        "explanation": "Explanation:Talos maintains the security incident detection rule sets for the Snort.org, ClamAV, and SpamCop network security tools.",
+        "explanation": "Explicación: Talos maintains the security incident detection rule sets for the Snort.org, ClamAV, and SpamCop network security tools.",
         "images": null
     },
     {
@@ -2980,7 +2980,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:Windows Firewall uses a profile-based approach to configuring firewall functionality. It uses three profiles, Public, Private, and Domain, to define firewall functions.",
+        "explanation": "Explicación: Windows Firewall uses a profile-based approach to configuring firewall functionality. It uses three profiles, Public, Private, and Domain, to define firewall functions.",
         "images": null
     },
     {
@@ -3003,7 +3003,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:A digital certificate must be revoked if it is invalid. CAs maintain a certificate revocation list (CRL), a list of revoked certificate serial numbers that have been invalidated. The user browser will query the CRL to verify the validity of a certificate.",
+        "explanation": "Explicación: A digital certificate must be revoked if it is invalid. CAs maintain a certificate revocation list (CRL), a list of revoked certificate serial numbers that have been invalidated. The user browser will query the CRL to verify the validity of a certificate.",
         "images": null
     },
     {
@@ -3026,7 +3026,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:The steps in the Vulnerability Management Life Cycle include these:Discover – inventory all assets across the network and identify host details, including operating systems and open services, to identify vulnerabilitiesPrioritize assets – categorize assets into groups or business units, and assign a business value to asset groups based on their criticality to business operationsAssess – determine a baseline risk profile to eliminate risks based on asset criticality, vulnerability threats, and asset classificationReport – measure the level of business risk associated with assets according to security policies. Document a security plan, monitor suspicious activity, and describe known vulnerabilities.Remediate – prioritize according to business risk and fix vulnerabilities in order of riskVerify – verify that threats have been eliminated through follow-up audits",
+        "explanation": "Explicación: The steps in the Vulnerability Management Life Cycle include these:Discover – inventory all assets across the network and identify host details, including operating systems and open services, to identify vulnerabilitiesPrioritize assets – categorize assets into groups or business units, and assign a business value to asset groups based on their criticality to business operationsAssess – determine a baseline risk profile to eliminate risks based on asset criticality, vulnerability threats, and asset classificationReport – measure the level of business risk associated with assets according to security policies. Document a security plan, monitor suspicious activity, and describe known vulnerabilities.Remediate – prioritize according to business risk and fix vulnerabilities in order of riskVerify – verify that threats have been eliminated through follow-up audits",
         "images": null
     },
     {
@@ -3049,7 +3049,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:Asset management involves the implementation of systems that track the location and configuration of networked devices and software across an enterprise.",
+        "explanation": "Explicación: Asset management involves the implementation of systems that track the location and configuration of networked devices and software across an enterprise.",
         "images": null
     },
     {
@@ -3072,7 +3072,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:True Positive: The alert has been verified to be an actual security incident.False Positive: The alert does not indicate an actual security incident. Benign activity that results in a false positive is sometimes referred to as a benign trigger.True Negative: No security incident has occurred. The activity is benign.False Negative: An undetected incident has occurred.",
+        "explanation": "Explicación: True Positive: The alert has been verified to be an actual security incident.False Positive: The alert does not indicate an actual security incident. Benign activity that results in a false positive is sometimes referred to as a benign trigger.True Negative: No security incident has occurred. The activity is benign.False Negative: An undetected incident has occurred.",
         "images": null
     },
     {
@@ -3095,7 +3095,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:SMB is used in Microsoft networking for file-sharing and print services. The Linux operating system provides a method of sharing resources with Microsoft networks by using a version of SMB called SAMBA.",
+        "explanation": "Explicación: SMB is used in Microsoft networking for file-sharing and print services. The Linux operating system provides a method of sharing resources with Microsoft networks by using a version of SMB called SAMBA.",
         "images": null
     },
     {
@@ -3118,7 +3118,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:A firewall is typically a second line of defense in a layered defense-in-depth approach to network security. The firewall typically connects to an edge router that connects to the service provider. The firewall tracks connections initiated within the company going out of the company and denies initiation of connections from external untrusted networks going to internal trusted networks.",
+        "explanation": "Explicación: A firewall is typically a second line of defense in a layered defense-in-depth approach to network security. The firewall typically connects to an edge router that connects to the service provider. The firewall tracks connections initiated within the company going out of the company and denies initiation of connections from external untrusted networks going to internal trusted networks.",
         "images": null
     },
     {
@@ -3145,7 +3145,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:Large numbers of ARP broadcast messages could cause momentary data communications delays. Network attackers could manipulate MAC address and IP address mappings in ARP messages with the intent to intercept network traffic. ARP requests and replies cause entries to be made into the ARP table, not the MAC address table. ARP table overflows are very unlikely. Manually configuring static ARP associations is a way to prevent, not facilitate, ARP poisoning and MAC address spoofing. Multiple ARP replies resulting in the switch MAC address table containing entries that match the MAC addresses of connected nodes and are associated with the relevant switch port are required for normal switch frame forwarding operations. It is not an ARP caused network problem.",
+        "explanation": "Explicación: Large numbers of ARP broadcast messages could cause momentary data communications delays. Network attackers could manipulate MAC address and IP address mappings in ARP messages with the intent to intercept network traffic. ARP requests and replies cause entries to be made into the ARP table, not the MAC address table. ARP table overflows are very unlikely. Manually configuring static ARP associations is a way to prevent, not facilitate, ARP poisoning and MAC address spoofing. Multiple ARP replies resulting in the switch MAC address table containing entries that match the MAC addresses of connected nodes and are associated with the relevant switch port are required for normal switch frame forwarding operations. It is not an ARP caused network problem.",
         "images": null
     },
     {
@@ -3176,7 +3176,7 @@
                 "is_correct": true
             }
         ],
-        "explanation": "Explanation:Sguil is a tool for addressing alerts. Three tasks can be completed in Sguil to manage alerts:Alerts that have been found to be false positives can be expired.An alert can be escalated if the cybersecurity analyst is uncertain how to handle it.Events that have been identified as true positives can be categorized.",
+        "explanation": "Explicación: Sguil is a tool for addressing alerts. Three tasks can be completed in Sguil to manage alerts:Alerts that have been found to be false positives can be expired.An alert can be escalated if the cybersecurity analyst is uncertain how to handle it.Events that have been identified as true positives can be categorized.",
         "images": null
     },
     {
@@ -3211,7 +3211,7 @@
                 "is_correct": true
             }
         ],
-        "explanation": "Explanation:NetFlow efficiently provides an important set of services for IP applications including network traffic accounting, usage-based network billing, network planning, security, denial of service monitoring capabilities, and network monitoring.",
+        "explanation": "Explicación: NetFlow efficiently provides an important set of services for IP applications including network traffic accounting, usage-based network billing, network planning, security, denial of service monitoring capabilities, and network monitoring.",
         "images": null
     },
     {
@@ -3234,7 +3234,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:One of the most common security policy components is an AUP. This can also be referred to as an appropriate use policy. This component defines what users are allowed and not allowed to do on the various system components. This includes the type of traffic that is allowed on the network. The AUP should be as explicit as possible to avoid misunderstanding.",
+        "explanation": "Explicación: One of the most common security policy components is an AUP. This can also be referred to as an appropriate use policy. This component defines what users are allowed and not allowed to do on the various system components. This includes the type of traffic that is allowed on the network. The AUP should be as explicit as possible to avoid misunderstanding.",
         "images": null
     },
     {
@@ -3261,7 +3261,7 @@
                 "is_correct": true
             }
         ],
-        "explanation": "Explanation:Two important functions of DNS are to (1) provide IP addresses for domain names such as http://www.cisco.com, and (2) forward requests that cannot be resolved to other servers in order to provide domain name to IP address translation. DHCP provides IP addressing information to local devices. A file transfer protocol such as FTP, SFTP, or TFTP provides file sharing services. IMAP or POP can be used to retrieve an email message from a server.",
+        "explanation": "Explicación: Two important functions of DNS are to (1) provide IP addresses for domain names such as http://www.cisco.com, and (2) forward requests that cannot be resolved to other servers in order to provide domain name to IP address translation. DHCP provides IP addressing information to local devices. A file transfer protocol such as FTP, SFTP, or TFTP provides file sharing services. IMAP or POP can be used to retrieve an email message from a server.",
         "images": null
     },
     {
@@ -3284,7 +3284,7 @@
                 "is_correct": true
             }
         ],
-        "explanation": "Explanation:Network discovery events in Cisco NGIPS represent changes that have been detected in the monitored network.",
+        "explanation": "Explicación: Network discovery events in Cisco NGIPS represent changes that have been detected in the monitored network.",
         "images": null
     },
     {
@@ -3311,7 +3311,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:According to the guideline defined in the NIST Incident Response Life Cycle, several actions should be taken during the preparation phase including (1) creating and training the CSIRT and (2) acquiring and deploying the tools needed by the team to investigate incidents.",
+        "explanation": "Explicación: According to the guideline defined in the NIST Incident Response Life Cycle, several actions should be taken during the preparation phase including (1) creating and training the CSIRT and (2) acquiring and deploying the tools needed by the team to investigate incidents.",
         "images": null
     },
     {
@@ -3338,7 +3338,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:The slash notation /20 represents a subnet mask with 20 1s. This would translate to: 11111111.11111111.11110000.0000, which in turn would convert into 255.255.240.0.",
+        "explanation": "Explicación: The slash notation /20 represents a subnet mask with 20 1s. This would translate to: 11111111.11111111.11110000.0000, which in turn would convert into 255.255.240.0.",
         "images": null
     },
     {
@@ -3361,7 +3361,7 @@
                 "is_correct": true
             }
         ],
-        "explanation": "Explanation:When data is converted into a universal format, it can be effectively structured for performing fast queries and event analysis.",
+        "explanation": "Explicación: When data is converted into a universal format, it can be effectively structured for performing fast queries and event analysis.",
         "images": null
     },
     {
@@ -3384,7 +3384,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:The Cisco Certified CyberOps Associate certification provides a valuable first step in acquiring the knowledge and skills needed to work with a SOC team. It can be a valuable part of a career in the exciting and growing field of cybersecurity operations.",
+        "explanation": "Explicación: The Cisco Certified CyberOps Associate certification provides a valuable first step in acquiring the knowledge and skills needed to work with a SOC team. It can be a valuable part of a career in the exciting and growing field of cybersecurity operations.",
         "images": null
     },
     {
@@ -3415,7 +3415,7 @@
                 "is_correct": true
             }
         ],
-        "explanation": "Explanation:The designated private IP addresses are within the three IP address ranges:10.0.0.0 – 10.255.255.255172.16.0.0 – 172.31.255.255192.168.0.0 – 192.168.255.255",
+        "explanation": "Explicación: The designated private IP addresses are within the three IP address ranges:10.0.0.0 – 10.255.255.255172.16.0.0 – 172.31.255.255192.168.0.0 – 192.168.255.255",
         "images": null
     },
     {
@@ -3438,7 +3438,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:A network profile should include some important elements, such as the following:Total throughput – the amount of data passing from a given source to a given destination in a given period of timeSession duration – the time between the establishment of a data flow and its terminationPorts used – a list of TCP or UDP processes that are available to accept dataCritical asset address space – the IP addresses or the logical location of essential systems or data",
+        "explanation": "Explicación: A network profile should include some important elements, such as the following:Total throughput – the amount of data passing from a given source to a given destination in a given period of timeSession duration – the time between the establishment of a data flow and its terminationPorts used – a list of TCP or UDP processes that are available to accept dataCritical asset address space – the IP addresses or the logical location of essential systems or data",
         "images": null
     },
     {
@@ -3496,7 +3496,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:A cryptographic hash function should have the following properties:The input can be any length.The output has a fixed length.The hash value is relatively easy to compute for any given input.The hash is one way and not reversible.The hash is collision free, meaning that two different input values will result in different hash values",
+        "explanation": "Explicación: A cryptographic hash function should have the following properties:The input can be any length.The output has a fixed length.The hash value is relatively easy to compute for any given input.The hash is one way and not reversible.The hash is collision free, meaning that two different input values will result in different hash values",
         "images": null
     },
     {
@@ -3527,7 +3527,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:Because host A does not have the MAC address of the default gateway in the ARP table, host A sends an ARP broadcast. The ARP broadcast would be sent to every device on the local network. Hosts B, C, and router R1 would receive the broadcast. Router R1 would not forward the message.",
+        "explanation": "Explicación: Because host A does not have the MAC address of the default gateway in the ARP table, host A sends an ARP broadcast. The ARP broadcast would be sent to every device on the local network. Hosts B, C, and router R1 would receive the broadcast. Router R1 would not forward the message.",
         "images": [
             "https://itexamanswers.net/wp-content/uploads/2020/12/i360201v3n1_275353-1608482322.6606.png"
         ]
@@ -3552,7 +3552,7 @@
                 "is_correct": true
             }
         ],
-        "explanation": "Explanation:Indirect evidence cannot prove a fact on its own, but direct evidence can. Corroborative evidence is supporting information. Best evidence is most reliable because it is something concrete such as a signed contract.",
+        "explanation": "Explicación: Indirect evidence cannot prove a fact on its own, but direct evidence can. Corroborative evidence is supporting information. Best evidence is most reliable because it is something concrete such as a signed contract.",
         "images": null
     },
     {
@@ -3575,7 +3575,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:Statistical techniques can be used to evaluate the risk that exploits will be successful in a given network. This type of analysis can help decision makers to better evaluate the cost of mitigating a threat and the damage that an exploit could cause. Two general approaches used to do this are as follows:Deterministic Analysis: For an exploit to be successful, all prior steps in the exploit must also be successful. The cybersecurity analyst knows the steps for a successful exploit.Probabilistic Analysis: Statistical techniques are used to determine the probability that a successful exploit will occur based on the likelihood that each step in the exploit will succeed.",
+        "explanation": "Explicación: Statistical techniques can be used to evaluate the risk that exploits will be successful in a given network. This type of analysis can help decision makers to better evaluate the cost of mitigating a threat and the damage that an exploit could cause. Two general approaches used to do this are as follows:Deterministic Analysis: For an exploit to be successful, all prior steps in the exploit must also be successful. The cybersecurity analyst knows the steps for a successful exploit.Probabilistic Analysis: Statistical techniques are used to determine the probability that a successful exploit will occur based on the likelihood that each step in the exploit will succeed.",
         "images": null
     },
     {
@@ -3652,7 +3652,7 @@
                 "is_correct": true
             }
         ],
-        "explanation": "Explanation:POP, POP3, and IMAP are protocols that are used to retrieve email from servers. SMTP is the default protocol that is used to send email. DNS may be used by the sender email server to find the address of the destination email server. HTTP is a protocol for send and receiving web pages.",
+        "explanation": "Explicación: POP, POP3, and IMAP are protocols that are used to retrieve email from servers. SMTP is the default protocol that is used to send email. DNS may be used by the sender email server to find the address of the destination email server. HTTP is a protocol for send and receiving web pages.",
         "images": null
     },
     {
@@ -3698,7 +3698,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:A piece of malware, after accessing a host, may exploit the DNS service by communicating with command-and-control (CnC) servers and then exfiltrate data in traffic disguised as normal DNS lookup queries. Various types of encoding, such as base64, 8-bit binary, and hex can be used to camouflage the data and evade basic data loss prevention (DLP) measures.",
+        "explanation": "Explicación: A piece of malware, after accessing a host, may exploit the DNS service by communicating with command-and-control (CnC) servers and then exfiltrate data in traffic disguised as normal DNS lookup queries. Various types of encoding, such as base64, 8-bit binary, and hex can be used to camouflage the data and evade basic data loss prevention (DLP) measures.",
         "images": null
     },
     {
@@ -3721,7 +3721,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:The CNT field indicates the number of times an event is detected from the same source and destination IP address. Having a high number of events can indicated a problem with event signatures.",
+        "explanation": "Explicación: The CNT field indicates the number of times an event is detected from the same source and destination IP address. Having a high number of events can indicated a problem with event signatures.",
         "images": [
             "https://itexamanswers.net/wp-content/uploads/2021/02/CyberOps-qfinal-png.png"
         ]
@@ -3746,7 +3746,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:The default gateway for host H1 is the router interface that is attached to the LAN that H1 is a member of. In this case, that is the G0/0 interface of R1. H1 should be configured with the IP address of that interface in its addressing settings. R1 will provide routing services to packets from H1 that need to be forwarded to remote networks.",
+        "explanation": "Explicación: The default gateway for host H1 is the router interface that is attached to the LAN that H1 is a member of. In this case, that is the G0/0 interface of R1. H1 should be configured with the IP address of that interface in its addressing settings. R1 will provide routing services to packets from H1 that need to be forwarded to remote networks.",
         "images": [
             "https://itexamanswers.net/wp-content/uploads/2020/09/167_2022-06-28_112341.jpg"
         ]
@@ -3802,7 +3802,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:IPv6 uses neighbor solicitation (NS) and neighbor advertisement (NA) ICMPv6 messages for MAC address resolution.",
+        "explanation": "Explicación: IPv6 uses neighbor solicitation (NS) and neighbor advertisement (NA) ICMPv6 messages for MAC address resolution.",
         "images": null
     },
     {
@@ -3848,7 +3848,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:HTTPS adds extra overhead to the HTTP-formed packet. HTTPS encrypts using Secure Sockets Layer (SSL). Even though some devices can perform SSL decryption and inspection, this can present processing and privacy issues.",
+        "explanation": "Explicación: HTTPS adds extra overhead to the HTTP-formed packet. HTTPS encrypts using Secure Sockets Layer (SSL). Even though some devices can perform SSL decryption and inspection, this can present processing and privacy issues.",
         "images": null
     },
     {
@@ -3871,7 +3871,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:Dynamic DNS can be abused by threat actors in various ways. Free DDNS services are especially useful to threat actors. DDNS can be used to facilitate the rapid change of IP address for malware command-and-control servers after the current IP address has become widely blocked.",
+        "explanation": "Explicación: Dynamic DNS can be abused by threat actors in various ways. Free DDNS services are especially useful to threat actors. DDNS can be used to facilitate the rapid change of IP address for malware command-and-control servers after the current IP address has become widely blocked.",
         "images": null
     },
     {
@@ -3925,7 +3925,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:Beats – This is a series of software plugins that send different types of data to the Elasticsearch data stores.",
+        "explanation": "Explicación: Beats – This is a series of software plugins that send different types of data to the Elasticsearch data stores.",
         "images": null
     },
     {
@@ -3979,7 +3979,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:NIST describes the digital forensics process as involving the following four steps:Collection – the identification of potential sources of forensic data and acquisition, handling, and storage of that dataExamination – assessing and extracting relevant information from the collected data. This may involve decompression or decryption of the dataAnalysis – drawing conclusions from the data. Salient features, such as people, places, times, events, and so on should be documentedReporting – preparing and presenting information that resulted from the analysis. Reporting should be impartial and alternative explanations should be offered if appropriate",
+        "explanation": "Explicación: NIST describes the digital forensics process as involving the following four steps:Collection – the identification of potential sources of forensic data and acquisition, handling, and storage of that dataExamination – assessing and extracting relevant information from the collected data. This may involve decompression or decryption of the dataAnalysis – drawing conclusions from the data. Salient features, such as people, places, times, events, and so on should be documentedReporting – preparing and presenting information that resulted from the analysis. Reporting should be impartial and alternative explanations should be offered if appropriate",
         "images": null
     },
     {
@@ -4002,7 +4002,7 @@
                 "is_correct": true
             }
         ],
-        "explanation": "Explanation:The CNT column, between the ST and Sensor columns, displays the frequency of alerts. By sorting with frfequency, the analyst will get a better sense of what has happened on the network.",
+        "explanation": "Explicación: The CNT column, between the ST and Sensor columns, displays the frequency of alerts. By sorting with frfequency, the analyst will get a better sense of what has happened on the network.",
         "images": [
             "https://itexamanswers.net/wp-content/uploads/2020/09/2021-04-16_150303.jpg"
         ]
@@ -4031,7 +4031,7 @@
                 "is_correct": true
             }
         ],
-        "explanation": "Explanation:The X Window System provides the basic framework for a GUI, but the GUI itself varies greatly between different distributions. Two window managers are Gnome and KDE.",
+        "explanation": "Explicación: The X Window System provides the basic framework for a GUI, but the GUI itself varies greatly between different distributions. Two window managers are Gnome and KDE.",
         "images": null
     },
     {
@@ -4058,7 +4058,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:Two methods can be used by a wireless device to discover and register with an access point: passive mode and active mode. In passive mode, the AP sends a broadcast beacon frame that contains the SSID and other wireless settings. In active mode, the wireless device must be manually configured for the SSID, and then the device broadcasts a probe request.",
+        "explanation": "Explicación: Two methods can be used by a wireless device to discover and register with an access point: passive mode and active mode. In passive mode, the AP sends a broadcast beacon frame that contains the SSID and other wireless settings. In active mode, the wireless device must be manually configured for the SSID, and then the device broadcasts a probe request.",
         "images": null
     },
     {
@@ -4081,7 +4081,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:Port numbers are used in TCP and UDP communications to differentiate between the various services running on a device. The well-known port number used by HTTPs is port 443.",
+        "explanation": "Explicación: Port numbers are used in TCP and UDP communications to differentiate between the various services running on a device. The well-known port number used by HTTPs is port 443.",
         "images": null
     },
     {
@@ -4104,7 +4104,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:Evidence can be classified as follows:Best evidence: This is evidence that is in its original state. It might be storage devices used by an accused or archives of files that can be proven to be unaltered.Corroborating evidence: This is evidence that supports a propositionalready supported by initial evidence, therefore confirming the original proposition.Indirect evidence: This evidence acts in combination with other facts to establish a hypothesis.",
+        "explanation": "Explicación: Evidence can be classified as follows:Best evidence: This is evidence that is in its original state. It might be storage devices used by an accused or archives of files that can be proven to be unaltered.Corroborating evidence: This is evidence that supports a propositionalready supported by initial evidence, therefore confirming the original proposition.Indirect evidence: This evidence acts in combination with other facts to establish a hypothesis.",
         "images": null
     },
     {
@@ -4135,13 +4135,13 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:When a host configured to use DHCP powers up on a network it sends a DHCPDISCOVER message. FF-FF-FF-FF-FF-FF is the L2 broadcast address. A DHCP server replies with a unicast DHCPOFFER message back to the host.",
+        "explanation": "Explicación: When a host configured to use DHCP powers up on a network it sends a DHCPDISCOVER message. FF-FF-FF-FF-FF-FF is the L2 broadcast address. A DHCP server replies with a unicast DHCPOFFER message back to the host.",
         "images": null
     },
     {
         "question": "185. Refer to the exhibit. The PC is sending a packet to the Server on the remote network. Router R1 is performing NAT overload. From the perspective of the PC, match the NAT address type with the correct IP address. (Not all options are used.)",
         "answers": null,
-        "explanation": "Explanation:The inside local address is the private IP address of the source or the PC in this instance. The inside global address is the translated address of the source or the address as seen by the outside device. Since the PC is using the outside address of the R1 router, the inside global address is 192.0.2.1. The outside addressing is simply the address of the server or 203.0.113.5.",
+        "explanation": "Explicación: The inside local address is the private IP address of the source or the PC in this instance. The inside global address is the translated address of the source or the address as seen by the outside device. Since the PC is using the outside address of the R1 router, the inside global address is 192.0.2.1. The outside addressing is simply the address of the server or 203.0.113.5.",
         "images": [
             "https://itexamanswers.net/wp-content/uploads/2019/12/i249830v1n1_212288-1.png",
             "https://itexamanswers.net/wp-content/uploads/2019/12/2020-01-21_005238.jpg"
@@ -4167,13 +4167,13 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:The steps in the Vulnerability Management Life Cycle include these:Discover – inventory all assets across the network and identify host details, including operating systems and open services to identify vulnerabilitiesPrioritize assets – categorize assets into groups or business units, and assign a business value to asset groups based on their criticality to business operationsAssess – determine a baseline risk profile to eliminate risks based on asset criticality, vulnerability threats, and asset classificationReport – measure the level of business risk associated with your assets according to your security policies. Document a security plan, monitor suspicious activity, and describe known vulnerabilitiesRemediate – prioritize according to business risk and fix vulnerabilities in order of riskVerify – verify that threats have been eliminated through follow-up audits",
+        "explanation": "Explicación: The steps in the Vulnerability Management Life Cycle include these:Discover – inventory all assets across the network and identify host details, including operating systems and open services to identify vulnerabilitiesPrioritize assets – categorize assets into groups or business units, and assign a business value to asset groups based on their criticality to business operationsAssess – determine a baseline risk profile to eliminate risks based on asset criticality, vulnerability threats, and asset classificationReport – measure the level of business risk associated with your assets according to your security policies. Document a security plan, monitor suspicious activity, and describe known vulnerabilitiesRemediate – prioritize according to business risk and fix vulnerabilities in order of riskVerify – verify that threats have been eliminated through follow-up audits",
         "images": null
     },
     {
         "question": "187. A client application needs to terminate a TCP communication session with a server. Place the termination process steps in the order that they will occur. (Not all options are used.)",
         "answers": null,
-        "explanation": "Explanation:In order to terminate a TCP session, the client sends to the server a segment with the FIN flag set. The server acknowledges the client by sending a segment with the ACK flag set. The server sends a FIN to the client to terminate the server to client session. The client acknowledges the termination by sending a segment with the ACK flag set.",
+        "explanation": "Explicación: In order to terminate a TCP session, the client sends to the server a segment with the FIN flag set. The server acknowledges the client by sending a segment with the ACK flag set. The server sends a FIN to the client to terminate the server to client session. The client acknowledges the termination by sending a segment with the ACK flag set.",
         "images": [
             "https://itexamanswers.net/wp-content/uploads/2020/09/2024-11-12_093151.jpg"
         ]
@@ -4218,7 +4218,7 @@
                 "is_correct": true
             }
         ],
-        "explanation": "Explanation:The network layer is primarily concerned with passing data from a source to a destination on another network. IP addresses supply unique identifiers for the source and destination. The network layer provides connectionless, best-effort delivery. Devices rely on higher layers to supply services to processes.",
+        "explanation": "Explicación: The network layer is primarily concerned with passing data from a source to a destination on another network. IP addresses supply unique identifiers for the source and destination. The network layer provides connectionless, best-effort delivery. Devices rely on higher layers to supply services to processes.",
         "images": null
     },
     {
