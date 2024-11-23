@@ -76,7 +76,9 @@ function Exam() {
         <>
             <Dropdown>
                 <DropdownTrigger>
-                    <Button className="mb-4">Select Exam File</Button>
+                    <Button className="mb-4" isDisabled>
+                        Seleccionar archivo de examen
+                    </Button>
                 </DropdownTrigger>
                 <DropdownMenu onAction={(key) => setSelectedFile(key)}>
                     {files.map((file) => (
@@ -84,6 +86,9 @@ function Exam() {
                     ))}
                 </DropdownMenu>
             </Dropdown>
+            <span className="ml-4">
+                {answeredQuestions.length}/{questions.length}
+            </span>
             {questions.length > 0 && (
                 <Question
                     question_data={questions[currentQuestionIndex]}
