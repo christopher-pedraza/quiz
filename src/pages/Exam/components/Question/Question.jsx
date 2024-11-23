@@ -144,7 +144,7 @@ function Question({ question_data, nextQuestion }) {
             >
                 <ModalContent>
                     {(onClose) => (
-                        <div className="w-full overflow-hidden">
+                        <div className="w-full overflow-hidden p-8">
                             <EmblaCarousel images={images} />
                         </div>
                     )}
