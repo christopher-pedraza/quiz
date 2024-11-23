@@ -2008,7 +2008,7 @@
             },
             {
                 "answer": "when random variables create difficulty in knowing with certainty the outcome of any given event",
-                "is_correct": false
+                "is_correct": true
             },
             {
                 "answer": "when each event is the inevitable result of antecedent causes",
@@ -2016,7 +2016,7 @@
             },
             {
                 "answer": "when analyzing applications designed to circumvent firewalls",
-                "is_correct": false
+                "is_correct": true
             },
             {
                 "answer": "when analyzing events with the assumption that they follow predefined steps",
@@ -3825,7 +3825,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explain:The destination multicast IPv4 address is a group address, which is a single IP multicast address within the Class D range.",
+        "explanation": "Explicación: The destination multicast IPv4 address is a group address, which is a single IP multicast address within the Class D range.",
         "images": null
     },
     {
@@ -4223,24 +4223,7 @@
     },
     {
         "question": "191. Match the phase in the NIST incident response life cycle to the action.",
-        "answers": [
-            {
-                "answer": "Document incident handling. –> post-incident actvities",
-                "is_correct": false
-            },
-            {
-                "answer": "Conduct CSIRT response training. –> preparation",
-                "is_correct": false
-            },
-            {
-                "answer": "Identify, analyze, and validate an incident. –> detection and analysis",
-                "is_correct": false
-            },
-            {
-                "answer": "Implement procedures to contain the threat. –> containment, eradication, and recovery",
-                "is_correct": false
-            }
-        ],
+        "answers": null,
         "explanation": null,
         "images": [
             "https://itexamanswers.net/wp-content/uploads/2023/04/2023-04-29_080521.jpg"
