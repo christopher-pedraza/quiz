@@ -1,0 +1,1649 @@
+[
+    {
+        "question": "What are two problems that can be caused by a large number of ARP request and reply messages? (Choose two.)",
+        "answers": [
+            {
+                "answer": "All ARP request messages must be processed by all nodes on the local network.",
+                "is_correct": true
+            },
+            {
+                "answer": "The ARP request is sent as a broadcast, and will flood the entire subnet.",
+                "is_correct": true
+            },
+            {
+                "answer": "A large number of ARP request and reply messages may slow down the switching process, leading the switch to make many changes in its MAC table.",
+                "is_correct": false
+            },
+            {
+                "answer": "The network may become overloaded because ARP reply messages have a very large payload due to the 48-bit MAC address and 32-bit IP address that they contain.",
+                "is_correct": false
+            },
+            {
+                "answer": "Switches become overloaded because they concentrate all the traffic from the attached subnets.",
+                "is_correct": false
+            }
+        ],
+        "explanation": "ARP requests are sent as broadcasts: (1) All nodes will receive them, and they will be processed by software, interrupting the CPU. (2) The switch forwards (floods) Layer 2 broadcasts to all ports. A switch does not change its MAC table based on ARP request or reply messages. The switch populates the MAC table using the source MAC address of all frames. The ARP payload is very small and does not overload the switch.",
+        "images": null
+    },
+    {
+        "question": "Refer to the exhibit. Which field in the Sguil application window indicates the priority of an event or set of correlated events?",
+        "answers": [
+            {
+                "answer": "ST",
+                "is_correct": true
+            },
+            {
+                "answer": "AlertID",
+                "is_correct": false
+            },
+            {
+                "answer": "Pr",
+                "is_correct": false
+            },
+            {
+                "answer": "CNT",
+                "is_correct": false
+            }
+        ],
+        "explanation": "The Sguil application window has several fields available that give information about an event. The ST field gives the status of an event that includes a color-coded priority from light yellow to red to indicate four levels of priority.",
+        "images": [
+            "https://itexamanswers.net/wp-content/uploads/2020/10/i301981v1n1_squil-event-window_v2.jpg"
+        ]
+    },
+    {
+        "question": "Match the job titles to SOC personnel positions. (Not all options are used.)",
+        "answers": null,
+        "explanation": "Tier 1 Alert Analyst —> monitors incoming alerts & verifies that a true incident has occurred. Tier 2 Incident Responder –> involved in deep investigation of incidents. Tier 3 Subject Matter Expert –> involved in hunting for potential threats & implements threat detection tools.",
+        "images": [
+            "https://itexamanswers.net/wp-content/uploads/2020/10/2020-10-24_232101.jpg"
+        ]
+    },
+    {
+        "question": "If the default gateway is configured incorrectly on the host, what is the impact on communications?",
+        "answers": [
+            {
+                "answer": "The host is unable to communicate on the local network.",
+                "is_correct": false
+            },
+            {
+                "answer": "The host can communicate with other hosts on the local network, but is unable to communicate with hosts on remote networks.",
+                "is_correct": true
+            },
+            {
+                "answer": "The host can communicate with other hosts on remote networks, but is unable to communicate with hosts on the local network.",
+                "is_correct": false
+            },
+            {
+                "answer": "There is no impact on communications.",
+                "is_correct": false
+            }
+        ],
+        "explanation": "A default gateway is only required to communicate with devices on another network. The absence of a default gateway does not affect connectivity between devices on the same local network.",
+        "images": null
+    },
+    {
+        "question": "When a connectionless protocol is in use at a lower layer of the OSI model, how is missing data detected and retransmitted if necessary?",
+        "answers": [
+            {
+                "answer": "Connectionless acknowledgements are used to request retransmission.",
+                "is_correct": false
+            },
+            {
+                "answer": "Upper-layer connection-oriented protocols keep track of the data received and can request retransmission from the upper-level protocols on the sending host.",
+                "is_correct": true
+            },
+            {
+                "answer": "Network layer IP protocols manage the communication sessions if connection-oriented transport services are not available.",
+                "is_correct": false
+            },
+            {
+                "answer": "The best-effort delivery process guarantees that all packets that are sent are received.",
+                "is_correct": false
+            }
+        ],
+        "explanation": "When connectionless protocols are in use at a lower layer of the OSI model, upper-level protocols may need to work together on the sending and receiving hosts to account for and retransmit lost data. In some cases, this is not necessary, because for some applications a certain amount of data loss is tolerable.",
+        "images": null
+    },
+    {
+        "question": "What is the prefix length notation for the subnet mask 255.255.255.224?",
+        "answers": [
+            {
+                "answer": "/25",
+                "is_correct": false
+            },
+            {
+                "answer": "/26",
+                "is_correct": false
+            },
+            {
+                "answer": "/27",
+                "is_correct": true
+            },
+            {
+                "answer": "/28",
+                "is_correct": false
+            }
+        ],
+        "explanation": "The binary format for 255.255.255.224 is 11111111.11111111.11111111.11100000. The prefix length is the number of consecutive 1s in the subnet mask. Therefore, the prefix length is /27.",
+        "images": null
+    },
+    {
+        "question": "Which network monitoring tool saves captured network frames in PCAP files?",
+        "answers": [
+            {
+                "answer": "NetFlow",
+                "is_correct": false
+            },
+            {
+                "answer": "Wireshark",
+                "is_correct": true
+            },
+            {
+                "answer": "SNMP",
+                "is_correct": false
+            },
+            {
+                "answer": "SIEM",
+                "is_correct": false
+            }
+        ],
+        "explanation": "Wireshark is a network protocol analyzer used to capture network traffic. The traffic captured by Wireshark is saved in PCAP files and includes interface information and timestamps.",
+        "images": null
+    },
+    {
+        "question": "What is the TCP mechanism used in congestion avoidance?",
+        "answers": [
+            {
+                "answer": "three-way handshake",
+                "is_correct": false
+            },
+            {
+                "answer": "socket pair",
+                "is_correct": false
+            },
+            {
+                "answer": "two-way handshake",
+                "is_correct": false
+            },
+            {
+                "answer": "sliding window",
+                "is_correct": true
+            }
+        ],
+        "explanation": "TCP uses windows to attempt to manage the rate of transmission to the maximum flow that the network and destination device can support while minimizing loss and retransmissions. When overwhelmed with data, the destination can send a request to reduce the size of the window. This congestion avoidance is called sliding windows.",
+        "images": null
+    },
+    {
+        "question": "What is the Internet?",
+        "answers": [
+            {
+                "answer": "It is a network based on Ethernet technology.",
+                "is_correct": false
+            },
+            {
+                "answer": "It provides network access for mobile devices.",
+                "is_correct": false
+            },
+            {
+                "answer": "It provides connections through interconnected global networks.",
+                "is_correct": true
+            },
+            {
+                "answer": "It is a private network for an organization with LAN and WAN connections.",
+                "is_correct": false
+            }
+        ],
+        "explanation": "The Internet provides global connections that enable networked devices (workstations and mobile devices) with different network technologies, such as Ethernet, DSL/cable, and serial connections, to communicate. A private network for an organization with LAN and WAN connections is an intranet.",
+        "images": null
+    },
+    {
+        "question": "Which protocol is used by the traceroute command to send and receive echo-requests and echo-replies?",
+        "answers": [
+            {
+                "answer": "SNMP",
+                "is_correct": false
+            },
+            {
+                "answer": "ICMP",
+                "is_correct": true
+            },
+            {
+                "answer": "Telnet",
+                "is_correct": false
+            },
+            {
+                "answer": "TCP",
+                "is_correct": false
+            }
+        ],
+        "explanation": "Traceroute uses the ICMP (Internet Control Message Protocol) to send and receive echo-request and echo-reply messages.",
+        "images": null
+    },
+    {
+        "question": "What are two ICMPv6 messages that are not present in ICMP for IPv4? (Choose two.)",
+        "answers": [
+            {
+                "answer": "Neighbor Solicitation",
+                "is_correct": true
+            },
+            {
+                "answer": "Destination Unreachable",
+                "is_correct": false
+            },
+            {
+                "answer": "Host Confirmation",
+                "is_correct": false
+            },
+            {
+                "answer": "Time Exceeded",
+                "is_correct": false
+            },
+            {
+                "answer": "Router Advertisement",
+                "is_correct": true
+            },
+            {
+                "answer": "Route Redirection",
+                "is_correct": false
+            }
+        ],
+        "explanation": "ICMPv6 includes four new message types: Router Advertisement, Neighbor Advertisement, Router Solicitation, and Neighbor Solicitation.",
+        "images": null
+    },
+    {
+        "question": "Match the network security testing technique with how it is used to test network security. (Not all options are used.)",
+        "answers": null,
+        "explanation": "Network scanning tools are used to probe network devices, servers and hosts for open TCP or UDP ports. Vulnerability scanning tools are used to discover security weaknesses in a network or computer system. Penetration testing tools are used to determine the possible outcome of a successful attack on a network or computer system.",
+        "images": [
+            "https://itexamanswers.net/wp-content/uploads/2020/10/2020-10-24_235223.jpg"
+        ]
+    },
+    {
+        "question": "What are two monitoring tools that capture network traffic and forward it to network monitoring devices? (Choose two.)",
+        "answers": [
+            {
+                "answer": "SPAN",
+                "is_correct": true
+            },
+            {
+                "answer": "network tap",
+                "is_correct": true
+            },
+            {
+                "answer": "SNMP",
+                "is_correct": false
+            },
+            {
+                "answer": "SIEM",
+                "is_correct": false
+            },
+            {
+                "answer": "Wireshark",
+                "is_correct": false
+            }
+        ],
+        "explanation": "A network tap is used to capture traffic for monitoring the network. The tap is typically a passive splitting device implemented inline on the network and forwards all traffic including physical layer errors to an analysis device. SPAN is a port mirroring technology supported on Cisco switches that enables the switch to copy frames and forward them to an analysis device.",
+        "images": null
+    },
+    {
+        "question": "Which network monitoring tool is in the category of network protocol analyzers?",
+        "answers": [
+            {
+                "answer": "SNMP",
+                "is_correct": false
+            },
+            {
+                "answer": "SPAN",
+                "is_correct": false
+            },
+            {
+                "answer": "Wireshark",
+                "is_correct": true
+            },
+            {
+                "answer": "SIEM",
+                "is_correct": false
+            }
+        ],
+        "explanation": "Wireshark is a network protocol analyzer used to capture network traffic. The traffic captured by Wireshark is saved in PCAP files and includes interface information and timestamps.",
+        "images": null
+    },
+    {
+        "question": "Based on the command output shown, which file permission or permissions have been assigned to the other user group for the data.txt file? Comando: 'ls –l data.txt' Resultado: '-rwxrw-r-- sales staff 1028 May 28 15:50 data.txt'",
+        "answers": [
+            {
+                "answer": "full access",
+                "is_correct": false
+            },
+            {
+                "answer": "read, write",
+                "is_correct": false
+            },
+            {
+                "answer": "read",
+                "is_correct": true
+            },
+            {
+                "answer": "read, write, execute",
+                "is_correct": false
+            }
+        ],
+        "explanation": "The file permissions are always displayed in the user, group and other order. In the example displayed, the file has the following permissions: The dash ( – ) means that this is a file. For directories, the first dash would be replaced with a 'd'. The first set of characters is for user permission (rwx). The user, sales, who owns the file can read, write and execute the file. The second set of characters is for group permissions (rw-). The group, staff, who owns the file can read and write to the file. The third set of characters is for any other user or group permissions (r–). Any other user or group on the computer can only read the file.",
+        "images": null
+    },
+    {
+        "question": "What are three benefits of using symbolic links over hard links in Linux? (Choose three.)",
+        "answers": [
+            {
+                "answer": "They can link to a directory.",
+                "is_correct": true
+            },
+            {
+                "answer": "They can be compressed.",
+                "is_correct": false
+            },
+            {
+                "answer": "Symbolic links can be exported.",
+                "is_correct": false
+            },
+            {
+                "answer": "They can be encrypted.",
+                "is_correct": false
+            },
+            {
+                "answer": "They can link to a file in a different file system.",
+                "is_correct": true
+            },
+            {
+                "answer": "They can show the location of the original file.",
+                "is_correct": true
+            }
+        ],
+        "explanation": "In Linux, a hard link is another file that points to the same location as the original file. A soft link (also called a symbolic link or a symlink) is a link to another file system name. Hard links are limited to the file system in which they are created and they cannot link to a directory; soft links are not limited to the same file system and they can link to a directory. To see the location of the original file for a symbolic link use the ls –l command.",
+        "images": null
+    },
+    {
+        "question": "A network security specialist is tasked to implement a security measure that monitors the status of critical files in the data center and sends an immediate alert if any file is modified. Which aspect of secure communications is addressed by this security measure?",
+        "answers": [
+            {
+                "answer": "origin authentication",
+                "is_correct": false
+            },
+            {
+                "answer": "data integrity",
+                "is_correct": true
+            },
+            {
+                "answer": "nonrepudiation",
+                "is_correct": false
+            },
+            {
+                "answer": "data confidentiality",
+                "is_correct": false
+            }
+        ],
+        "explanation": "Secure communications consists of four elements: Data confidentiality – guarantees that only authorized users can read the message Data integrity – guarantees that the message was not altered Origin authentication – guarantees that the message is not a forgery and does actually come from whom it states Data nonrepudiation – guarantees that the sender cannot repudiate, or refute, the validity of a message sent.",
+        "images": null
+    },
+    {
+        "question": "A network administrator is configuring an AAA server to manage TACACS+ authentication. What are two attributes of TACACS+ authentication? (Choose two.)",
+        "answers": [
+            {
+                "answer": "TCP port 40",
+                "is_correct": false
+            },
+            {
+                "answer": "encryption for all communication",
+                "is_correct": true
+            },
+            {
+                "answer": "single process for authentication and authorization",
+                "is_correct": false
+            },
+            {
+                "answer": "UDP port 1645",
+                "is_correct": false
+            },
+            {
+                "answer": "encryption for only the password of a user",
+                "is_correct": false
+            },
+            {
+                "answer": "separate processes for authentication and authorization",
+                "is_correct": true
+            }
+        ],
+        "explanation": "TACACS+ authentication includes the following attributes: Separates authentication and authorization processes Encrypts all communication, not just passwords Utilizes TCP port 49.",
+        "images": null
+    },
+    {
+        "question": "In an attempt to prevent network attacks, cyber analysts share unique identifiable attributes of known attacks with colleagues. What three types of attributes or indicators of compromise are helpful to share? (Choose three.)",
+        "answers": [
+            {
+                "answer": "IP addresses of attack servers",
+                "is_correct": true
+            },
+            {
+                "answer": "changes made to end system software",
+                "is_correct": true
+            },
+            {
+                "answer": "netbios names of compromised firewalls",
+                "is_correct": false
+            },
+            {
+                "answer": "features of malware files",
+                "is_correct": true
+            },
+            {
+                "answer": "BIOS of attacking systems",
+                "is_correct": false
+            },
+            {
+                "answer": "system ID of compromised systems",
+                "is_correct": false
+            }
+        ],
+        "explanation": "Many network attacks can be prevented by sharing information about indicators of compromise (IOC). Each attack has unique identifiable attributes. Indicators of compromise are the evidence that an attack has occurred. IOCs can be identifying features of malware files, IP addresses of servers that are used in the attack, filenames, and characteristic changes made to end system software.",
+        "images": null
+    },
+    {
+        "question": "Which two types of messages are used in place of ARP for address resolution in IPv6? (Choose two.)",
+        "answers": [
+            {
+                "answer": "anycast",
+                "is_correct": false
+            },
+            {
+                "answer": "broadcast",
+                "is_correct": false
+            },
+            {
+                "answer": "neighbor solicitation",
+                "is_correct": true
+            },
+            {
+                "answer": "echo reply",
+                "is_correct": false
+            },
+            {
+                "answer": "echo request",
+                "is_correct": false
+            },
+            {
+                "answer": "neighbor advertisement",
+                "is_correct": true
+            }
+        ],
+        "explanation": "IPv6 does not use ARP. Instead, ICMPv6 neighbor discovery is used by sending neighbor solicitation and neighbor advertisement messages.",
+        "images": null
+    },
+    {
+        "question": "What is indicated by a true negative security alert classification?",
+        "answers": [
+            {
+                "answer": "An alert is verified to be an actual security incident.",
+                "is_correct": false
+            },
+            {
+                "answer": "An alert is incorrectly issued and does not indicate an actual security incident.",
+                "is_correct": false
+            },
+            {
+                "answer": "Normal traffic is correctly ignored and erroneous alerts are not being issued.",
+                "is_correct": true
+            },
+            {
+                "answer": "Exploits are not being detected by the security systems that are in place.",
+                "is_correct": false
+            }
+        ],
+        "explanation": "True negative classifications are desirable because they indicate that normal traffic is correctly not being identified as malicious traffic by security measures.",
+        "images": null
+    },
+    {
+        "question": "Which statement describes the anomaly-based intrusion detection approach?",
+        "answers": [
+            {
+                "answer": "It compares the antivirus definition file to a cloud based repository for latest updates.",
+                "is_correct": false
+            },
+            {
+                "answer": "It compares the behavior of a host to an established baseline to identify potential intrusions.",
+                "is_correct": true
+            },
+            {
+                "answer": "It compares the signatures of incoming traffic to a known intrusion database.",
+                "is_correct": false
+            },
+            {
+                "answer": "It compares the operations of a host against a well-defined security policy.",
+                "is_correct": false
+            }
+        ],
+        "explanation": "With an anomaly-based intrusion detection approach, a baseline of host behaviors is established first. The host behavior is checked against the baseline to detect significant deviations, which might indicate potential intrusions.",
+        "images": null
+    },
+    {
+        "question": "Match the description to the antimalware approach. (Not all options are used.)",
+        "answers": null,
+        "explanation": "Antimalware programs may detect viruses using three different approaches:\nsignature-based – by recognizing various characteristics of known malware files\nheuristics-based – by recognizing general features shared by various types of malware\nbehavior-based – through analysis of suspicious activities",
+        "images": [
+            "https://itexamanswers.net/wp-content/uploads/2020/10/2020-10-24_233310.jpg"
+        ]
+    },
+    {
+        "question": "Which two protocols are associated with the transport layer? (Choose two.)",
+        "answers": [
+            {
+                "answer": "ICMP",
+                "is_correct": false
+            },
+            {
+                "answer": "IP",
+                "is_correct": false
+            },
+            {
+                "answer": "UDP",
+                "is_correct": true
+            },
+            {
+                "answer": "PPP",
+                "is_correct": false
+            },
+            {
+                "answer": "TCP",
+                "is_correct": true
+            }
+        ],
+        "explanation": "TCP and UDP reside at the transport layer in both the OSI and TCP/IP models.",
+        "images": null
+    },
+    {
+        "question": "A network administrator is creating a network profile to generate a network baseline. What is included in the critical asset address space element?",
+        "answers": [
+            {
+                "answer": "the time between the establishment of a data flow and its termination",
+                "is_correct": false
+            },
+            {
+                "answer": "the TCP and UDP daemons and ports that are allowed to be open on the server",
+                "is_correct": false
+            },
+            {
+                "answer": "the IP addresses or the logical location of essential systems or data",
+                "is_correct": true
+            },
+            {
+                "answer": "the list of TCP or UDP processes that are available to accept data",
+                "is_correct": false
+            }
+        ],
+        "explanation": "A network profile should include some important elements, such as the following:\nTotal throughput – the amount of data passing from a given source to a given destination in a given period of time\nSession duration – the time between the establishment of a data flow and its termination\nPorts used – a list of TCP or UDP processes that are available to accept data\nCritical asset address space – the IP addresses or the logical location of essential systems or data",
+        "images": null
+    },
+    {
+        "question": "What are the three impact metrics contained in the CVSS 3.0 Base Metric Group? (Choose three.)",
+        "answers": [
+            {
+                "answer": "confidentiality",
+                "is_correct": true
+            },
+            {
+                "answer": "remediation level",
+                "is_correct": false
+            },
+            {
+                "answer": "integrity",
+                "is_correct": true
+            },
+            {
+                "answer": "attack vector",
+                "is_correct": false
+            },
+            {
+                "answer": "exploit",
+                "is_correct": false
+            },
+            {
+                "answer": "availability",
+                "is_correct": true
+            }
+        ],
+        "explanation": "The Common Vulnerability Scoring System (CVSS) is a vendor-neutral, industry standard, open framework for weighing the risks of a vulnerability using a variety of metrics. CVSS uses three groups of metrics to assess vulnerability, the Base Metric Group, Temporal Metric Group, and Environmental Metric Group. The Base Metric Group has two classes of metrics (exploitability and impact). The impact metrics are rooted in the following areas: confidentiality, integrity, and availability.",
+        "images": null
+    },
+    {
+        "question": "What is a characteristic of DNS?",
+        "answers": [
+            {
+                "answer": "DNS servers can cache recent queries to reduce DNS query traffic.",
+                "is_correct": true
+            },
+            {
+                "answer": "All DNS servers must maintain mappings for the entire DNS structure.",
+                "is_correct": false
+            },
+            {
+                "answer": "DNS servers are programmed to drop requests for name translations that are not within their zone.",
+                "is_correct": false
+            },
+            {
+                "answer": "DNS relies on a hub-and-spoke topology with centralized servers.",
+                "is_correct": false
+            }
+        ],
+        "explanation": "DNS uses a hierarchy for decentralized servers to perform name resolution. DNS servers only maintain records for their zone and can cache recent queries so that future queries do not produce excessive DNS traffic.",
+        "images": null
+    },
+    {
+        "question": "What are two differences between HTTP and HTTP/2? (Choose two.)",
+        "answers": [
+            {
+                "answer": "HTTP/2 uses a compressed header to reduce bandwidth requirements.",
+                "is_correct": true
+            },
+            {
+                "answer": "HTTP/2 uses multiplexing to support multiple streams and enhance efficiency.",
+                "is_correct": true
+            },
+            {
+                "answer": "HTTP/2 uses different status codes than HTTP does to improve performance.",
+                "is_correct": false
+            },
+            {
+                "answer": "HTTP/2 issues requests using a text format whereas HTTP uses binary commands.",
+                "is_correct": false
+            },
+            {
+                "answer": "HTTP has a different header format than HTTP/2 has.",
+                "is_correct": false
+            }
+        ],
+        "explanation": "The purpose of HTTP/2 is to improve HTTP performance by addressing the latency issues of HTTP. This is accomplished using features such as multiplexing, server push, binary code, and header compression.",
+        "images": null
+    },
+    {
+        "question": "Match the steps with the actions that are involved when an internal host with IP address 192.168.10.10 attempts to send a packet to an external server at the IP address 209.165.200.254 across a router R1 that is running dynamic NAT. (Not all options are used.)",
+        "answers": null,
+        "explanation": "The translation of the IP addresses from 209.65.200.254 to 192.168.10.10 will take place when the reply comes back from the server.",
+        "images": [
+            "https://itexamanswers.net/wp-content/uploads/2020/10/2020-10-25_000229.jpg"
+        ]
+    },
+    {
+        "question": "A router has received a packet destined for a network that is in the routing table. What steps does the router perform to send this packet on its way? Match the step to the task performed by the router.",
+        "answers": null,
+        "explanation": null,
+        "images": [
+            "https://itexamanswers.net/wp-content/uploads/2020/10/2020-10-25_000344.jpg"
+        ]
+    },
+    {
+        "question": "What are two shared characteristics of the IDS and the IPS? (Choose two.)",
+        "answers": [
+            {
+                "answer": "Both have minimal impact on network performance.",
+                "is_correct": false
+            },
+            {
+                "answer": "Both are deployed as sensors.",
+                "is_correct": true
+            },
+            {
+                "answer": "Both analyze copies of network traffic.",
+                "is_correct": false
+            },
+            {
+                "answer": "Both use signatures to detect malicious traffic.",
+                "is_correct": true
+            },
+            {
+                "answer": "Both rely on an additional network device to respond to malicious traffic.",
+                "is_correct": false
+            }
+        ],
+        "explanation": "Both the IDS and the IPS are deployed as sensors and use signatures to detect malicious traffic. The IDS analyzes copies of network traffic, which results in minimal impact on network performance. The IDS also relies on an IPS to stop malicious traffic.",
+        "images": null
+    },
+    {
+        "question": "Which statement describes a typical security policy for a DMZ firewall configuration?",
+        "answers": [
+            {
+                "answer": "Traffic that originates from the DMZ interface is selectively permitted to the outside interface.",
+                "is_correct": true
+            },
+            {
+                "answer": "Return traffic from the inside that is associated with traffic originating from the outside is permitted to traverse from the inside interface to the outside interface.",
+                "is_correct": false
+            },
+            {
+                "answer": "Return traffic from the outside that is associated with traffic originating from the inside is permitted to traverse from the outside interface to the DMZ interface.",
+                "is_correct": false
+            },
+            {
+                "answer": "Traffic that originates from the inside interface is generally blocked entirely or very selectively permitted to the outside interface.",
+                "is_correct": false
+            },
+            {
+                "answer": "Traffic that originates from the outside interface is permitted to traverse the firewall to the inside interface with few or no restrictions.",
+                "is_correct": false
+            }
+        ],
+        "explanation": "With a three interface firewall design that has internal, external, and DMZ connections, typical configurations include the following:\nTraffic originating from DMZ destined for the internal network is normally blocked.\nTraffic originating from the internal network and destined for the outside interface is allowed.\nTraffic originating from the outside network is generally restricted.\nReturn traffic from the outside network can only reach the DMZ interface after passing through firewall rules.",
+        "images": null
+    },
+    {
+        "question": "After complaints from users, a technician identifies that the college web server is running very slowly. A check of the server reveals that there are an unusually large number of TCP requests coming from multiple locations on the Internet. What is the source of the problem?",
+        "answers": [
+            {
+                "answer": "The server is infected with a virus.",
+                "is_correct": false
+            },
+            {
+                "answer": "A DDoS attack is in progress.",
+                "is_correct": true
+            },
+            {
+                "answer": "There is insufficient bandwidth to connect to the server.",
+                "is_correct": false
+            },
+            {
+                "answer": "There is a replay attack in progress.",
+                "is_correct": false
+            }
+        ],
+        "explanation": "The source of the problem cannot be a virus because in this situation the server is passive and at the receiving end of the attack. A replay attack uses intercepted and recorded data in an attempt to gain access to an unauthorized server. This type of attack does not involve multiple computers. The issue is not the bandwidth available, but the number of TCP connections taking place. Receiving a large number of connections from multiple locations is the main symptom of a distributed denial of service attack which use botnets or zombie computers.",
+        "images": null
+    },
+    {
+        "question": "Which two statements describe access attacks? (Choose two.)",
+        "answers": [
+            {
+                "answer": "Password attacks can be implemented by the use of brute-force attack methods, Trojan horses, or packet sniffers.",
+                "is_correct": true
+            },
+            {
+                "answer": "To detect listening services, port scanning attacks scan a range of TCP or UDP port numbers on a host.",
+                "is_correct": false
+            },
+            {
+                "answer": "Port redirection attacks use a network adapter card in promiscuous mode to capture all network packets that are sent across a LAN.",
+                "is_correct": false
+            },
+            {
+                "answer": "Trust exploitation attacks often involve the use of a laptop to act as a rogue access point to capture and copy all network traffic in a public location, such as a wireless hotspot.",
+                "is_correct": false
+            },
+            {
+                "answer": "Buffer overflow attacks write data beyond the allocated buffer memory to overwrite valid data or to exploit systems to execute malicious code.",
+                "is_correct": true
+            }
+        ],
+        "explanation": "An access attack tries to gain access to a resource using a hijacked account or other means. The five types of access attacks include the following:\npassword – a dictionary is used for repeated login attempts\ntrust exploitation – uses granted privileges to access unauthorized material\nport redirection – uses a compromised internal host to pass traffic through a firewall\nman-in-the-middle – an unauthorized device positioned between two legitimate devices in order to redirect or capture traffic\nbuffer overflow – too much data sent to a memory location that already contains data",
+        "images": null
+    },
+    {
+        "question": "Which two actions can be taken when configuring Windows Firewall? (Choose two.)",
+        "answers": [
+            {
+                "answer": "Turn on port screening.",
+                "is_correct": false
+            },
+            {
+                "answer": "Manually open ports that are required for specific applications.",
+                "is_correct": true
+            },
+            {
+                "answer": "Allow a different software firewall to control access.",
+                "is_correct": true
+            },
+            {
+                "answer": "Enable MAC address authentication.",
+                "is_correct": false
+            },
+            {
+                "answer": "Perform a rollback.",
+                "is_correct": false
+            }
+        ],
+        "explanation": "When a different software firewall is installed, Windows Firewall must be disabled through the Windows Firewall control panel. When Windows Firewall is enabled, specific ports can be enabled that are needed by specific applications.",
+        "images": null
+    },
+    {
+        "question": "Which statement describes the state of the administrator and guest accounts after a user installs Windows desktop version to a new computer?",
+        "answers": [
+            {
+                "answer": "By default, the guest account is enabled but the administrator account is disabled.",
+                "is_correct": false
+            },
+            {
+                "answer": "By default, both the administrator and guest accounts are enabled.",
+                "is_correct": false
+            },
+            {
+                "answer": "By default, both the administrator and guest accounts are disabled.",
+                "is_correct": true
+            },
+            {
+                "answer": "By default, the administrator account is enabled but the guest account is disabled.",
+                "is_correct": false
+            }
+        ],
+        "explanation": "When a user installs Windows desktop version, two local user accounts are created automatically during the process, administrator and guest. Both accounts are disabled by default.",
+        "images": null
+    },
+    {
+        "question": "What is a purpose of entering the nslookup cisco.com command on a Windows PC?",
+        "answers": [
+            {
+                "answer": "to check if the DNS service is running",
+                "is_correct": true
+            },
+            {
+                "answer": "to connect to the Cisco server",
+                "is_correct": false
+            },
+            {
+                "answer": "to test if the Cisco server is reachable",
+                "is_correct": false
+            },
+            {
+                "answer": "to discover the transmission time needed to reach the Cisco server",
+                "is_correct": false
+            }
+        ],
+        "explanation": "The nslookup command queries DNS servers to find out the IP address or addresses associated with the domain name cisco.com. A successful result indicates that the DNS configuration on the PC is functional, and also indicates the IP address for the domain name being displayed. The command does not try connect to the actual Cisco host directly.",
+        "images": null
+    },
+    {
+        "question": "How is the event ID assigned in Sguil?",
+        "answers": [
+            {
+                "answer": "All events in the series of correlated events are assigned the same event ID.",
+                "is_correct": false
+            },
+            {
+                "answer": "Only the first event in the series of correlated events is assigned a unique ID.",
+                "is_correct": false
+            },
+            {
+                "answer": "All events in the series of correlated events are assigned the same event group ID.",
+                "is_correct": false
+            },
+            {
+                "answer": "Each event in the series of correlated events is assigned a unique ID.",
+                "is_correct": true
+            }
+        ],
+        "explanation": "In Sguil, each event receives a unique event ID, but only the first event ID in the series of correlated events is displayed in the RealTime tab.",
+        "images": null
+    },
+    {
+        "question": "Which two types of network traffic are from protocols that generate a lot of routine traffic? (Choose two.)",
+        "answers": [
+            {
+                "answer": "routing updates traffic",
+                "is_correct": true
+            },
+            {
+                "answer": "Windows security auditing alert traffic",
+                "is_correct": false
+            },
+            {
+                "answer": "IPsec traffic",
+                "is_correct": false
+            },
+            {
+                "answer": "STP traffic",
+                "is_correct": true
+            },
+            {
+                "answer": "SSL traffic",
+                "is_correct": false
+            }
+        ],
+        "explanation": "To reduce the huge amount of data collected so that cybersecurity analysts can focus on critical threats, some less important or less relevant data could be eliminated from the datasets. For example, routing network management traffic, such as routing updates and STP traffic, could be eliminated.",
+        "images": null
+    },
+    {
+        "question": "What are two elements that form the PRI value in a syslog message? (Choose two.)",
+        "answers": [
+            {
+                "answer": "facility",
+                "is_correct": true
+            },
+            {
+                "answer": "timestamp",
+                "is_correct": false
+            },
+            {
+                "answer": "severity",
+                "is_correct": true
+            },
+            {
+                "answer": "header",
+                "is_correct": false
+            },
+            {
+                "answer": "hostname",
+                "is_correct": false
+            }
+        ],
+        "explanation": "The PRI in a syslog message consists of two elements, the facility and severity of the message.",
+        "images": null
+    },
+    {
+        "question": "Which three pieces of information are found in session data? (Choose three.)",
+        "answers": [
+            {
+                "answer": "default gateway IP address",
+                "is_correct": false
+            },
+            {
+                "answer": "source and destination port numbers",
+                "is_correct": true
+            },
+            {
+                "answer": "Layer 4 transport protocol",
+                "is_correct": true
+            },
+            {
+                "answer": "source and destination MAC addresses",
+                "is_correct": false
+            },
+            {
+                "answer": "user name",
+                "is_correct": false
+            },
+            {
+                "answer": "source and destination IP addresses",
+                "is_correct": true
+            }
+        ],
+        "explanation": "Session data includes identifying information such as source and destination IP addresses, source and destination port numbers, and the Layer 4 protocol in use. Session data does not include user name, source and destination MAC addresses, and a default gateway IP address.",
+        "images": null
+    },
+    {
+        "question": "What kind of ICMP message can be used by threat actors to perform network reconnaissance and scanning attacks?",
+        "answers": [
+            {
+                "answer": "ICMP mask reply",
+                "is_correct": false
+            },
+            {
+                "answer": "ICMP router discovery",
+                "is_correct": false
+            },
+            {
+                "answer": "ICMP unreachable",
+                "is_correct": true
+            },
+            {
+                "answer": "ICMP redirects",
+                "is_correct": false
+            }
+        ],
+        "explanation": "Common ICMP messages of interest to threat actors include the these:\nICMP echo request and echo reply: used to perform host verification and DoS attacks\nICMP unreachable: used to perform network reconnaissance and scanning attacks\nICMP mask reply: used to map an internal IP network\nICMP redirects: used to lure a target host into sending all traffic through a compromised device and create a man-in-the-middle attack\nICMP router discovery: used to inject bogus route entries into the routing table of a target host",
+        "images": null
+    },
+    {
+        "question": "A flood of packets with invalid source IP addresses requests a connection on the network. The server busily tries to respond, resulting in valid requests being ignored. What type of attack has occurred?",
+        "answers": [
+            {
+                "answer": "TCP session hijacking",
+                "is_correct": false
+            },
+            {
+                "answer": "TCP SYN flood",
+                "is_correct": true
+            },
+            {
+                "answer": "TCP reset",
+                "is_correct": false
+            },
+            {
+                "answer": "UDP flood",
+                "is_correct": false
+            }
+        ],
+        "explanation": "The TCP SYN Flood attack exploits the TCP three-way handshake. The threat actor continually sends TCP SYN session request packets with a randomly spoofed source IP address to an intended target. The target device replies with a TCP SYN-ACK packet to the spoofed IP address and waits for a TCP ACK packet. Those responses never arrive. Eventually the target host is overwhelmed with half-open TCP connections and denies TCP services.",
+        "images": null
+    },
+    {
+        "question": "An attacker is redirecting traffic to a false default gateway in an attempt to intercept the data traffic of a switched network. What type of attack could achieve this?",
+        "answers": [
+            {
+                "answer": "DNS tunneling",
+                "is_correct": false
+            },
+            {
+                "answer": "TCP SYN flood",
+                "is_correct": false
+            },
+            {
+                "answer": "DHCP spoofing",
+                "is_correct": true
+            },
+            {
+                "answer": "ARP cache poisoning",
+                "is_correct": false
+            }
+        ],
+        "explanation": "In DHCP spoofing attacks, a threat actor configures a fake DHCP server on the network to issue DHCP addresses to clients with the aim of forcing the clients to use a false or invalid default gateway. A man-in-the-middle attack can be created by setting the default gateway address to the IP address of the threat actor.",
+        "images": null
+    },
+    {
+        "question": "What is the most common goal of search engine optimization (SEO) poisoning?",
+        "answers": [
+            {
+                "answer": "to increase web traffic to malicious sites",
+                "is_correct": true
+            },
+            {
+                "answer": "to build a botnet of zombies",
+                "is_correct": false
+            },
+            {
+                "answer": "to trick someone into installing malware or divulging personal information",
+                "is_correct": false
+            },
+            {
+                "answer": "to overwhelm a network device with maliciously formed packets",
+                "is_correct": false
+            }
+        ],
+        "explanation": "A malicious user could create an SEO so that a malicious website appears higher in search results. The malicious website commonly contains malware or is used to obtain information via social engineering techniques.",
+        "images": null
+    },
+    {
+        "question": "Users report that a database file on the main server cannot be accessed. A database administrator verifies the issue and notices that the database file is now encrypted. The organization receives a threatening email demanding payment for the decryption of the database file. What type of attack has the organization experienced?",
+        "answers": [
+            {
+                "answer": "man-in-the-middle attack",
+                "is_correct": false
+            },
+            {
+                "answer": "DoS attack",
+                "is_correct": false
+            },
+            {
+                "answer": "ransomware",
+                "is_correct": true
+            },
+            {
+                "answer": "Trojan horse",
+                "is_correct": false
+            }
+        ],
+        "explanation": "In a ransomware attack, the attacker compromises the victim computer and encrypts the hard drive so that data can no longer be accessed by the user. The attacker then demands payment from the user to decrypt the drive.",
+        "images": null
+    },
+    {
+        "question": "What two kinds of personal information can be sold on the dark web by cybercriminals? (Choose two.)",
+        "answers": [
+            {
+                "answer": "city of residence",
+                "is_correct": false
+            },
+            {
+                "answer": "Facebook photos",
+                "is_correct": true
+            },
+            {
+                "answer": "name of a bank",
+                "is_correct": false
+            },
+            {
+                "answer": "name of a pet",
+                "is_correct": false
+            },
+            {
+                "answer": "street address",
+                "is_correct": true
+            }
+        ],
+        "explanation": "Personally identifiable information (PII) is any information that can be used to positively identify an individual. Examples of PII include the following:\nName\nSocial security number\nBirthdate\nCredit card numbers\nBank account numbers\nFacebook information\nAddress information (street, email, phone numbers).",
+        "images": null
+    },
+    {
+        "question": "What three services are offered by FireEye? (Choose three.)",
+        "answers": [
+            {
+                "answer": "blocks attacks across the web",
+                "is_correct": true
+            },
+            {
+                "answer": "creates firewall rules dynamically",
+                "is_correct": false
+            },
+            {
+                "answer": "identifies and stops latent malware on files",
+                "is_correct": true
+            },
+            {
+                "answer": "subjects all traffic to deep packet inspection analysis",
+                "is_correct": false
+            },
+            {
+                "answer": "deploys incident detection rule sets to network security tools",
+                "is_correct": false
+            },
+            {
+                "answer": "identifies and stops email threat vectors",
+                "is_correct": true
+            }
+        ],
+        "explanation": "FireEye is a security company that uses a three-pronged approach combining security intelligence, security expertise, and technology. FireEye offers SIEM and SOAR with the Helix Security Platform, which use behavioral analysis and advanced threat detection.",
+        "images": null
+    },
+    {
+        "question": "After containment, what is the first step of eradicating an attack?",
+        "answers": [
+            {
+                "answer": "Change all passwords.",
+                "is_correct": false
+            },
+            {
+                "answer": "Patch all vulnerabilities.",
+                "is_correct": false
+            },
+            {
+                "answer": "Hold meetings on lessons learned.",
+                "is_correct": false
+            },
+            {
+                "answer": "Identify all hosts that need remediation.",
+                "is_correct": true
+            }
+        ],
+        "explanation": "Once an attack is contained, the next step is to identify all hosts that will need remediation so that the effects of the attack can be eliminated.",
+        "images": null
+    },
+    {
+        "question": "Which activity is typically performed by a threat actor in the installation phase of the Cyber Kill Chain?",
+        "answers": [
+            {
+                "answer": "Install a web shell on the target web server for persistent access.",
+                "is_correct": true
+            },
+            {
+                "answer": "Harvest email addresses of user accounts.",
+                "is_correct": false
+            },
+            {
+                "answer": "Open a two-way communication channel to the CnC infrastructure.",
+                "is_correct": false
+            },
+            {
+                "answer": "Obtain an automated tool to deliver the malware payload.",
+                "is_correct": false
+            }
+        ],
+        "explanation": "In the installation phase of the Cyber Kill Chain, the threat actor establishes a back door into the system to allow for continued access to the target.",
+        "images": null
+    },
+    {
+        "question": "When dealing with a security threat and using the Cyber Kill Chain model, which two approaches can an organization use to help block potential exploitations on a system? (Choose two.)",
+        "answers": [
+            {
+                "answer": "Collect email and web logs for forensic reconstruction.",
+                "is_correct": false
+            },
+            {
+                "answer": "Conduct full malware analysis.",
+                "is_correct": false
+            },
+            {
+                "answer": "Train web developers for securing code.",
+                "is_correct": true
+            },
+            {
+                "answer": "Build detections for the behavior of known weaponizers.",
+                "is_correct": false
+            },
+            {
+                "answer": "Perform regular vulnerability scanning and penetration testing.",
+                "is_correct": true
+            }
+        ],
+        "explanation": "The most common exploit targets, once a weapon is delivered, are applications, operating system vulnerabilities, and user accounts. Among other measures, such as regular vulnerability scanning and penetration testing, training web developers in securing code can help block potential exploitations on systems.",
+        "images": null
+    },
+    {
+        "question": "How might corporate IT professionals deal with DNS-based cyber threats?",
+        "answers": [
+            {
+                "answer": "Limit the number of simultaneously opened browsers or browser tabs.",
+                "is_correct": false
+            },
+            {
+                "answer": "Monitor DNS proxy server logs and look for unusual DNS queries.",
+                "is_correct": true
+            },
+            {
+                "answer": "Use IPS/IDS devices to scan internal corporate traffic.",
+                "is_correct": false
+            },
+            {
+                "answer": "Limit the number of DNS queries permitted within the organization.",
+                "is_correct": false
+            }
+        ],
+        "explanation": "DNS queries for randomly generated domain names or extremely long random-appearing DNS subdomains should be considered suspicious. Cyberanalysts could do the following for DNS-based attacks:\nAnalyze DNS logs.\nUse a passive DNS service to block requests to suspected CnC and exploit domains.",
+        "images": null
+    },
+    {
+        "question": "How does using HTTPS complicate network security monitoring?",
+        "answers": [
+            {
+                "answer": "HTTPS adds complexity to captured packets.",
+                "is_correct": true
+            },
+            {
+                "answer": "HTTPS cannot protect visitors to a company-provided web site.",
+                "is_correct": false
+            },
+            {
+                "answer": "Web browser traffic is directed to infected servers.",
+                "is_correct": false
+            },
+            {
+                "answer": "HTTPS can be used to infiltrate DNS queries.",
+                "is_correct": false
+            }
+        ],
+        "explanation": "HTTPS adds extra overhead to the HTTP-formed packet. HTTPS encrypts using secure socket layer (SSL). Even though some devices can perform SSL decryption and inspection, this can present processing and privacy issues. HTTPS adds complexity to packet captures due to the additional message involved in establishing an encrypted data connection.",
+        "images": null
+    },
+    {
+        "question": "Match the security concept to the description.",
+        "answers": null,
+        "explanation": null,
+        "images": [
+            "https://itexamanswers.net/wp-content/uploads/2020/10/2020-10-25_000715.jpg"
+        ]
+    },
+    {
+        "question": "What are the two important components of a public key infrastructure (PKI) used in network security? (Choose two.)",
+        "answers": [
+            {
+                "answer": "intrusion prevention system",
+                "is_correct": false
+            },
+            {
+                "answer": "digital certificates",
+                "is_correct": true
+            },
+            {
+                "answer": "symmetric encryption algorithms",
+                "is_correct": false
+            },
+            {
+                "answer": "certificate authority",
+                "is_correct": true
+            },
+            {
+                "answer": "pre-shared key generation",
+                "is_correct": false
+            }
+        ],
+        "explanation": "A public key infrastructure uses digital certificates and certificate authorities to manage asymmetric key distribution. PKI certificates are public information. The PKI certificate authority (CA) is a trusted third-party that issues the certificate. The CA has its own certificate (self-signed certificate) that contains the public key of the CA.",
+        "images": null
+    },
+    {
+        "question": "Which three algorithms are designed to generate and verify digital signatures? (Choose three.)",
+        "answers": [
+            {
+                "answer": "3DES",
+                "is_correct": false
+            },
+            {
+                "answer": "IKE",
+                "is_correct": false
+            },
+            {
+                "answer": "DSA",
+                "is_correct": true
+            },
+            {
+                "answer": "AES",
+                "is_correct": false
+            },
+            {
+                "answer": "ECDSA",
+                "is_correct": true
+            },
+            {
+                "answer": "RSA",
+                "is_correct": true
+            }
+        ],
+        "explanation": "There are three Digital Signature Standard (DSS) algorithms that are used for generating and verifying digital signatures: Digital Signature Algorithm (DSA), Rivest-Shamir Adelman Algorithm (RSA), and Elliptic Curve Digital Signature Algorithm (ECDSA).",
+        "images": null
+    },
+    {
+        "question": "Which section of a security policy is used to specify that only authorized individuals should have access to enterprise data?",
+        "answers": [
+            {
+                "answer": "statement of authority",
+                "is_correct": false
+            },
+            {
+                "answer": "identification and authentication policy",
+                "is_correct": true
+            },
+            {
+                "answer": "campus access policy",
+                "is_correct": false
+            },
+            {
+                "answer": "Internet access policy",
+                "is_correct": false
+            },
+            {
+                "answer": "statement of scope",
+                "is_correct": false
+            },
+            {
+                "answer": "acceptable use policy",
+                "is_correct": false
+            }
+        ],
+        "explanation": "The identification and authentication policy section of the security policy typically specifies authorized persons that can have access to network resources and identity verification procedures.",
+        "images": null
+    },
+    {
+        "question": "Refer to the exhibit. A cybersecurity analyst is viewing captured packets forwarded on switch S1. Which device has the MAC address d8:cb:8a:5c:d5:8a?",
+        "answers": [
+            {
+                "answer": "PC-A",
+                "is_correct": true
+            },
+            {
+                "answer": "DNS server",
+                "is_correct": false
+            },
+            {
+                "answer": "web server",
+                "is_correct": false
+            },
+            {
+                "answer": "router DG",
+                "is_correct": false
+            },
+            {
+                "answer": "router ISP",
+                "is_correct": false
+            }
+        ],
+        "explanation": "The Wireshark capture is a DNS response from the DNS server to PC-A. Because the packet was captured on the LAN that the PC is on, router DG would have encapsulated the response packet from the ISP router into an Ethernet frame addressed to PC-A and forwarded the frame with the MAC address of PC-A as the destination.",
+        "images": null
+    },
+    {
+        "question": "What kind of message is sent by a DHCPv4 client requesting an IP address?",
+        "answers": [
+            {
+                "answer": "DHCPDISCOVER broadcast message",
+                "is_correct": true
+            },
+            {
+                "answer": "DHCPDISCOVER unicast message",
+                "is_correct": false
+            },
+            {
+                "answer": "DHCPOFFER unicast message",
+                "is_correct": false
+            },
+            {
+                "answer": "DHCPACK unicast message",
+                "is_correct": false
+            }
+        ],
+        "explanation": "When the DHCPv4 client requests an IP address, it sends a DHCPDISCOVER broadcast message seeking a DHCPv4 server on the network.",
+        "images": null
+    },
+    {
+        "question": "Place the evidence collection priority from most volatile to least volatile as defined by the IETF guidelines.",
+        "answers": null,
+        "explanation": null,
+        "images": [
+            "https://itexamanswers.net/wp-content/uploads/2020/10/2020-10-25_193913.jpg"
+        ]
+    },
+    {
+        "question": "What is the responsibility of the human resources department when handling a security incident?",
+        "answers": [
+            {
+                "answer": "Coordinate the incident response with other stakeholders and minimize the damage of the incident.",
+                "is_correct": false
+            },
+            {
+                "answer": "Perform actions to minimize the effectiveness of the attack and preserve evidence.",
+                "is_correct": false
+            },
+            {
+                "answer": "Apply disciplinary measures if an incident is caused by an employee.",
+                "is_correct": true
+            },
+            {
+                "answer": "Review the incident policies, plans, and procedures for local or federal guideline violations.",
+                "is_correct": false
+            }
+        ],
+        "explanation": "The human resources department may be called upon to perform disciplinary measures if an incident is caused by an employee.",
+        "images": null
+    },
+    {
+        "question": "How does a security information and event management system (SIEM) in a SOC help the personnel fight against security threats?",
+        "answers": [
+            {
+                "answer": "by integrating all security devices and appliances in an organization",
+                "is_correct": false
+            },
+            {
+                "answer": "by analyzing logging data in real time",
+                "is_correct": false
+            },
+            {
+                "answer": "by combining data from multiple technologies",
+                "is_correct": true
+            },
+            {
+                "answer": "by dynamically implementing firewall rules",
+                "is_correct": false
+            }
+        ],
+        "explanation": "A security information and event management system (SIEM) combines data from multiple sources to help SOC personnel collect and filter data, detect and classify threats, analyze and investigate threats, and manage resources to implement preventive measures.",
+        "images": null
+    },
+    {
+        "question": "At which OSI layer is a source IP address added to a PDU during the encapsulation process?",
+        "answers": [
+            {
+                "answer": "network layer",
+                "is_correct": true
+            },
+            {
+                "answer": "transport layer",
+                "is_correct": false
+            },
+            {
+                "answer": "data link layer",
+                "is_correct": false
+            },
+            {
+                "answer": "application layer",
+                "is_correct": false
+            }
+        ],
+        "explanation": "The source IP address is added at the network layer (Layer 3) during the encapsulation process.",
+        "images": null
+    },
+    {
+        "question": "What is the purpose of CSMA/CA?",
+        "answers": [
+            {
+                "answer": "to prevent loops",
+                "is_correct": false
+            },
+            {
+                "answer": "to isolate traffic",
+                "is_correct": false
+            },
+            {
+                "answer": "to filter traffic",
+                "is_correct": false
+            },
+            {
+                "answer": "to prevent collisions",
+                "is_correct": true
+            }
+        ],
+        "explanation": "CSMA/CA stands for carrier sense multiple access with collision avoidance. It is a mechanism used in wireless networks to prevent packet collisions from occurring.",
+        "images": null
+    },
+    {
+        "question": "Why is DHCP preferred for use on large networks?",
+        "answers": [
+            {
+                "answer": "Hosts on large networks require more IP addressing configuration settings than hosts on small networks.",
+                "is_correct": false
+            },
+            {
+                "answer": "It prevents sharing of files that are copyrighted.",
+                "is_correct": false
+            },
+            {
+                "answer": "It is a more efficient way to manage IP addresses than static address assignment.",
+                "is_correct": true
+            },
+            {
+                "answer": "Large networks send more requests for domain to IP address resolution than do smaller networks.",
+                "is_correct": false
+            },
+            {
+                "answer": "DHCP uses a reliable transport layer protocol.",
+                "is_correct": false
+            }
+        ],
+        "explanation": "Static IP address assignment requires personnel to configure each network host with addresses manually. Large networks can change frequently and have many more hosts to configure than do small networks. DHCP provides a much more efficient means of configuring and managing IP addresses on large networks than does static address assignment.",
+        "images": null
+    },
+    {
+        "question": "Which NIST incident response life cycle phase includes continuous monitoring by the CSIRT to quickly identify and validate an incident?",
+        "answers": [
+            {
+                "answer": "postincident activities",
+                "is_correct": false
+            },
+            {
+                "answer": "detection and analysis",
+                "is_correct": true
+            },
+            {
+                "answer": "containment, eradication, and recovery",
+                "is_correct": false
+            },
+            {
+                "answer": "preparation",
+                "is_correct": false
+            }
+        ],
+        "explanation": "It is in the detection and analysis phase of the NIST incident response life cycle that the CSIRT identifies and validates incidents through continuous monitoring. The NIST defines four stages of the incident response life cycle.",
+        "images": null
+    },
+    {
+        "question": "What will a threat actor do to create a back door on a compromised target according to the Cyber Kill Chain model?",
+        "answers": [
+            {
+                "answer": "Add services and autorun keys.",
+                "is_correct": true
+            },
+            {
+                "answer": "Collect and exfiltrate data.",
+                "is_correct": false
+            },
+            {
+                "answer": "Obtain an automated tool to deliver the malware payload.",
+                "is_correct": false
+            },
+            {
+                "answer": "Open a two-way communications channel to the CnC infrastructure.",
+                "is_correct": false
+            }
+        ],
+        "explanation": "Once a target system is compromised, the threat actor will establish a back door into the system to allow for continued access to the target. Adding services and autorun keys is a way to create a point of persistent access.",
+        "images": null
+    },
+    {
+        "question": "Which type of evidence supports an assertion based on previously obtained evidence?",
+        "answers": [
+            {
+                "answer": "direct evidence",
+                "is_correct": false
+            },
+            {
+                "answer": "corroborating evidence",
+                "is_correct": true
+            },
+            {
+                "answer": "best evidence",
+                "is_correct": false
+            },
+            {
+                "answer": "indirect evidence",
+                "is_correct": false
+            }
+        ],
+        "explanation": "Corroborating evidence is evidence that supports a proposition already supported by initial evidence, therefore confirming the original proposition. Circumstantial evidence is evidence other than first-hand accounts of events provided by witnesses.",
+        "images": null
+    },
+    {
+        "question": "A technician is configuring email on a mobile device. The user wants to be able to keep the original email on the server, organize it into folders, and synchronize the folders between the mobile device and the server. Which email protocol should the technician use?",
+        "answers": [
+            {
+                "answer": "POP3",
+                "is_correct": false
+            },
+            {
+                "answer": "MIME",
+                "is_correct": false
+            },
+            {
+                "answer": "IMAP",
+                "is_correct": true
+            },
+            {
+                "answer": "SMTP",
+                "is_correct": false
+            }
+        ],
+        "explanation": "The IMAP protocol allows email data to be synchronized between a client and server. Changes made in one location, such as marking an email as read, are automatically applied to the other location. POP3 is also an email protocol. However, the data is not synchronized between the client and the server. SMTP is used for sending email, and is typically used in conjunction with the POP3 protocol. MIME is an email standard that is used to define attachment types, and allows extra content like pictures and documents to be attached to email messages.",
+        "images": null
+    },
+    {
+        "question": "What is the goal of an attack in the installation phase of the Cyber Kill Chain?",
+        "answers": [
+            {
+                "answer": "Break the vulnerability and gain control of the target.",
+                "is_correct": false
+            },
+            {
+                "answer": "Establish command and control (CnC) with the target system.",
+                "is_correct": false
+            },
+            {
+                "answer": "Create a back door in the target system to allow for future access.",
+                "is_correct": true
+            },
+            {
+                "answer": "Use the information from the reconnaissance phase to develop a weapon against the target.",
+                "is_correct": false
+            }
+        ],
+        "explanation": "In the installation phase of the Cyber Kill Chain, the threat actor establishes a back door into the system to allow for continued access to the target.",
+        "images": null
+    }
+]
