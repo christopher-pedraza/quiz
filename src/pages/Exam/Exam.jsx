@@ -72,15 +72,20 @@ function Exam() {
         }
     };
 
+    const changeExamFile = (exam_file) => {
+        setSelectedFile(exam_file);
+        setAnsweredQuestions([]);
+    };
+
     return (
         <>
             <Dropdown>
                 <DropdownTrigger>
-                    <Button className="mb-4" isDisabled>
+                    <Button className="mb-4">
                         Seleccionar archivo de examen
                     </Button>
                 </DropdownTrigger>
-                <DropdownMenu onAction={(key) => setSelectedFile(key)}>
+                <DropdownMenu onAction={(key) => changeExamFile(key)}>
                     {files.map((file) => (
                         <DropdownItem key={file}>{file}</DropdownItem>
                     ))}
