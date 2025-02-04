@@ -46,7 +46,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:ZigBee is an IEEE 802.15.4 wireless standard designed for creating personal-area networks. Low energy, power, and data rate requirements make Zigbee a popular protocol for connecting home automation devices.",
+        "explanation": "ZigBee is an IEEE 802.15.4 wireless standard designed for creating personal-area networks. Low energy, power, and data rate requirements make Zigbee a popular protocol for connecting home automation devices.",
         "images": null
     },
     {
@@ -69,7 +69,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explain:The OSI model network layer corresponds directly to the internet layer of the TCP/IP model and is used to describe protocols that address and route messages through an internetwork.",
+        "explanation": "The OSI model network layer corresponds directly to the internet layer of the TCP/IP model and is used to describe protocols that address and route messages through an internetwork.",
         "images": null
     },
     {
@@ -92,7 +92,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explain:A DNS server stores records that are used to resolve IP addresses to host names. Some DNS record types include the following:A – an end device IPv4 addressNS – an authoritative name serverAAAA – an end device IPv6 addressMX – a mail exchange record",
+        "explanation": "A DNS server stores records that are used to resolve IP addresses to host names. Some DNS record types include the following:A – an end device IPv4 addressNS – an authoritative name serverAAAA – an end device IPv6 addressMX – a mail exchange record",
         "images": null
     },
     {
@@ -115,7 +115,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explain:Proprietary protocols have their definition and operation controlled by one company or vendor. Some of them can be used by different organizations with permission from the owner. The TCP/IP protocol suite is an open standard, not a proprietary protocol.",
+        "explanation": "Proprietary protocols have their definition and operation controlled by one company or vendor. Some of them can be used by different organizations with permission from the owner. The TCP/IP protocol suite is an open standard, not a proprietary protocol.",
         "images": null
     },
     {
@@ -207,7 +207,7 @@
                 "is_correct": true
             }
         ],
-        "explanation": "Explanation:Peer-to-peer (P2P) networks have two or more network devices that can share resources such as printers or files without having a dedicated server.",
+        "explanation": "Peer-to-peer (P2P) networks have two or more network devices that can share resources such as printers or files without having a dedicated server.",
         "images": null
     },
     {
@@ -253,7 +253,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:QoS mechanisms enable the establishment of queue management strategies that enforce priorities for different categories of application data. Thus, this queuing enables voice data to have priority over transaction data, which has priority over web data.",
+        "explanation": "QoS mechanisms enable the establishment of queue management strategies that enforce priorities for different categories of application data. Thus, this queuing enables voice data to have priority over transaction data, which has priority over web data.",
         "images": null
     },
     {
@@ -292,7 +292,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:The TCP/IP model contains the application, transport, internet, and network access layers. A file transfer uses the FTP application layer protocol. The data would move from the application layer through all of the layers of the model and across the network to the file server.",
+        "explanation": "The TCP/IP model contains the application, transport, internet, and network access layers. A file transfer uses the FTP application layer protocol. The data would move from the application layer through all of the layers of the model and across the network to the file server.",
         "images": [
             "https://itexamanswers.net/wp-content/uploads/2016/03/i275370v1n1_275370-2.png"
         ]
@@ -300,7 +300,7 @@
     {
         "question": "14. Match the characteristic to the forwarding method. (Not all options are used.)",
         "answers": null,
-        "explanation": "Explanation:A store-and-forward switch always stores the entire frame before forwarding, and checks its CRC and frame length. A cut-through switch can forward frames before receiving the destination address field, thus presenting less latency than a store-and-forward switch. Because the frame can begin to be forwarded before it is completely received, the switch may transmit a corrupt or runt frame. All forwarding methods require a Layer 2 switch to forward broadcast frames.",
+        "explanation": "A store-and-forward switch always stores the entire frame before forwarding, and checks its CRC and frame length. A cut-through switch can forward frames before receiving the destination address field, thus presenting less latency than a store-and-forward switch. Because the frame can begin to be forwarded before it is completely received, the switch may transmit a corrupt or runt frame. All forwarding methods require a Layer 2 switch to forward broadcast frames.",
         "images": [
             "https://itexamanswers.net/wp-content/uploads/2020/01/28.png"
         ]
@@ -325,7 +325,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:The default gateway for host H1 is the router interface that is attached to the LAN that H1 is a member of. In this case, that is the G0/0 interface of R1. H1 should be configured with the IP address of that interface in its addressing settings. R1 will provide routing services to packets from H1 that need to be forwarded to remote networks.",
+        "explanation": "The default gateway for host H1 is the router interface that is attached to the LAN that H1 is a member of. In this case, that is the G0/0 interface of R1. H1 should be configured with the IP address of that interface in its addressing settings. R1 will provide routing services to packets from H1 that need to be forwarded to remote networks.",
         "images": [
             "https://itexamanswers.net/wp-content/uploads/2020/01/35.jpg"
         ]
@@ -356,7 +356,7 @@
     {
         "question": "17. Refer to the exhibit. Match the network with the correct IP address and prefix that will satisfy the usable host addressing requirements for each network.",
         "answers": null,
-        "explanation": "Explanation:Network A needs to use 192.168.0.128 /25, which yields 128 host addresses.Network B needs to use 192.168.0.0 /26, which yields 64 host addresses.Network C needs to use 192.168.0.96 /27, which yields 32 host addresses.Network D needs to use 192.168.0.80/30, which yields 4 host addresses.",
+        "explanation": "Network A needs to use 192.168.0.128 /25, which yields 128 host addresses.Network B needs to use 192.168.0.0 /26, which yields 64 host addresses.Network C needs to use 192.168.0.96 /27, which yields 32 host addresses.Network D needs to use 192.168.0.80/30, which yields 4 host addresses.",
         "images": [
             "https://itexamanswers.net/wp-content/uploads/2020/01/i304956v6n1_207918.png",
             "https://itexamanswers.net/wp-content/uploads/2020/01/CCNA1-v7-ITN-IP-Addressing-Exam-Answers-003.png"
@@ -382,7 +382,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:The table that is shown corresponds to the output of the arp -a command, a command that is used on a Windows PC to display the ARP table.",
+        "explanation": "The table that is shown corresponds to the output of the arp -a command, a command that is used on a Windows PC to display the ARP table.",
         "images": [
             "https://itexamanswers.net/wp-content/uploads/2020/01/2021-03-22_150538.jpg"
         ]
@@ -553,7 +553,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:The source port number of an application is randomly generated and used to individually keep track of each session connecting out to the Internet. Each application will use a unique source port number to provide simultaneous communication from multiple applications through the Internet.",
+        "explanation": "The source port number of an application is randomly generated and used to individually keep track of each session connecting out to the Internet. Each application will use a unique source port number to provide simultaneous communication from multiple applications through the Internet.",
         "images": null
     },
     {
@@ -582,7 +582,7 @@
     {
         "question": "28. Refer to the exhibit. Match the network with the correct IP address and prefix that will satisfy the usable host addressing requirements for each network. (Not all options are used.)",
         "answers": null,
-        "explanation": "Explanation:Network A needs to use 192.168.0.0 /25 which yields 128 host addresses.Network B needs to use 192.168.0.128 /26 which yields 64 host addresses.Network C needs to use 192.168.0.192 /27 which yields 32 host addresses.Network D needs to use 192.168.0.224 /30 which yields 4 host addresses.",
+        "explanation": "Network A needs to use 192.168.0.0 /25 which yields 128 host addresses.Network B needs to use 192.168.0.128 /26 which yields 64 host addresses.Network C needs to use 192.168.0.192 /27 which yields 32 host addresses.Network D needs to use 192.168.0.224 /30 which yields 4 host addresses.",
         "images": [
             "https://itexamanswers.net/wp-content/uploads/2016/03/i207918v1n1_207918-1-1.jpg",
             "https://itexamanswers.net/wp-content/uploads/2020/01/2021-11-07_115520.jpg"
@@ -662,26 +662,30 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explain:The source and destination port numbers are used to identify the correct application and window within that application.",
+        "explanation": "The source and destination port numbers are used to identify the correct application and window within that application.",
         "images": null
     },
     {
-        "question": "33.Refer to the exhibit. Host B on subnet Teachers transmits a packet to host D on subnet Students. Which Layer 2 and Layer 3 addresses are contained in the PDUs that are transmitted from host B to the router?Layer 2 destination address = 00-00-0c-94-36-abLayer 2 source address = 00-00-0c-94-36-bbLayer 3 destination address = 172.16.20.200Layer 3 source address = 172.16.10.200",
+        "question": "33. Refer to the exhibit. Host B on subnet Teachers transmits a packet to host D on subnet Students. Which Layer 2 and Layer 3 addresses are contained in the PDUs that are transmitted from host B to the router?",
         "answers": [
             {
-                "answer": "Layer 2 destination address = 00-00-0c-94-36-ddLayer 2 source address = 00-00-0c-94-36-bbLayer 3 destination address = 172.16.20.200Layer 3 source address = 172.16.10.200",
+                "answer": "Layer 2 destination address = 00-00-0c-94-36-ab // Layer 2 source address = 00-00-0c-94-36-bb // Layer 3 destination address = 172.16.20.200 // Layer 3 source address = 172.16.10.200",
+                "is_correct": true
+            },
+            {
+                "answer": "Layer 2 destination address = 00-00-0c-94-36-dd // Layer 2 source address = 00-00-0c-94-36-bb // Layer 3 destination address = 172.16.20.200 // Layer 3 source address = 172.16.10.200",
                 "is_correct": false
             },
             {
-                "answer": "Layer 2 destination address = 00-00-0c-94-36-cdLayer 2 source address = 00-00-0c-94-36-bbLayer 3 destination address = 172.16.20.99Layer 3 source address = 172.16.10.200",
+                "answer": "Layer 2 destination address = 00-00-0c-94-36-cd // Layer 2 source address = 00-00-0c-94-36-bb // Layer 3 destination address = 172.16.20.99L // Lyer 3 source address = 172.16.10.200",
                 "is_correct": false
             },
             {
-                "answer": "Layer 2 destination address = 00-00-0c-94-36-abLayer 2 source address = 00-00-0c-94-36-bbLayer 3 destination address = 172.16.20.200Layer 3 source address = 172.16.100.200",
+                "answer": "Layer 2 destination address = 00-00-0c-94-36-ab // Layer 2 source address = 00-00-0c-94-36-bb // Layer 3 destination address = 172.16.20.200 // Layer 3 source address = 172.16.100.200",
                 "is_correct": false
             }
         ],
-        "explanation": null,
+        "explanation": "Data is transmitted on copper cables as electrical pulses. A detector in the network interface of a destination device must receive a signal that can be successfully decoded to match the signal sent. However, the farther the signal travels, the more it deteriorates. This is referred to as signal attenuation.",
         "images": [
             "https://itexamanswers.net/wp-content/uploads/2020/01/i204796v11n1_204796-TOPOLOGY-ARP.png"
         ]
@@ -706,7 +710,7 @@
                 "is_correct": true
             }
         ],
-        "explanation": "Explanation:Data is transmitted on copper cables as electrical pulses. A detector in the network interface of a destination device must receive a signal that can be successfully decoded to match the signal sent. However, the farther the signal travels, the more it deteriorates. This is referred to as signal attenuation.",
+        "explanation": "Data is transmitted on copper cables as electrical pulses. A detector in the network interface of a destination device must receive a signal that can be successfully decoded to match the signal sent. However, the farther the signal travels, the more it deteriorates. This is referred to as signal attenuation.",
         "images": null
     },
     {
@@ -843,7 +847,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explain:The Internet Protocol (IP) is a connectionless, best effort protocol. This means that IP requires no end-to-end connection nor does it guarantee delivery of packets. IP is also media independent, which means it operates independently of the network media carrying the packets.",
+        "explanation": "The Internet Protocol (IP) is a connectionless, best effort protocol. This means that IP requires no end-to-end connection nor does it guarantee delivery of packets. IP is also media independent, which means it operates independently of the network media carrying the packets.",
         "images": null
     },
     {
@@ -874,7 +878,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:Usernames and passwords relate to network security. Good quality video, to support video conferencing, relates to prioritizing the video traffic with quality of service (QoS). The fact that a connection to an ISP failed and was then restored but went unnoticed by employees relates to the fault tolerant design of the network.",
+        "explanation": "Usernames and passwords relate to network security. Good quality video, to support video conferencing, relates to prioritizing the video traffic with quality of service (QoS). The fact that a connection to an ISP failed and was then restored but went unnoticed by employees relates to the fault tolerant design of the network.",
         "images": null
     },
     {
@@ -901,7 +905,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:When terminated improperly, each cable is a potential source of physical layer performance degradation.",
+        "explanation": "When terminated improperly, each cable is a potential source of physical layer performance degradation.",
         "images": null
     },
     {
@@ -924,7 +928,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:For the subnet of 192.168.1.64/26, there are 6 bits for host addresses, yielding 64 possible addresses. However, the first and last subnets are the network and broadcast addresses for this subnet. Therefore, the range of host addresses for this subnet is 192.168.1.65 to 192.168.1.126. The other subnets do not contain the address 192.168.1.96 as a valid host address.",
+        "explanation": "For the subnet of 192.168.1.64/26, there are 6 bits for host addresses, yielding 64 possible addresses. However, the first and last subnets are the network and broadcast addresses for this subnet. Therefore, the range of host addresses for this subnet is 192.168.1.65 to 192.168.1.126. The other subnets do not contain the address 192.168.1.96 as a valid host address.",
         "images": null
     },
     {
@@ -951,7 +955,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explain:The output displays a successful Layer 3 connection between a host computer and a host at 19.168.100.1. It can be determined that 4 hops exist between them and the average transmission time is 1 milliseconds. Layer 3 connectivity does not necessarily mean that an application can run between the hosts.",
+        "explanation": "The output displays a successful Layer 3 connection between a host computer and a host at 19.168.100.1. It can be determined that 4 hops exist between them and the average transmission time is 1 milliseconds. Layer 3 connectivity does not necessarily mean that an application can run between the hosts.",
         "images": [
             "https://itexamanswers.net/wp-content/uploads/2020/01/i275429v1n1_chapter-9-WAN-images2.jpg"
         ]
@@ -980,7 +984,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:Traffic flow patterns should be gathered during peak utilization times to get a good representation of the different traffic types. The capture should also be performed on different network segments because some traffic will be local to a particular segment.",
+        "explanation": "Traffic flow patterns should be gathered during peak utilization times to get a good representation of the different traffic types. The capture should also be performed on different network segments because some traffic will be local to a particular segment.",
         "images": null
     },
     {
@@ -1034,7 +1038,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:The TCP/IP model consists of four layers: application, transport, internet, and network access. The OSI model consists of seven layers: application, presentation, session, transport, network, data link, and physical. The top three layers of the OSI model: application, presentation, and session map to the application layer of the TCP/IP model.",
+        "explanation": "The TCP/IP model consists of four layers: application, transport, internet, and network access. The OSI model consists of seven layers: application, presentation, session, transport, network, data link, and physical. The top three layers of the OSI model: application, presentation, and session map to the application layer of the TCP/IP model.",
         "images": null
     },
     {
@@ -1057,7 +1061,7 @@
                 "is_correct": true
             }
         ],
-        "explanation": "Explanation:When PC1 forms the various headers attached to the data one of those headers is the Layer 2 header. Because PC1 connects to an Ethernet network, an Ethernet header is used. The source MAC address will be the MAC address of PC1 and the destination MAC address will be that of G0/0 on R1. When R1 gets that information, the router removes the Layer 2 header and creates a new one for the type of network the data will be placed onto (the serial link).",
+        "explanation": "When PC1 forms the various headers attached to the data one of those headers is the Layer 2 header. Because PC1 connects to an Ethernet network, an Ethernet header is used. The source MAC address will be the MAC address of PC1 and the destination MAC address will be that of G0/0 on R1. When R1 gets that information, the router removes the Layer 2 header and creates a new one for the type of network the data will be placed onto (the serial link).",
         "images": [
             "https://itexamanswers.net/wp-content/uploads/2020/01/i271152v1n1_271152.png"
         ]
@@ -1213,7 +1217,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:IMAP and POP are protocols that are used to retrieve email messages. The advantage of using IMAP instead of POP is that when the user connects to an IMAP-capable server, copies of the messages are downloaded to the client application. IMAP then stores the email messages on the server until the user manually deletes those messages.",
+        "explanation": "IMAP and POP are protocols that are used to retrieve email messages. The advantage of using IMAP instead of POP is that when the user connects to an IMAP-capable server, copies of the messages are downloaded to the client application. IMAP then stores the email messages on the server until the user manually deletes those messages.",
         "images": null
     },
     {
@@ -1236,7 +1240,7 @@
                 "is_correct": true
             }
         ],
-        "explanation": "Explain:Traceroute (tracert) is a utility that generates a list of hops that were successfully reached along the path from source to destination.This list can provide important verification and troubleshooting information. The ipconfig utility is used to display the IP configuration settings on a Windows PC. The Netstat utility is used to identify which active TCP connections are open and running on a networked host. Nslookup is a utility that allows the user to manually query the name servers to resolve a given host name. This utility can also be used to troubleshoot name resolution issues and to verify the current status of the name servers.",
+        "explanation": "Traceroute (tracert) is a utility that generates a list of hops that were successfully reached along the path from source to destination.This list can provide important verification and troubleshooting information. The ipconfig utility is used to display the IP configuration settings on a Windows PC. The Netstat utility is used to identify which active TCP connections are open and running on a networked host. Nslookup is a utility that allows the user to manually query the name servers to resolve a given host name. This utility can also be used to troubleshoot name resolution issues and to verify the current status of the name servers.",
         "images": null
     },
     {
@@ -1263,11 +1267,11 @@
                 "is_correct": true
             }
         ],
-        "explanation": null,
+        "explanation": "The data link layer is actually divided into two sublayers:+ Logical Link Control (LLC): This upper sublayer defines the software processes that provide services to the network layer protocols. It places information in the frame that identifies which network layer protocol is being used for the frame. This information allows multiple Layer 3 protocols, such as IPv4 and IPv6, to utilize the same network interface and media.+ Media Access Control (MAC): This lower sublayer defines the media access processes performed by the hardware. It provides data link layer addressing and delimiting of data according to the physical signaling requirements of the medium and the type of data link layer protocol in use.",
         "images": null
     },
     {
-        "question": "Other case:",
+        "question": "55. Which two functions are performed at the LLC sublayer of the OSI Data Link Layer to facilitate Ethernet communication? (Choose two.)",
         "answers": [
             {
                 "answer": "responsible for internal structure of Ethernet frame",
@@ -1290,11 +1294,11 @@
                 "is_correct": false
             }
         ],
-        "explanation": null,
+        "explanation": "The data link layer is actually divided into two sublayers:+ Logical Link Control (LLC): This upper sublayer defines the software processes that provide services to the network layer protocols. It places information in the frame that identifies which network layer protocol is being used for the frame. This information allows multiple Layer 3 protocols, such as IPv4 and IPv6, to utilize the same network interface and media.+ Media Access Control (MAC): This lower sublayer defines the media access processes performed by the hardware. It provides data link layer addressing and delimiting of data according to the physical signaling requirements of the medium and the type of data link layer protocol in use.",
         "images": null
     },
     {
-        "question": "Other case:",
+        "question": "55. Which two functions are performed at the LLC sublayer of the OSI Data Link Layer to facilitate Ethernet communication? (Choose two.)",
         "answers": [
             {
                 "answer": "integrates Layer 2 flows between 10 Gigabit Ethernet over fiber and 1 Gigabit Ethernet over copper",
@@ -1317,11 +1321,11 @@
                 "is_correct": false
             }
         ],
-        "explanation": null,
+        "explanation": "The data link layer is actually divided into two sublayers:+ Logical Link Control (LLC): This upper sublayer defines the software processes that provide services to the network layer protocols. It places information in the frame that identifies which network layer protocol is being used for the frame. This information allows multiple Layer 3 protocols, such as IPv4 and IPv6, to utilize the same network interface and media.+ Media Access Control (MAC): This lower sublayer defines the media access processes performed by the hardware. It provides data link layer addressing and delimiting of data according to the physical signaling requirements of the medium and the type of data link layer protocol in use.",
         "images": null
     },
     {
-        "question": "Other case:",
+        "question": "55. Which two functions are performed at the LLC sublayer of the OSI Data Link Layer to facilitate Ethernet communication? (Choose two.)",
         "answers": [
             {
                 "answer": "enables IPv4 and IPv6 to utilize the same physical medium",
@@ -1344,11 +1348,11 @@
                 "is_correct": false
             }
         ],
-        "explanation": null,
+        "explanation": "The data link layer is actually divided into two sublayers:+ Logical Link Control (LLC): This upper sublayer defines the software processes that provide services to the network layer protocols. It places information in the frame that identifies which network layer protocol is being used for the frame. This information allows multiple Layer 3 protocols, such as IPv4 and IPv6, to utilize the same network interface and media.+ Media Access Control (MAC): This lower sublayer defines the media access processes performed by the hardware. It provides data link layer addressing and delimiting of data according to the physical signaling requirements of the medium and the type of data link layer protocol in use.",
         "images": null
     },
     {
-        "question": "Other case:",
+        "question": "55. Which two functions are performed at the LLC sublayer of the OSI Data Link Layer to facilitate Ethernet communication? (Choose two.)",
         "answers": [
             {
                 "answer": "enables IPv4 and IPv6 to utilize the same physical medium",
@@ -1371,7 +1375,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:The data link layer is actually divided into two sublayers:+ Logical Link Control (LLC): This upper sublayer defines the software processes that provide services to the network layer protocols. It places information in the frame that identifies which network layer protocol is being used for the frame. This information allows multiple Layer 3 protocols, such as IPv4 and IPv6, to utilize the same network interface and media.+ Media Access Control (MAC): This lower sublayer defines the media access processes performed by the hardware. It provides data link layer addressing and delimiting of data according to the physical signaling requirements of the medium and the type of data link layer protocol in use.",
+        "explanation": "The data link layer is actually divided into two sublayers:+ Logical Link Control (LLC): This upper sublayer defines the software processes that provide services to the network layer protocols. It places information in the frame that identifies which network layer protocol is being used for the frame. This information allows multiple Layer 3 protocols, such as IPv4 and IPv6, to utilize the same network interface and media.+ Media Access Control (MAC): This lower sublayer defines the media access processes performed by the hardware. It provides data link layer addressing and delimiting of data according to the physical signaling requirements of the medium and the type of data link layer protocol in use.",
         "images": null
     },
     {
@@ -1394,7 +1398,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:A default gateway address is typically configured on all devices to allow them to communicate beyond just their local network.In a switch this is achieved using the command ip default-gateway <ip address>.",
+        "explanation": "A default gateway address is typically configured on all devices to allow them to communicate beyond just their local network.In a switch this is achieved using the command ip default-gateway <ip address>.",
         "images": null
     },
     {
@@ -1417,7 +1421,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:Thetransport input sshcommand when entered on the switch vty (virtual terminal lines) will encrypt all inbound controlled telnet connections.",
+        "explanation": "Thetransport input sshcommand when entered on the switch vty (virtual terminal lines) will encrypt all inbound controlled telnet connections.",
         "images": null
     },
     {
@@ -1448,7 +1452,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:A reconnaissance attack is the unauthorized discovery and documentation of various computing networks, network systems, resources, applications, services, or vulnerabilities.",
+        "explanation": "A reconnaissance attack is the unauthorized discovery and documentation of various computing networks, network systems, resources, applications, services, or vulnerabilities.",
         "images": null
     },
     {
@@ -1521,7 +1525,7 @@
                 "is_correct": true
             }
         ],
-        "explanation": "Explanation:ARP requests are sent as broadcasts:(1) All nodes will receive them, and they will be processed by software, interrupting the CPU.(2) The switch forwards (floods) Layer 2 broadcasts to all ports.A switch does not change its MAC table based on ARP request or reply messages. The switch populates the MAC table using the source MAC address of all frames. The ARP payload is very small and does not overload the switch.",
+        "explanation": "ARP requests are sent as broadcasts:(1) All nodes will receive them, and they will be processed by software, interrupting the CPU.(2) The switch forwards (floods) Layer 2 broadcasts to all ports.A switch does not change its MAC table based on ARP request or reply messages. The switch populates the MAC table using the source MAC address of all frames. The ARP payload is very small and does not overload the switch.",
         "images": null
     },
     {
@@ -1579,7 +1583,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:A router receives a packet on an interface and looks at the destination IP address. It consults its routing table and matches the destination IP address to a routing table entry. The router then discovers that it has to send the packet to the next-hop address or out to a directly connected interface. When the destination address is on a directly connected interface, the packet is switched over to that interface.",
+        "explanation": "A router receives a packet on an interface and looks at the destination IP address. It consults its routing table and matches the destination IP address to a routing table entry. The router then discovers that it has to send the packet to the next-hop address or out to a directly connected interface. When the destination address is on a directly connected interface, the packet is switched over to that interface.",
         "images": null
     },
     {
@@ -1656,7 +1660,7 @@
                 "is_correct": true
             }
         ],
-        "explanation": "Explanation:A cybersecurity specialist must be aware of the technologies and measures that are used as countermeasures to protect the organization from threats and vulnerabilities.",
+        "explanation": "A cybersecurity specialist must be aware of the technologies and measures that are used as countermeasures to protect the organization from threats and vulnerabilities.",
         "images": null
     },
     {
@@ -1679,7 +1683,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:A Trojan horse is software that does something harmful, but is hidden in legitimate software code. A denial of service (DoS) attack results in interruption of network services to users, network devices, or applications. A brute-force attack commonly involves trying to access a network device. A buffer overflow occurs when a program attempts to store more data in a memory location than it can hold.",
+        "explanation": "A Trojan horse is software that does something harmful, but is hidden in legitimate software code. A denial of service (DoS) attack results in interruption of network services to users, network devices, or applications. A brute-force attack commonly involves trying to access a network device. A buffer overflow occurs when a program attempts to store more data in a memory location than it can hold.",
         "images": null
     },
     {
@@ -2037,7 +2041,7 @@
                 "is_correct": true
             }
         ],
-        "explanation": "Explanation:FF02::2 identifies all IPv6 routers that exist on the link or network. FF02::1 is the target for all IPv6 enabled devices on the link or network.​",
+        "explanation": "FF02::2 identifies all IPv6 routers that exist on the link or network. FF02::1 is the target for all IPv6 enabled devices on the link or network.​",
         "images": null
     },
     {
@@ -2064,7 +2068,7 @@
                 "is_correct": true
             }
         ],
-        "explanation": "Explanation:The general format for IPv6 global unicast addresses includes a global routing prefix, a subnet ID, and an interface ID. The global routing prefix is the network portion of the address. A typical global routing prefix is /48 assigned by the Internet provider. The subnet ID portion can be used by an organization to create multiple subnetwork numbers. The interface ID is similar to the host portion of an IPv4 address.",
+        "explanation": "The general format for IPv6 global unicast addresses includes a global routing prefix, a subnet ID, and an interface ID. The global routing prefix is the network portion of the address. A typical global routing prefix is /48 assigned by the Internet provider. The subnet ID portion can be used by an organization to create multiple subnetwork numbers. The interface ID is similar to the host portion of an IPv4 address.",
         "images": null
     },
     {
@@ -2095,7 +2099,7 @@
                 "is_correct": true
             }
         ],
-        "explanation": "Explanation:The three areas of concern for wireless networks focus on the size of the coverage area, any nearby interference, and providing network security. Extensive cabling is not a concern for wireless networks, as a wireless network will require minimal cabling for providing wireless access to hosts. Mobility options are not a component of the areas of concern for wireless networks.",
+        "explanation": "The three areas of concern for wireless networks focus on the size of the coverage area, any nearby interference, and providing network security. Extensive cabling is not a concern for wireless networks, as a wireless network will require minimal cabling for providing wireless access to hosts. Mobility options are not a component of the areas of concern for wireless networks.",
         "images": null
     },
     {
@@ -2191,7 +2195,7 @@
                 "is_correct": true
             }
         ],
-        "explanation": "Explanation:The TCP sliding window allows a destination device to inform a source to slow down the rate of transmission. To do this, the destination device reduces the value contained in the window field of the segment. It is acknowledgment numbers that are used to specify retransmission from a specific point forward. It is sequence numbers that are used to ensure segments arrive in order. Finally, it is a FIN control bit that is used to end a communication session.",
+        "explanation": "The TCP sliding window allows a destination device to inform a source to slow down the rate of transmission. To do this, the destination device reduces the value contained in the window field of the segment. It is acknowledgment numbers that are used to specify retransmission from a specific point forward. It is sequence numbers that are used to ensure segments arrive in order. Finally, it is a FIN control bit that is used to end a communication session.",
         "images": null
     },
     {
@@ -2260,7 +2264,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explain:Link-local addresses are in the range of FE80::/10 to FEBF::/10. The original IPv6 specification defined site-local addresses and used the prefix range FEC0::/10, but these addresses were deprecated by the IETF in favor of unique local addresses. FDEE::/7 is a unique local address because it is in the range of FC00::/7 to FDFF::/7. IPv6 multicast addresses have the prefix FF00::/8.",
+        "explanation": "Link-local addresses are in the range of FE80::/10 to FEBF::/10. The original IPv6 specification defined site-local addresses and used the prefix range FEC0::/10, but these addresses were deprecated by the IETF in favor of unique local addresses. FDEE::/7 is a unique local address because it is in the range of FC00::/7 to FDFF::/7. IPv6 multicast addresses have the prefix FF00::/8.",
         "images": null
     },
     {
@@ -2341,7 +2345,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:Network Address Translation (NAT) is a technology that is implemented within IPv4 networks. One application of NAT is to use private IP addresses inside a network and use NAT to share a few public IP addresses for many internal hosts. In this way it provides a solution to slow down the IPv4 address depletion. However, since NAT hides the actual IP addresses that are used by end devices, it may cause problems for some applications that require end-to-end connectivity.",
+        "explanation": "Network Address Translation (NAT) is a technology that is implemented within IPv4 networks. One application of NAT is to use private IP addresses inside a network and use NAT to share a few public IP addresses for many internal hosts. In this way it provides a solution to slow down the IPv4 address depletion. However, since NAT hides the actual IP addresses that are used by end devices, it may cause problems for some applications that require end-to-end connectivity.",
         "images": null
     },
     {
@@ -2364,7 +2368,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:To derive the EUI-64 interface ID by using the MAC address 1C-6F-65-C2-BD-F8, three steps are taken.Change the seventh bit of the MAC address from a binary 0 to a binary 1 which changes the hex C, into a hex E.Insert hex digits FFFE into the middle of the address.Rewrite the address in IPv6 format.The three steps, when complete, give the interface ID of1E6F:65FF:FEC2:BDF8.",
+        "explanation": "To derive the EUI-64 interface ID by using the MAC address 1C-6F-65-C2-BD-F8, three steps are taken.Change the seventh bit of the MAC address from a binary 0 to a binary 1 which changes the hex C, into a hex E.Insert hex digits FFFE into the middle of the address.Rewrite the address in IPv6 format.The three steps, when complete, give the interface ID of1E6F:65FF:FEC2:BDF8.",
         "images": null
     },
     {
@@ -2391,7 +2395,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explain:When a network device wants to communicate with another device on the same network, it sends a broadcast ARP request. In this case, the request will contain the IP address of PC2. The destination device (PC2) sends an ARP reply with its MAC address.",
+        "explanation": "When a network device wants to communicate with another device on the same network, it sends a broadcast ARP request. In this case, the request will contain the IP address of PC2. The destination device (PC2) sends an ARP reply with its MAC address.",
         "images": [
             "https://itexamanswers.net/wp-content/uploads/2016/03/i209824v1n1_209824.jpg"
         ]
@@ -2485,7 +2489,7 @@
                 "is_correct": true
             }
         ],
-        "explanation": "Explanation: Peer-to-peer networks do not require the use of a dedicated server, and devices can assume both client and server roles simultaneously on a per request basis. Because they do not require formalized accounts or permissions, they are best used in limited situations. Peer-to-peer applications require a user interface and background service to be running, and can be used in more diverse situations.",
+        "explanation": " Peer-to-peer networks do not require the use of a dedicated server, and devices can assume both client and server roles simultaneously on a per request basis. Because they do not require formalized accounts or permissions, they are best used in limited situations. Peer-to-peer applications require a user interface and background service to be running, and can be used in more diverse situations.",
         "images": [
             "https://itexamanswers.net/wp-content/uploads/2020/01/2022-05-12_101113.jpg"
         ]
@@ -2545,7 +2549,7 @@
                 "is_correct": true
             }
         ],
-        "explanation": "Explain:Vlan1 is the default SVI. Because an SVI has been configured, the switch can be configured and managed remotely. FastEthernet0/0 is showing up and up, so a device is connected.",
+        "explanation": "Vlan1 is the default SVI. Because an SVI has been configured, the switch can be configured and managed remotely. FastEthernet0/0 is showing up and up, so a device is connected.",
         "images": [
             "https://itexamanswers.net/wp-content/uploads/2016/03/i274067v1n1_274067.jpg"
         ]
@@ -2584,7 +2588,7 @@
     {
         "question": "101. Match the firewall function to the type of threat protection it provides to the network. (Not all options are used.)",
         "answers": null,
-        "explanation": "Explain:Firewall products come packaged in various forms. These products use different techniques for determining what will be permitted or denied access to a network. They include the following:+ Packet filtering – Prevents or allows access based on IP or MAC addresses+ Application filtering – Prevents or allows access by specific application types based on port numbers+ URL filtering – Prevents or allows access to websites based on specific URLs or keywords+ Stateful packet inspection (SPI) – Incoming packets must be legitimate responses to requests from internal hosts. Unsolicited packets are blocked unless permitted specifically. SPI can also include the capability to recognize and filter out specific types of attacks, such as denial of service (DoS)",
+        "explanation": "Firewall products come packaged in various forms. These products use different techniques for determining what will be permitted or denied access to a network. They include the following:+ Packet filtering – Prevents or allows access based on IP or MAC addresses+ Application filtering – Prevents or allows access by specific application types based on port numbers+ URL filtering – Prevents or allows access to websites based on specific URLs or keywords+ Stateful packet inspection (SPI) – Incoming packets must be legitimate responses to requests from internal hosts. Unsolicited packets are blocked unless permitted specifically. SPI can also include the capability to recognize and filter out specific types of attacks, such as denial of service (DoS)",
         "images": [
             "https://itexamanswers.net/wp-content/uploads/2020/01/18.jpg"
         ]
@@ -2598,7 +2602,7 @@
             },
             {
                 "answer": "the network performance baseline",
-                "is_correct": false
+                "is_correct": true
             },
             {
                 "answer": "debug output and packet captures",
@@ -2632,7 +2636,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explain:The service password-encryption command encrypts plaintext passwords in the configuration file so that they cannot be viewed by unauthorized users.",
+        "explanation": "The service password-encryption command encrypts plaintext passwords in the configuration file so that they cannot be viewed by unauthorized users.",
         "images": null
     },
     {
@@ -2659,7 +2663,7 @@
                 "is_correct": true
             }
         ],
-        "explanation": "Explanation:The IPv6 packet header fields are as follows: Version, Traffic Class, Flow Label, Payload Length, Next Header, Hop Limit, Source Address, and Destination Address. The IPv4 packet header fields include the following: Version, Differentiated Services, Time-to-Live, Protocol, Source IP Address, and Destination IP Address. Both versions have a 4-bit Version field. Both versions have a Source (IP) Address field. IPv4 addresses are 32 bits; IPv6 addresses are 128 bits. The Time-to-Live or TTL field in IPv4 is now called Hop Limit in IPv6, but this field serves the same purpose in both versions. The value in this 8-bit field decrements each time a packet passes through any router. When this value is 0, the packet is discarded and is not forwarded to any other router.",
+        "explanation": "The IPv6 packet header fields are as follows: Version, Traffic Class, Flow Label, Payload Length, Next Header, Hop Limit, Source Address, and Destination Address. The IPv4 packet header fields include the following: Version, Differentiated Services, Time-to-Live, Protocol, Source IP Address, and Destination IP Address. Both versions have a 4-bit Version field. Both versions have a Source (IP) Address field. IPv4 addresses are 32 bits; IPv6 addresses are 128 bits. The Time-to-Live or TTL field in IPv4 is now called Hop Limit in IPv6, but this field serves the same purpose in both versions. The value in this 8-bit field decrements each time a packet passes through any router. When this value is 0, the packet is discarded and is not forwarded to any other router.",
         "images": null
     },
     {
@@ -2790,7 +2794,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:When a cable to an RJ-45 connector is terminated, it is important to ensure that the untwisted wires are not too long and that the flexible plastic sheath surrounding the wires is crimped down and not the bare wires. None of the colored wires should be visible from the bottom of the jack.",
+        "explanation": "When a cable to an RJ-45 connector is terminated, it is important to ensure that the untwisted wires are not too long and that the flexible plastic sheath surrounding the wires is crimped down and not the bare wires. None of the colored wires should be visible from the bottom of the jack.",
         "images": [
             "https://itexamanswers.net/wp-content/uploads/2020/01/i274300v1n1_209630-300x221-1.png"
         ]
@@ -2854,7 +2858,7 @@
                 "is_correct": true
             }
         ],
-        "explanation": "Explain:Both TCP and UDP use source and destination port numbers to distinguish different data streams and to forward the right data segments to the right applications. Error checking the header and data is done by both protocols by using a checksum calculation to determine the integrity of the data that is received. TCP is connection-oriented and uses a 3-way handshake to establish an initial connection. TCP also uses window to regulate the amount of traffic sent before receiving an acknowledgment. UDP is connectionless and is the best protocol for carry digitized VoIP signals.",
+        "explanation": "Both TCP and UDP use source and destination port numbers to distinguish different data streams and to forward the right data segments to the right applications. Error checking the header and data is done by both protocols by using a checksum calculation to determine the integrity of the data that is received. TCP is connection-oriented and uses a 3-way handshake to establish an initial connection. TCP also uses window to regulate the amount of traffic sent before receiving an acknowledgment. UDP is connectionless and is the best protocol for carry digitized VoIP signals.",
         "images": null
     },
     {
@@ -2885,7 +2889,7 @@
                 "is_correct": true
             }
         ],
-        "explanation": "Explanation:Addresses 10.18.10.0 through 10.18.10.63 are taken for the leftmost network. Addresses 192 through 199 are used by the center network. Because 4 host bits are needed to accommodate 10 hosts, a /28 mask is needed. 10.18.10.200/28 is not a valid network number. Two subnets that can be used are 10.18.10.208/28 and 10.18.10.224/28.",
+        "explanation": "Addresses 10.18.10.0 through 10.18.10.63 are taken for the leftmost network. Addresses 192 through 199 are used by the center network. Because 4 host bits are needed to accommodate 10 hosts, a /28 mask is needed. 10.18.10.200/28 is not a valid network number. Two subnets that can be used are 10.18.10.208/28 and 10.18.10.224/28.",
         "images": [
             "https://itexamanswers.net/wp-content/uploads/2020/01/i274518v1n1_247518.png"
         ]
@@ -2983,7 +2987,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:To help prevent the effects of crosstalk, UTP cable wires are twisted together into pairs. Twisting the wires together causes the magnetic fields of each wire to cancel each other out.",
+        "explanation": "To help prevent the effects of crosstalk, UTP cable wires are twisted together into pairs. Twisting the wires together causes the magnetic fields of each wire to cancel each other out.",
         "images": null
     },
     {
@@ -3010,7 +3014,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explain:Using a /29 prefix to subnet 192.168.10.0 results in subnets that increment by 8:192.168.10.0 (1)192.168.10.8 (2)192.168.10.16 (3)192.168.10.24 (4)192.168.10.32 (5)",
+        "explanation": "Using a /29 prefix to subnet 192.168.10.0 results in subnets that increment by 8:192.168.10.0 (1)192.168.10.8 (2)192.168.10.16 (3)192.168.10.24 (4)192.168.10.32 (5)",
         "images": [
             "https://itexamanswers.net/wp-content/uploads/2017/05/i209840v1n3_209840.jpg"
         ]
@@ -3043,7 +3047,7 @@
                 "is_correct": true
             }
         ],
-        "explanation": "Explain:Since host A does not have the MAC address of the default gateway in its ARP table, host A sends an ARP broadcast. The ARP broadcast would be sent to every device on the local network. Hosts B, C, and router R1 would receive the broadcast. Router R1 would not forward the message.",
+        "explanation": "Since host A does not have the MAC address of the default gateway in its ARP table, host A sends an ARP broadcast. The ARP broadcast would be sent to every device on the local network. Hosts B, C, and router R1 would receive the broadcast. Router R1 would not forward the message.",
         "images": [
             "https://itexamanswers.net/wp-content/uploads/2016/03/i275353v1n1_275353.jpg"
         ]
@@ -3153,7 +3157,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:IPS – An intrusion prevention system (IPS) monitors incoming and outgoing traffic looking for malware, network attack signatures, and more. If it recognizes a threat, it can immediately stop it.",
+        "explanation": "IPS – An intrusion prevention system (IPS) monitors incoming and outgoing traffic looking for malware, network attack signatures, and more. If it recognizes a threat, it can immediately stop it.",
         "images": null
     },
     {
@@ -3215,7 +3219,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:Because host A does not have the MAC address of the default gateway in the ARP table, host A sends an ARP broadcast. The ARP broadcast would be sent to every device on the local network. Hosts B, C, and router R1 would receive the broadcast. Router R1 would not forward the message.",
+        "explanation": "Because host A does not have the MAC address of the default gateway in the ARP table, host A sends an ARP broadcast. The ARP broadcast would be sent to every device on the local network. Hosts B, C, and router R1 would receive the broadcast. Router R1 would not forward the message.",
         "images": [
             "https://itexamanswers.net/wp-content/uploads/2020/12/i360201v3n1_275353-1608482322.6606.png"
         ]
@@ -3240,7 +3244,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:Zigbee is a specification used for low-data rate, low-power communications. It is intended for applications that require short-range, low data-rates and long battery life. Zigbee is typically used for industrial and Internet of Things (IoT) environments such as wireless light switches and medical device data collection.",
+        "explanation": "Zigbee is a specification used for low-data rate, low-power communications. It is intended for applications that require short-range, low data-rates and long battery life. Zigbee is typically used for industrial and Internet of Things (IoT) environments such as wireless light switches and medical device data collection.",
         "images": null
     },
     {
@@ -3367,7 +3371,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:In order to accommodate 40 devices, 6 host bits are needed. With 6 bits, 64 addresses are possible, but one address is for the subnet number and one address is for a broadcast. This leaves 62 addresses that can be assigned to network devices. The mask associated with leaving 6 host bits for addressing is 255.255.255.192.",
+        "explanation": "In order to accommodate 40 devices, 6 host bits are needed. With 6 bits, 64 addresses are possible, but one address is for the subnet number and one address is for a broadcast. This leaves 62 addresses that can be assigned to network devices. The mask associated with leaving 6 host bits for addressing is 255.255.255.192.",
         "images": null
     },
     {
@@ -3398,7 +3402,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explain:When a host sends information to a distant network, the Layer 2 frame header will contain a source and destination MAC address. The source address will be the originating host device. The destination address will be the router interface that connects to the same network. In the case of host A sending information to host B, the source address is AA:AA:AA:AA:AA:AA and the destination address is the MAC address assigned to the R2 Ethernet interface, BB:BB:BB:BB:BB:BB.",
+        "explanation": "When a host sends information to a distant network, the Layer 2 frame header will contain a source and destination MAC address. The source address will be the originating host device. The destination address will be the router interface that connects to the same network. In the case of host A sending information to host B, the source address is AA:AA:AA:AA:AA:AA and the destination address is the MAC address assigned to the R2 Ethernet interface, BB:BB:BB:BB:BB:BB.",
         "images": [
             "https://itexamanswers.net/wp-content/uploads/2020/01/i274590v1n1_274590.png"
         ]
@@ -3423,7 +3427,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:Cloud computing extends IT’s capabilities without requiring investment in new infrastructure, training new personnel, or licensing new software. These services are available on-demand and delivered economically to any device anywhere in the world without compromising security or function. BYOD is about end users having the freedom to use personal tools to access information and communicate across a business or campus network. Smart home technology is integrated into every-day appliances allowing them to interconnect with other devices, making them more ‘smart’ or automated. Powerline networking is a trend for home networking that uses existing electrical wiring to connect devices to the network wherever there is an electrical outlet, saving the cost of installing data cables.",
+        "explanation": "Cloud computing extends IT’s capabilities without requiring investment in new infrastructure, training new personnel, or licensing new software. These services are available on-demand and delivered economically to any device anywhere in the world without compromising security or function. BYOD is about end users having the freedom to use personal tools to access information and communicate across a business or campus network. Smart home technology is integrated into every-day appliances allowing them to interconnect with other devices, making them more ‘smart’ or automated. Powerline networking is a trend for home networking that uses existing electrical wiring to connect devices to the network wherever there is an electrical outlet, saving the cost of installing data cables.",
         "images": null
     },
     {
@@ -3504,7 +3508,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:The Carrier Sense Multiple Access/Collision Detection (CSMA/CD) process is a contention-based media access control mechanism used on shared media access networks, such as Ethernet. When a device needs to transmit data, it listens and waits until the media is available (quiet), then it will send data. If two devices transmit at the same time, a collision will occur. Both devices will detect the collision on the network. When a device detects a collision, it will stop the data transmission process, wait for a random amount of time, then try again.",
+        "explanation": "The Carrier Sense Multiple Access/Collision Detection (CSMA/CD) process is a contention-based media access control mechanism used on shared media access networks, such as Ethernet. When a device needs to transmit data, it listens and waits until the media is available (quiet), then it will send data. If two devices transmit at the same time, a collision will occur. Both devices will detect the collision on the network. When a device detects a collision, it will stop the data transmission process, wait for a random amount of time, then try again.",
         "images": null
     },
     {
@@ -3527,7 +3531,7 @@
                 "is_correct": true
             }
         ],
-        "explanation": "Explain:The show startup-config command displays the saved configuration located in NVRAM. The show running-config command displays the contents of the currently running configuration file located in RAM.​",
+        "explanation": "The show startup-config command displays the saved configuration located in NVRAM. The show running-config command displays the contents of the currently running configuration file located in RAM.​",
         "images": null
     },
     {
@@ -3554,7 +3558,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explain:On a Windows host, the route print or netstat -r commands can be used to display the host routing table. Both commands generate the same output. On a router, the show ip route command is used to display the routing table. The netstat –s command is used to display per-protocol statistics. The tracert command is used to display the path that a packet travels to its destination.",
+        "explanation": "On a Windows host, the route print or netstat -r commands can be used to display the host routing table. Both commands generate the same output. On a router, the show ip route command is used to display the routing table. The netstat –s command is used to display per-protocol statistics. The tracert command is used to display the path that a packet travels to its destination.",
         "images": null
     },
     {
@@ -3581,7 +3585,7 @@
                 "is_correct": true
             }
         ],
-        "explanation": "Explanation:The network layer is primarily concerned with passing data from a source to a destination on another network. IP addresses supply unique identifiers for the source and destination. The network layer provides connectionless, best-effort delivery. Devices rely on higher layers to supply services to processes.",
+        "explanation": "The network layer is primarily concerned with passing data from a source to a destination on another network. IP addresses supply unique identifiers for the source and destination. The network layer provides connectionless, best-effort delivery. Devices rely on higher layers to supply services to processes.",
         "images": null
     },
     {
@@ -3612,11 +3616,11 @@
                 "is_correct": true
             }
         ],
-        "explanation": null,
+        "explanation": "Theshow ip routecommand is used to display the routing table of the router. In IPv4, directly connected interfaces will have one source code:C. The routing table stores information about directly connected routes and remote routes. An entry in the routing table with a source code ofSis included if a default static route is configured on the router.",
         "images": null
     },
     {
-        "question": "Other case:",
+        "question": "142. Which two statements describe features of an IPv4 routing table on a router? (Choose two.)​",
         "answers": [
             {
                 "answer": "The netstat -r command can be used to display the routing table of a router.​",
@@ -3624,7 +3628,7 @@
             },
             {
                 "answer": "The routing table stores information about routes derived from the active router interfaces.",
-                "is_correct": false
+                "is_correct": true
             },
             {
                 "answer": "The routing table lists the MAC addresses of each active interface.",
@@ -3636,10 +3640,10 @@
             },
             {
                 "answer": "If a default static route is configured in the router, an entry will be included in the routing table with source code S",
-                "is_correct": false
+                "is_correct": true
             }
         ],
-        "explanation": "Explanation:Theshow ip routecommand is used to display the routing table of the router. In IPv4, directly connected interfaces will have one source code:C. The routing table stores information about directly connected routes and remote routes. An entry in the routing table with a source code ofSis included if a default static route is configured on the router.",
+        "explanation": "Theshow ip routecommand is used to display the routing table of the router. In IPv4, directly connected interfaces will have one source code:C. The routing table stores information about directly connected routes and remote routes. An entry in the routing table with a source code ofSis included if a default static route is configured on the router.",
         "images": null
     },
     {
@@ -3685,7 +3689,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:A switch, as a Layer 2 device, does not need an IP address to transmit frames to attached devices. However, when a switch is accessed remotely through the network, it must have a Layer 3 address. The IP address must be applied to a virtual interface rather than to a physical interface. Routers, not switches, function as default gateways.",
+        "explanation": "A switch, as a Layer 2 device, does not need an IP address to transmit frames to attached devices. However, when a switch is accessed remotely through the network, it must have a Layer 3 address. The IP address must be applied to a virtual interface rather than to a physical interface. Routers, not switches, function as default gateways.",
         "images": null
     },
     {
@@ -3716,7 +3720,7 @@
                 "is_correct": true
             }
         ],
-        "explanation": "Explanation:A frame is encapsulated with source and destination MAC addresses. The source device will not know the MAC address of the remote host. An ARP request will be sent by the source and will be responded to by the router. The router will respond with the MAC address of its interface, the one which is connected to the same network as the source.",
+        "explanation": "A frame is encapsulated with source and destination MAC addresses. The source device will not know the MAC address of the remote host. An ARP request will be sent by the source and will be responded to by the router. The router will respond with the MAC address of its interface, the one which is connected to the same network as the source.",
         "images": null
     },
     {
@@ -3739,7 +3743,7 @@
                 "is_correct": true
             }
         ],
-        "explanation": "Explain:A monopoly by one company is not a good idea from a user point of view. If a protocol can only be run on one brand, it makes it difficult to have mixed equipment in a network. A proprietary protocol is not free to use. An open standard protocol will in general be implemented by a wide range of vendors.",
+        "explanation": "A monopoly by one company is not a good idea from a user point of view. If a protocol can only be run on one brand, it makes it difficult to have mixed equipment in a network. A proprietary protocol is not free to use. An open standard protocol will in general be implemented by a wide range of vendors.",
         "images": null
     },
     {
@@ -3770,7 +3774,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:Layer 4 port numbers identify the application or service which will handle the data. The source port number is added by the sending device and will be the destination port number when the requested information is returned. Layer 4 segments are encapsulated within IP packets. UDP, not TCP, is used when low overhead is needed. A source IP address, not a TCP source port number, identifies the sending host on the network. Destination port numbers are specific ports that a server application or service monitors for requests.",
+        "explanation": "Layer 4 port numbers identify the application or service which will handle the data. The source port number is added by the sending device and will be the destination port number when the requested information is returned. Layer 4 segments are encapsulated within IP packets. UDP, not TCP, is used when low overhead is needed. A source IP address, not a TCP source port number, identifies the sending host on the network. Destination port numbers are specific ports that a server application or service monitors for requests.",
         "images": null
     },
     {
@@ -3805,7 +3809,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:The largest subnet in the topology has 100 hosts in it so the subnet mask must have at least 7 host bits in it (27-2=126). 255.255.255.0 has 8 hosts bits, but this does not meet the requirement of providing the maximum number of subnets.",
+        "explanation": "The largest subnet in the topology has 100 hosts in it so the subnet mask must have at least 7 host bits in it (27-2=126). 255.255.255.0 has 8 hosts bits, but this does not meet the requirement of providing the maximum number of subnets.",
         "images": [
             "https://itexamanswers.net/wp-content/uploads/2020/01/i207609v1n1_207609.png"
         ]
@@ -3830,7 +3834,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explain:If the same mask is to be used, then the network with the most hosts must be examined for number of hosts. Because this is 10 hosts, 4 host bits are needed. The /28 or 255.255.255.240 subnet mask would be appropriate to use for these networks. ​",
+        "explanation": "If the same mask is to be used, then the network with the most hosts must be examined for number of hosts. Because this is 10 hosts, 4 host bits are needed. The /28 or 255.255.255.240 subnet mask would be appropriate to use for these networks. ​",
         "images": null
     },
     {
@@ -3869,7 +3873,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:The command show ip interface brief shows the IP address of each interface, as well as the operational status of the interfaces at both Layer 1 and Layer 2. In order to see interface descriptions and speed and duplex settings, use the command show running-config interface. Next-hop addresses are displayed in the routing table with the command show ip route, and the MAC address of an interface can be seen with the command show interfaces.",
+        "explanation": "The command show ip interface brief shows the IP address of each interface, as well as the operational status of the interfaces at both Layer 1 and Layer 2. In order to see interface descriptions and speed and duplex settings, use the command show running-config interface. Next-hop addresses are displayed in the routing table with the command show ip route, and the MAC address of an interface can be seen with the command show interfaces.",
         "images": null
     },
     {
@@ -3892,7 +3896,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:The Command Prompt command tracert will map the path from the PC to the web server and measure transit delays of packets across the network.",
+        "explanation": "The Command Prompt command tracert will map the path from the PC to the web server and measure transit delays of packets across the network.",
         "images": null
     },
     {
@@ -3915,7 +3919,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:When a router receives a packet, the router will decrement the Time-to-Live (TTL) field by one. When the field reaches zero, the receiving router will discard the packet and will send an ICMP Time Exceeded message to the sender.",
+        "explanation": "When a router receives a packet, the router will decrement the Time-to-Live (TTL) field by one. When the field reaches zero, the receiving router will discard the packet and will send an ICMP Time Exceeded message to the sender.",
         "images": null
     },
     {
@@ -3942,7 +3946,7 @@
                 "is_correct": true
             }
         ],
-        "explanation": "Explanation:Fiber optic media is more expensive than copper cabling used over the same distance. Fiber optic cables use light instead of an electrical signal, so EMI and RFI are not issues. However, fiber optic does require different skills to terminate and splice.",
+        "explanation": "Fiber optic media is more expensive than copper cabling used over the same distance. Fiber optic cables use light instead of an electrical signal, so EMI and RFI are not issues. However, fiber optic does require different skills to terminate and splice.",
         "images": null
     },
     {
@@ -3977,7 +3981,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explain:When a router receives a traceroute packet, the value in the TTL field is decremented by 1. When the value in the field reaches zero, the receiving router will not forward the packet, and will send an ICMP Time Exceeded message back to the source.",
+        "explanation": "When a router receives a traceroute packet, the value in the TTL field is decremented by 1. When the value in the field reaches zero, the receiving router will not forward the packet, and will send an ICMP Time Exceeded message back to the source.",
         "images": null
     },
     {
@@ -4000,7 +4004,7 @@
                 "is_correct": false
             }
         ],
-        "explanation": "Explanation:A cybersecurity specialist needs to be familiar with the characteristics of the different types of malware and attacks that threaten an organization.",
+        "explanation": "A cybersecurity specialist needs to be familiar with the characteristics of the different types of malware and attacks that threaten an organization.",
         "images": null
     }
 ]
