@@ -492,7 +492,7 @@
         "answers": [
             {
                 "answer": "malicious software or code running on an end device",
-                "is_correct": false
+                "is_correct": true
             },
             {
                 "answer": "an attack that slows or crashes a device or network service",
@@ -523,7 +523,7 @@
             },
             {
                 "answer": "Uses encryption to secure the exchange of text, graphic images, sound, and video on the web.",
-                "is_correct": false
+                "is_correct": true
             },
             {
                 "answer": "Allows remote access to network devices and servers.",
@@ -855,11 +855,11 @@
         "answers": [
             {
                 "answer": "security",
-                "is_correct": false
+                "is_correct": true
             },
             {
                 "answer": "quality of service",
-                "is_correct": false
+                "is_correct": true
             },
             {
                 "answer": "scalability",
@@ -875,7 +875,7 @@
             },
             {
                 "answer": "fault tolerance",
-                "is_correct": false
+                "is_correct": true
             }
         ],
         "explanation": "Usernames and passwords relate to network security. Good quality video, to support video conferencing, relates to prioritizing the video traffic with quality of service (QoS). The fact that a connection to an ISP failed and was then restored but went unnoticed by employees relates to the fault tolerant design of the network.",
@@ -886,7 +886,7 @@
         "answers": [
             {
                 "answer": "improper termination",
-                "is_correct": false
+                "is_correct": true
             },
             {
                 "answer": "low-quality shielding in cable",
@@ -898,7 +898,7 @@
             },
             {
                 "answer": "low-quality cable or connectors",
-                "is_correct": false
+                "is_correct": true
             },
             {
                 "answer": "loss of light over long distances",
@@ -1895,7 +1895,7 @@
             },
             {
                 "answer": "implements trailer with frame check sequence for error detection",
-                "is_correct": false
+                "is_correct": true
             },
             {
                 "answer": "places information in the Ethernet frame that identifies which network layer protocol is being encapsulated by the frame",
@@ -1903,7 +1903,7 @@
             },
             {
                 "answer": "implements a process to delimit fields within an Ethernet 2 frame",
-                "is_correct": false
+                "is_correct": true
             },
             {
                 "answer": "adds Ethernet control information to network protocol data",
@@ -1914,7 +1914,7 @@
         "images": null
     },
     {
-        "question": "Case 2:",
+        "question": "77. Which two functions are performed at the MAC sublayer of the OSI Data Link Layer to facilitate Ethernet communication? (Choose two.)",
         "answers": [
             {
                 "answer": "places information in the Ethernet frame that identifies which network layer protocol is being encapsulated by the frame",
@@ -1926,7 +1926,7 @@
             },
             {
                 "answer": "responsible for internal structure of Ethernet frame",
-                "is_correct": false
+                "is_correct": true
             },
             {
                 "answer": "enables IPv4 and IPv6 to utilize the same physical medium",
@@ -1934,18 +1934,18 @@
             },
             {
                 "answer": "implements trailer with frame check sequence for error detection",
-                "is_correct": false
+                "is_correct": true
             }
         ],
         "explanation": null,
         "images": null
     },
     {
-        "question": "Case 3:",
+        "question": "77. Which two functions are performed at the MAC sublayer of the OSI Data Link Layer to facilitate Ethernet communication? (Choose two.)",
         "answers": [
             {
                 "answer": "integrates Layer 2 flows between 10 Gigabit Ethernet over fiber and 1 Gigabit Ethernet over copper",
-                "is_correct": false
+                "is_correct": true
             },
             {
                 "answer": "enables IPv4 and IPv6 to utilize the same physical medium",
@@ -1961,18 +1961,18 @@
             },
             {
                 "answer": "implements CSMA/CD over legacy shared half-duplex media",
-                "is_correct": false
+                "is_correct": true
             }
         ],
         "explanation": null,
         "images": null
     },
     {
-        "question": "Case 4:",
+        "question": "77. Which two functions are performed at the MAC sublayer of the OSI Data Link Layer to facilitate Ethernet communication? (Choose two.)",
         "answers": [
             {
                 "answer": "applies delimiting of Ethernet frame fields to synchronize communication between nodes",
-                "is_correct": false
+                "is_correct": true
             },
             {
                 "answer": "places information in the Ethernet frame that identifies which network layer protocol is being encapsulated by the frame",
@@ -1984,7 +1984,7 @@
             },
             {
                 "answer": "implements trailer with frame check sequence for error detection",
-                "is_correct": false
+                "is_correct": true
             },
             {
                 "answer": "handles communication between upper layer networking software and Ethernet NIC hardware",
@@ -1995,15 +1995,15 @@
         "images": null
     },
     {
-        "question": "Case 5:",
+        "question": "77. Which two functions are performed at the MAC sublayer of the OSI Data Link Layer to facilitate Ethernet communication? (Choose two.)",
         "answers": [
             {
                 "answer": "applies delimiting of Ethernet frame fields to synchronize communication between nodes",
-                "is_correct": false
+                "is_correct": true
             },
             {
                 "answer": "applies source and destination MAC addresses to Ethernet frame",
-                "is_correct": false
+                "is_correct": true
             },
             {
                 "answer": "places information in the Ethernet frame that identifies which network layer protocol is being encapsulated by the frame",
@@ -3659,7 +3659,7 @@
             },
             {
                 "answer": "a tunneling protocol that provides remote users with secure access into the network of an organization",
-                "is_correct": false
+                "is_correct": true
             },
             {
                 "answer": "a network device that filters access and traffic coming into a network",
