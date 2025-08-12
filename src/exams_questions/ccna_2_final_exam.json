@@ -4168,7 +4168,7 @@
                 "is_correct": false
             },
             {
-                "answer": "Segment the LAN into smaller LANs and route between them.*",
+                "answer": "Segment the LAN into smaller LANs and route between them.",
                 "is_correct": true
             },
             {
@@ -4383,4 +4383,5 @@
         "explanation": null,
         "images": null
     }
+
 ]
