@@ -2806,7 +2806,9 @@
             }
         ],
         "explanation": null,
-        "images": null
+        "images": [
+            "https://itexamanswers.net/wp-content/uploads/2020/01/2020-04-28_073221.jpg"
+        ]
     },
     {
         "question": "119. Users are complaining of sporadic access to the internet every afternoon. What should be done or checked?",
@@ -4385,4 +4387,5 @@
     }
 
 ]
+
 
