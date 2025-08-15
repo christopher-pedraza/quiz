@@ -1178,7 +1178,7 @@
         "answers": [
             {
                 "answer": "It relies on the settings of trusted and untrusted ports set by DHCP snooping.",
-                "is_correct": true
+                "is_correct": false
             },
             {
                 "answer": "It uses the MAC address table to verify the default gateway IP address.",
@@ -4387,5 +4387,6 @@
     }
 
 ]
+
 
 
