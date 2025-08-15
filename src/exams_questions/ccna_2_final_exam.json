@@ -1606,7 +1606,7 @@
         ]
     },
     {
-        "question": "68. What is the effect of entering the shutdown configuration command on a switch?",
+        "question": "68. What is the effect of entering the 'shutdown' configuration command on a switch?",
         "answers": [
             {
                 "answer": "It enables BPDU guard on a specific port.",
@@ -3181,7 +3181,7 @@
         ]
     },
     {
-        "question": "125. A network administrator uses the spanning-tree portfast bpduguard default global configuration command to enable BPDU guard on a switch. However, BPDU guard is not activated on all access ports. What is the cause of the issue?",
+        "question": "125. A network administrator uses the 'spanning-tree portfast bpduguard default' global configuration command to enable BPDU guard on a switch. However, BPDU guard is not activated on all access ports. What is the cause of the issue?",
         "answers": [
             {
                 "answer": "BPDU guard needs to be activated in the interface configuration command mode.",
@@ -3879,7 +3879,7 @@
         "images": null
     },
     {
-        "question": "154. What is the effect of entering theip dhcp snooping limit rate 6configuration command on a switch?",
+        "question": "154. What is the effect of entering the 'ip dhcp snooping limit rate 6' configuration command on a switch?",
         "answers": [
             {
                 "answer": "It displays the IP-to-MAC address associations for switch interfaces.",
@@ -4387,6 +4387,7 @@
     }
 
 ]
+
 
 
 
