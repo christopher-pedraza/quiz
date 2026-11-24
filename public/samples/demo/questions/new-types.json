@@ -1,0 +1,196 @@
+[
+  {
+    "id": "demo-order-train-step",
+    "type": "ordering",
+    "topic": "training",
+    "title": "One optimisation step",
+    "difficulty": "easy",
+    "prompt": "Put the steps of **one** mini-batch update in the order PyTorch needs them.",
+    "items": [
+      "Clear the old gradients",
+      "Run the forward pass to get predictions",
+      "Compute the loss",
+      "Backpropagate the loss",
+      "Update the parameters with the optimizer"
+    ],
+    "grading": "partial",
+    "hints": ["Gradients accumulate by default, so something has to reset them before they are filled again."],
+    "explanation": "`zero_grad()` first so `backward()` does not add to stale gradients; forward → loss → `backward()` fills `.grad`; `step()` finally consumes it."
+  },
+  {
+    "id": "demo-parsons-train-loop",
+    "type": "ordering",
+    "topic": "training",
+    "title": "Parsons problem: the training loop",
+    "difficulty": "medium",
+    "prompt": "Arrange the lines into a working training loop. (Indentation is shown as written; only the order is yours.)",
+    "language": "python",
+    "items": [
+      "for x, y in loader:",
+      "    optimizer.zero_grad()",
+      "    logits = model(x)",
+      "    loss = F.cross_entropy(logits, y)",
+      "    loss.backward()",
+      "    optimizer.step()"
+    ],
+    "explanation": "The loop body is the five-step update; the `for` line has to come first so the body is indented under it."
+  },
+  {
+    "id": "demo-match-activations",
+    "type": "matching",
+    "topic": "training",
+    "title": "Match the activation to its property",
+    "difficulty": "easy",
+    "prompt": "Pick the property that fits each activation function. A property can be used more than once.",
+    "pairs": [
+      { "left": "ReLU", "right": "Zero for negative inputs" },
+      { "left": "Leaky ReLU", "right": "Small slope for negative inputs" },
+      { "left": "Sigmoid", "right": "Output in (0, 1)" },
+      { "left": "Softmax", "right": "Outputs sum to 1" },
+      { "left": "Tanh", "right": "Output in (-1, 1)" },
+      { "left": "Hard sigmoid", "right": "Output in (0, 1)" }
+    ],
+    "distractors": ["Always non-negative and unbounded above"],
+    "grading": "partial",
+    "explanation": "Sigmoid and hard sigmoid both squash to $(0, 1)$, so that property is the right answer for two rows."
+  },
+  {
+    "id": "demo-categorize-layers",
+    "type": "categorize",
+    "topic": "training",
+    "title": "Does the layer have trainable parameters?",
+    "difficulty": "easy",
+    "prompt": "Drag each layer into the right bucket. One chip does not belong in either.",
+    "categories": [
+      { "id": "params", "title": "Has trainable parameters", "items": ["nn.Linear", "nn.Conv2d", "nn.BatchNorm2d", "nn.Embedding"] },
+      { "id": "none", "title": "No trainable parameters", "items": ["nn.ReLU", "nn.MaxPool2d", "nn.Flatten", "nn.Dropout"] }
+    ],
+    "distractors": ["torch.optim.SGD"],
+    "distractorPenalty": 0.5,
+    "explanation": "Pooling, activations, flatten and dropout are fixed functions. `BatchNorm2d` has a learnable scale and shift, and `Embedding` is a learnable lookup table. `SGD` is not a layer at all."
+  },
+  {
+    "id": "demo-drag-prose",
+    "type": "fill-blank",
+    "mode": "drag",
+    "topic": "training",
+    "title": "Drag the words into the sentence",
+    "difficulty": "easy",
+    "prompt": "Complete the sentence by dragging (or clicking) words from the bank.",
+    "template": "A <<BLANK:a>> is the part of the data used to tune hyper-parameters, while the <<BLANK:b>> set is only touched once, at the very end.",
+    "blanks": [
+      { "id": "a", "answers": ["validation", "dev"] },
+      { "id": "b", "answers": ["test"] }
+    ],
+    "distractors": ["training", "unlabelled"],
+    "explanation": "Hyper-parameters are tuned on the **validation** split; the **test** split gives the unbiased final estimate."
+  },
+  {
+    "id": "demo-drag-code",
+    "type": "fill-blank",
+    "mode": "drag",
+    "topic": "tensors",
+    "title": "Drag the tokens into the code",
+    "difficulty": "medium",
+    "prompt": "Standardise each column of `x` (shape `(N, D)`).",
+    "language": "python",
+    "template": "mean = x.<<BLANK:m>>(dim=<<BLANK:d>>, keepdim=True)\nstd = x.std(dim=0, keepdim=True)\nz = (x - mean) / <<BLANK:s>>",
+    "blanks": [
+      { "id": "m", "answers": ["mean"] },
+      { "id": "d", "answers": ["0"] },
+      { "id": "s", "answers": ["std"] }
+    ],
+    "distractors": ["1", "sum", "var"],
+    "explanation": "Columns are features, so reduce over the batch dimension `0`; `keepdim=True` keeps the result broadcastable."
+  },
+  {
+    "id": "demo-dropdown-prose",
+    "type": "fill-blank",
+    "mode": "choice",
+    "topic": "training",
+    "title": "Pick the right word",
+    "difficulty": "easy",
+    "prompt": "Choose the word that completes each sentence.",
+    "template": "Increasing the learning rate too far makes the loss <<BLANK:a>>. Early stopping is a form of <<BLANK:b>>.",
+    "blanks": [
+      { "id": "a", "answers": ["diverge"], "options": ["diverge", "converge faster, always", "become exactly zero"] },
+      { "id": "b", "answers": ["regularisation", "regularization"], "options": ["regularisation", "data augmentation", "initialisation"] }
+    ]
+  },
+  {
+    "id": "demo-multi-partial",
+    "type": "multi-select",
+    "topic": "training",
+    "title": "Which of these reduce overfitting?",
+    "difficulty": "medium",
+    "grading": "partial",
+    "shuffle": true,
+    "prompt": "Select **all** that apply. Wrong picks cancel right ones.",
+    "options": [
+      { "text": "Weight decay", "correct": true, "explanation": "Penalises large weights." },
+      { "text": "Dropout", "correct": true, "explanation": "Randomly removes units during training, so no unit can be relied on." },
+      { "text": "Training on more (or augmented) data", "correct": true, "explanation": "More variety makes memorising harder." },
+      { "text": "Doubling the number of layers with no other change", "correct": false, "explanation": "More capacity usually makes overfitting easier, not harder." },
+      { "text": "Training for many more epochs after the validation loss rises", "correct": false, "explanation": "This is exactly how overfitting happens." }
+    ]
+  },
+  {
+    "id": "demo-mcq-image",
+    "type": "mcq",
+    "topic": "training",
+    "title": "Which function is plotted?",
+    "difficulty": "easy",
+    "prompt": "The plot below is stored in the quiz folder as `assets/relu.svg`; the path is relative to `manifest.json`.\n\n![A function that is flat for negative x and a line of slope 1 for positive x](./assets/relu.svg)\n\nWhich function is it?",
+    "options": [
+      { "text": "$\\max(0, x)$", "correct": true, "explanation": "Zero for $x < 0$, and the identity for $x \\ge 0$: ReLU." },
+      { "text": "$\\tanh(x)$", "correct": false, "explanation": "Tanh is smooth and saturates at $\\pm 1$." },
+      { "text": "$\\sigma(x) = \\frac{1}{1 + e^{-x}}$", "correct": false, "explanation": "The sigmoid is smooth and bounded in $(0, 1)$." },
+      { "text": "$|x|$", "correct": false, "explanation": "The absolute value would rise on the left side too." }
+    ]
+  },
+  {
+    "id": "demo-calc-rel",
+    "type": "calculation",
+    "topic": "training",
+    "title": "Back-of-the-envelope speed-up (±2% accepted)",
+    "difficulty": "easy",
+    "prompt": "An epoch takes 125 s on one GPU and 34 s on four. What is the speed-up (old time / new time)? Answers within **2 %** are accepted.",
+    "parts": [{ "id": "speedup", "label": "Speed-up", "value": 3.676, "tolerance": { "rel": 0.02 }, "unit": "×" }],
+    "hints": ["Divide the two times."],
+    "explanation": "$125 / 34 \\approx 3.68$. Perfect linear scaling would give 4, so there is some overhead."
+  },
+  {
+    "id": "demo-debug-choice",
+    "type": "code-debug",
+    "topic": "training",
+    "title": "Find the bug, pick the fix",
+    "difficulty": "medium",
+    "prompt": "This evaluation loop gives noisy results and uses too much memory. Click the buggy line, then choose the fix.",
+    "language": "python",
+    "code": "model.eval()\ncorrect = 0\nfor x, y in val_loader:\n    logits = model(x)\n    correct += (logits.argmax(1) == y).sum().item()",
+    "errors": [
+      {
+        "line": 3,
+        "fixes": ["with torch.no_grad():"],
+        "options": ["with torch.no_grad():", "with torch.enable_grad():", "optimizer.zero_grad()", "model.train()"],
+        "explanation": "Evaluation should not build the autograd graph: wrap the loop body in `torch.no_grad()`."
+      }
+    ],
+    "hints": ["Think about what PyTorch records during the forward pass, and whether evaluation needs it."]
+  },
+  {
+    "id": "demo-short-answer",
+    "type": "short-answer",
+    "topic": "training",
+    "title": "Why shuffle the training data?",
+    "difficulty": "easy",
+    "prompt": "In two or three sentences: why do we usually **shuffle** the training set every epoch?",
+    "modelAnswer": "If the data arrive in a fixed order (for example sorted by class), every mini-batch is biased and consecutive gradient steps pull in the same direction. Shuffling makes each mini-batch a better estimate of the full gradient and stops the network from learning the order.",
+    "rubric": [
+      { "text": "Mini-batches become representative samples of the whole data set" },
+      { "text": "Avoids correlated / biased consecutive gradient steps (e.g. data sorted by class)" },
+      { "text": "Mentions that the model should not exploit the order of the examples", "points": 0.5 }
+    ],
+    "explanation": "This is a self-graded question: write your answer, reveal the model answer, then tick what you covered."
+  }
+]

@@ -1,0 +1,332 @@
+[
+  {
+    "id": "extra-gen-conv-size-01",
+    "topic": "randomized",
+    "title": "Output size of a convolution (random numbers)",
+    "difficulty": "easy",
+    "tags": [
+      "convolution",
+      "shapes"
+    ],
+    "hints": [
+      "Add the padding on both sides before subtracting the kernel size."
+    ],
+    "explanation": "Plug the numbers in: floor(({{H}} + 2·{{p}} − {{k}})/{{s}}) + 1 = floor({{H + 2*p - k}}/{{s}}) + 1 = {{(H + 2*p - k)/s}} + 1 = {{(H + 2*p - k)/s + 1}}.",
+    "type": "calculation",
+    "prompt": "A square input has side {{H}}. A convolution uses kernel size {{k}}, stride {{s}}, padding {{p}} and dilation 1. Using $H_{out} = \\lfloor (H + 2p - k)/s \\rfloor + 1$, what is the output side length?",
+    "variables": {
+      "H": {
+        "min": 16,
+        "max": 64,
+        "step": 4
+      },
+      "k": {
+        "choices": [
+          3,
+          5,
+          7
+        ]
+      },
+      "s": {
+        "choices": [
+          1,
+          2
+        ]
+      },
+      "p": {
+        "min": 0,
+        "max": 3
+      }
+    },
+    "constraints": [
+      "k <= H + 2*p",
+      "(H + 2*p - k) % s == 0"
+    ],
+    "parts": [
+      {
+        "id": "out",
+        "label": "Output side length",
+        "formula": "floor((H + 2*p - k)/s) + 1"
+      }
+    ]
+  },
+  {
+    "id": "extra-gen-linear-params-01",
+    "topic": "randomized",
+    "title": "Trainable parameters of an MLP (random sizes)",
+    "difficulty": "easy",
+    "tags": [
+      "parameters",
+      "linear"
+    ],
+    "hints": [
+      "A linear layer has in·out weights plus out biases; ReLU has no parameters."
+    ],
+    "explanation": "First layer: {{n_in}}·{{h}} + {{h}} = {{n_in*h + h}}.\n\nSecond layer: {{h}}·{{n_out}} + {{n_out}} = {{h*n_out + n_out}}.\n\nTotal: {{n_in*h + h}} + {{h*n_out + n_out}} = {{n_in*h + h + h*n_out + n_out}}. ReLU adds nothing.",
+    "type": "calculation",
+    "prompt": "An MLP is defined as:\n\n`nn.Linear({{n_in}}, {{h}})`, ReLU, `nn.Linear({{h}}, {{n_out}})`\n\nBoth linear layers use a bias. Give the number of trainable parameters of each layer and in total.",
+    "variables": {
+      "n_in": {
+        "choices": [
+          8,
+          16,
+          32,
+          64,
+          100
+        ]
+      },
+      "h": {
+        "choices": [
+          10,
+          20,
+          50,
+          128
+        ]
+      },
+      "n_out": {
+        "min": 2,
+        "max": 10
+      }
+    },
+    "parts": [
+      {
+        "id": "l1",
+        "label": "First layer",
+        "formula": "n_in*h + h",
+        "unit": "parameters"
+      },
+      {
+        "id": "l2",
+        "label": "Second layer",
+        "formula": "h*n_out + n_out",
+        "unit": "parameters"
+      },
+      {
+        "id": "total",
+        "label": "Total",
+        "formula": "n_in*h + h + h*n_out + n_out",
+        "unit": "parameters"
+      }
+    ]
+  },
+  {
+    "id": "extra-gen-sgd-step-01",
+    "topic": "randomized",
+    "title": "One gradient-descent step (decimals)",
+    "difficulty": "easy",
+    "tags": [
+      "sgd",
+      "optimization"
+    ],
+    "hints": [
+      "Move against the gradient: $w \\leftarrow w - \\eta g$."
+    ],
+    "explanation": "$w_{new} = {{w}} - {{lr}} \\cdot {{g}} = {{w}} - {{lr*g}} = {{w - lr*g:3}}$.",
+    "type": "calculation",
+    "prompt": "A weight is $w = {{w}}$ with gradient $\\partial L/\\partial w = {{g}}$. SGD with learning rate $\\eta = {{lr}}$ takes one step. What is the new weight? (Two decimals are enough.)",
+    "variables": {
+      "w": {
+        "min": -2,
+        "max": 2,
+        "step": 0.5
+      },
+      "g": {
+        "min": 0.5,
+        "max": 4,
+        "step": 0.5
+      },
+      "lr": {
+        "choices": [
+          0.01,
+          0.05,
+          0.1,
+          0.2
+        ]
+      }
+    },
+    "parts": [
+      {
+        "id": "w_new",
+        "label": "New weight",
+        "formula": "w - lr*g",
+        "tolerance": 0.005
+      }
+    ]
+  },
+  {
+    "id": "extra-pick-train-step-01",
+    "topic": "randomized",
+    "title": "Choose the lines of a training step",
+    "difficulty": "easy",
+    "tags": [
+      "training-loop",
+      "autograd"
+    ],
+    "hints": [
+      "Order: clear → compute → apply.",
+      "The optimizer owns two of the three calls."
+    ],
+    "explanation": "Gradients accumulate in .grad across backward() calls, so they are cleared first, computed from the loss, and finally consumed by the optimizer.",
+    "reference": [
+      "torch.optim.Optimizer.zero_grad",
+      "torch.Tensor.backward",
+      "torch.optim.Optimizer.step"
+    ],
+    "type": "fill-blank",
+    "mode": "choice",
+    "prompt": "Runs one mini-batch of training: forward pass, loss, gradient computation and parameter update.",
+    "language": "python",
+    "template": "for X, y in loader:\n    pred = model(X)\n    loss = criterion(pred, y)\n    <<BLANK:zero>>\n    <<BLANK:back>>\n    <<BLANK:step>>",
+    "blanks": [
+      {
+        "id": "zero",
+        "label": "clear the old gradients",
+        "answers": [
+          "optimizer.zero_grad()",
+          "optimizer.zero_grad(set_to_none=True)"
+        ],
+        "distractors": [
+          {
+            "text": "model.zero_grad(loss)",
+            "why": "zero_grad() takes no loss argument; it only resets gradients."
+          },
+          {
+            "text": "loss.zero_grad()",
+            "why": "Tensors have no zero_grad method; the optimizer (or module) owns it."
+          },
+          {
+            "text": "optimizer.clear()",
+            "why": "There is no clear() on optimizers; the method is zero_grad()."
+          },
+          {
+            "text": "optimizer.step()",
+            "why": "step() applies the update; it does not clear gradients, so they would keep accumulating."
+          },
+          {
+            "text": "loss.detach()",
+            "why": "detach() returns a tensor cut from the graph; it does not reset any .grad."
+          },
+          {
+            "text": "torch.zeros_like(pred)",
+            "why": "This only builds a tensor of zeros and discards it; it does not touch the gradients."
+          }
+        ]
+      },
+      {
+        "id": "back",
+        "label": "compute the gradients",
+        "answers": [
+          "loss.backward()"
+        ],
+        "distractors": [
+          {
+            "text": "optimizer.backward()",
+            "why": "Optimizers do not compute gradients; autograd does it from the loss tensor."
+          },
+          {
+            "text": "model.backward(loss)",
+            "why": "nn.Module has no backward(loss) method; call backward() on the loss tensor."
+          },
+          {
+            "text": "pred.backward()",
+            "why": "pred is not a scalar loss, so this raises an error (and is not the loss gradient anyway)."
+          },
+          {
+            "text": "loss.grad()",
+            "why": "grad is an attribute holding a gradient, not a method that computes it."
+          },
+          {
+            "text": "loss.step()",
+            "why": "Tensors have no step(); stepping belongs to the optimizer."
+          }
+        ]
+      },
+      {
+        "id": "step",
+        "label": "update the parameters",
+        "answers": [
+          "optimizer.step()"
+        ],
+        "distractors": [
+          {
+            "text": "loss.step()",
+            "why": "Tensors have no step(); the optimizer applies updates."
+          },
+          {
+            "text": "model.step()",
+            "why": "nn.Module has no step(); the optimizer holds the update rule."
+          },
+          {
+            "text": "optimizer.update(loss)",
+            "why": "There is no update(); step() reads the gradients already stored in .grad."
+          },
+          {
+            "text": "optimizer.zero_grad()",
+            "why": "This clears the gradients instead of using them, so the weights never change."
+          },
+          {
+            "text": "loss.backward()",
+            "why": "This computes gradients but never updates the parameters; it was already called one line before."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "extra-pick-flatten-01",
+    "topic": "randomized",
+    "title": "Flatten feature maps before the classifier",
+    "difficulty": "medium",
+    "tags": [
+      "flatten",
+      "shapes"
+    ],
+    "hints": [
+      "nn.Linear expects (N, features)."
+    ],
+    "explanation": "The classifier needs one feature vector per image, so everything except the batch axis is merged.",
+    "type": "fill-blank",
+    "mode": "choice",
+    "prompt": "Turns a batch of feature maps with shape (N, C, H, W) into a (N, C*H*W) matrix and feeds it to a linear classifier.",
+    "language": "python",
+    "template": "def forward(self, x):\n    x = self.features(x)  # (N, C, H, W)\n    <<BLANK:flat>>\n    return self.fc(x)",
+    "blanks": [
+      {
+        "id": "flat",
+        "label": "keep the batch axis, merge the rest",
+        "answers": [
+          "x = x.flatten(1)",
+          "x = x.view(x.size(0), -1)",
+          "x = x.reshape(x.size(0), -1)",
+          "x = torch.flatten(x, start_dim=1)"
+        ],
+        "distractors": [
+          {
+            "text": "x = x.flatten()",
+            "why": "Without start_dim=1 this also merges the batch axis, giving a 1-D tensor of length N*C*H*W."
+          },
+          {
+            "text": "x = x.view(-1, x.size(0))",
+            "why": "This puts the batch size on the wrong axis and scrambles which values belong to which image."
+          },
+          {
+            "text": "x = x.transpose(0, 1)",
+            "why": "This swaps two axes but stays 4-D, so nn.Linear would not receive (N, C*H*W)."
+          },
+          {
+            "text": "x = x.squeeze()",
+            "why": "squeeze only drops size-1 axes; a (N, C, H, W) tensor stays 4-D."
+          },
+          {
+            "text": "x = x.mean(dim=1)",
+            "why": "This averages over channels, throwing information away and leaving (N, H, W)."
+          },
+          {
+            "text": "x = x.unsqueeze(1)",
+            "why": "This adds another axis, making the tensor 5-D."
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "$schema": "../../schema/theme.schema.json",
+  "scheme": "dark",
+  "accent": "#8b7bff",
+  "accentSecondary": "#22d3ee",
+  "bgPrimary": "#0f1115",
+  "bgSurface": "#171a21",
+  "fontSans": "Inter, system-ui, -apple-system, Segoe UI, sans-serif",
+  "fontMono": "JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace",
+  "radius": "10px"
+}

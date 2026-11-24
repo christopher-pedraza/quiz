@@ -1,0 +1,449 @@
+{
+  "entries": [
+    {
+      "name": "torch.Tensor.any",
+      "aliases": [
+        "torch.any",
+        "any"
+      ],
+      "kind": "method",
+      "module": "torch.Tensor",
+      "summary": "True if any element is True (optionally along a dim).",
+      "signature": "Tensor.any(dim=None)",
+      "returns": "bool Tensor.",
+      "example": "if (y == k).any(): ...",
+      "tags": [
+        "masking"
+      ]
+    },
+    {
+      "name": "torch.Tensor.backward",
+      "aliases": [
+        "loss.backward",
+        "backward"
+      ],
+      "kind": "method",
+      "module": "torch",
+      "signature": "Tensor.backward(gradient=None, retain_graph=None, create_graph=False)",
+      "summary": "Computes gradients of this tensor w.r.t. graph leaves and accumulates them into their .grad.",
+      "parameters": [
+        {
+          "name": "gradient",
+          "type": "Tensor",
+          "default": "None",
+          "description": "Required if the tensor is not a scalar."
+        },
+        {
+          "name": "retain_graph",
+          "type": "bool",
+          "default": "None",
+          "description": "Keep the graph so backward can be called again."
+        }
+      ],
+      "notes": [
+        "Usually called on a scalar loss.",
+        "Accumulates into .grad; it does not overwrite."
+      ],
+      "tags": [
+        "autograd",
+        "training-loop"
+      ]
+    },
+    {
+      "name": "torch.Tensor.mean",
+      "aliases": [
+        "torch.mean",
+        "mean"
+      ],
+      "kind": "method",
+      "module": "torch.Tensor",
+      "summary": "Mean over all elements or over the given dimensions.",
+      "signature": "Tensor.mean(dim=None, keepdim=False)",
+      "parameters": [
+        {
+          "name": "dim",
+          "type": "int | tuple",
+          "default": "None",
+          "description": "Dimension(s) to reduce."
+        },
+        {
+          "name": "keepdim",
+          "type": "bool",
+          "default": "False",
+          "description": "Keep reduced dims as size 1."
+        }
+      ],
+      "returns": "Tensor.",
+      "example": "per_channel = x.mean(dim=(0, 2, 3))  # (C,)",
+      "notes": [
+        "Empty selections give NaN."
+      ],
+      "see_also": [
+        "torch.Tensor.sum",
+        "torch.Tensor.std"
+      ],
+      "tags": [
+        "reduction"
+      ]
+    },
+    {
+      "name": "torch.Tensor.reshape",
+      "aliases": [
+        "x.reshape",
+        ".reshape",
+        "tensor.reshape",
+        "reshape"
+      ],
+      "kind": "method",
+      "module": "torch.Tensor",
+      "summary": "Returns a tensor with the same data and a new shape; a view if possible, otherwise a copy.",
+      "signature": "Tensor.reshape(*shape)",
+      "parameters": [
+        {
+          "name": "shape",
+          "type": "int...",
+          "description": "New shape; one dimension may be -1 (inferred)."
+        }
+      ],
+      "returns": "Tensor with the requested shape.",
+      "example": "x.reshape(x.shape[0], -1)  # (B, C*H*W)",
+      "notes": [
+        "Works on non-contiguous tensors (view would raise)."
+      ],
+      "see_also": [
+        "torch.Tensor.view",
+        "torch.flatten"
+      ],
+      "tags": [
+        "shapes"
+      ]
+    },
+    {
+      "name": "torch.Tensor.std",
+      "aliases": [
+        "torch.std",
+        "std"
+      ],
+      "kind": "method",
+      "module": "torch.Tensor",
+      "summary": "Standard deviation; unbiased (N-1) by default.",
+      "signature": "Tensor.std(dim=None, unbiased=True, keepdim=False)",
+      "parameters": [
+        {
+          "name": "unbiased",
+          "type": "bool",
+          "default": "True",
+          "description": "False divides by N (population std). Newer API: correction=0."
+        },
+        {
+          "name": "dim",
+          "type": "int | tuple",
+          "default": "None",
+          "description": "Dimension(s) to reduce."
+        }
+      ],
+      "returns": "Tensor.",
+      "example": "x.std(dim=(0, 2, 3), unbiased=False)",
+      "notes": [
+        "Normalisation statistics usually use the population std (unbiased=False)."
+      ],
+      "see_also": [
+        "torch.Tensor.mean"
+      ],
+      "tags": [
+        "reduction",
+        "statistics"
+      ]
+    },
+    {
+      "name": "torch.Tensor.sum",
+      "aliases": [
+        "torch.sum",
+        "sum"
+      ],
+      "kind": "method",
+      "module": "torch.Tensor",
+      "summary": "Sum over all elements or over the given dimensions.",
+      "signature": "Tensor.sum(dim=None, keepdim=False)",
+      "parameters": [
+        {
+          "name": "dim",
+          "type": "int | tuple",
+          "default": "None",
+          "description": "Dimension(s) to reduce - they disappear from the shape."
+        },
+        {
+          "name": "keepdim",
+          "type": "bool",
+          "default": "False",
+          "description": "Keep reduced dims as size 1 so the result broadcasts against the input."
+        }
+      ],
+      "returns": "Tensor.",
+      "example": "x.sum(dim=(0, 2, 3), keepdim=True)  # (N, C, H, W) -> (1, C, 1, 1)",
+      "notes": [
+        "The dims you pass are the ones that get collapsed."
+      ],
+      "see_also": [
+        "torch.Tensor.mean"
+      ],
+      "tags": [
+        "reduction"
+      ]
+    },
+    {
+      "name": "torch.Tensor.unsqueeze",
+      "aliases": [
+        "x.unsqueeze",
+        ".unsqueeze",
+        "tensor.unsqueeze",
+        "unsqueeze"
+      ],
+      "kind": "method",
+      "module": "torch.Tensor",
+      "summary": "Inserts a size-1 dimension at the given position.",
+      "signature": "Tensor.unsqueeze(dim)",
+      "parameters": [
+        {
+          "name": "dim",
+          "type": "int",
+          "description": "Position of the new axis."
+        }
+      ],
+      "returns": "A view.",
+      "example": "col = v.unsqueeze(1)  # (n,) -> (n, 1)",
+      "notes": [
+        "x[:, None] is equivalent."
+      ],
+      "see_also": [
+        "torch.Tensor.squeeze"
+      ],
+      "tags": [
+        "shapes",
+        "broadcasting"
+      ]
+    },
+    {
+      "name": "torch.Tensor.view",
+      "aliases": [
+        "view",
+        "x.view",
+        "reshape",
+        "Tensor.reshape"
+      ],
+      "kind": "method",
+      "module": "torch",
+      "signature": "Tensor.view(*shape)",
+      "summary": "Returns a tensor with the same data and a new shape. One dimension may be -1 (inferred).",
+      "example": "x.view(x.size(0), -1)",
+      "notes": [
+        "Requires contiguous memory; use reshape() if unsure."
+      ],
+      "tags": [
+        "shape"
+      ]
+    },
+    {
+      "name": "torch.clamp",
+      "aliases": [
+        "Tensor.clamp",
+        "x.clamp",
+        ".clamp",
+        "clamp"
+      ],
+      "kind": "function",
+      "module": "torch",
+      "summary": "Limits values to the range [min, max].",
+      "signature": "torch.clamp(input, min=None, max=None)",
+      "parameters": [
+        {
+          "name": "min",
+          "type": "number",
+          "default": "None",
+          "description": "Lower bound."
+        },
+        {
+          "name": "max",
+          "type": "number",
+          "default": "None",
+          "description": "Upper bound."
+        }
+      ],
+      "returns": "Tensor.",
+      "example": "d = result.clamp(min=0)",
+      "notes": [
+        "Pass at least one of min/max."
+      ],
+      "tags": [
+        "math"
+      ]
+    },
+    {
+      "name": "torch.flatten",
+      "aliases": [
+        "flatten",
+        "Tensor.flatten",
+        "x.flatten"
+      ],
+      "kind": "function",
+      "module": "torch",
+      "signature": "torch.flatten(input, start_dim=0, end_dim=-1)",
+      "summary": "Flattens dimensions start_dim..end_dim into one. Use start_dim=1 to keep the batch dimension.",
+      "parameters": [
+        {
+          "name": "start_dim",
+          "type": "int",
+          "default": "0",
+          "description": "First dim to flatten."
+        },
+        {
+          "name": "end_dim",
+          "type": "int",
+          "default": "-1",
+          "description": "Last dim to flatten."
+        }
+      ],
+      "example": "x = torch.randn(8, 1, 28, 28)\nx.flatten(1).shape  # torch.Size([8, 784])",
+      "tags": [
+        "shape"
+      ],
+      "see_also": [
+        "torch.nn.Flatten"
+      ]
+    },
+    {
+      "name": "torch.matmul",
+      "aliases": [
+        "@",
+        "matmul",
+        "Tensor.matmul"
+      ],
+      "kind": "function",
+      "module": "torch",
+      "summary": "Matrix product with broadcasting: 1-D dot, 2-D matmul, or batched matmul over leading dimensions. The @ operator calls it.",
+      "signature": "torch.matmul(input, other)",
+      "parameters": [
+        {
+          "name": "input",
+          "type": "Tensor",
+          "description": "Left operand."
+        },
+        {
+          "name": "other",
+          "type": "Tensor",
+          "description": "Right operand."
+        }
+      ],
+      "returns": "Product Tensor.",
+      "example": "out = w_row @ cols  # (C_out, K) @ (N, K, L) -> (N, C_out, L)",
+      "notes": [
+        "The last two dims are the matrix dims; earlier dims are batch dims and broadcast.",
+        "torch.mm is strictly 2-D; torch.bmm is strictly 3-D."
+      ],
+      "see_also": [
+        "torch.mm",
+        "torch.bmm"
+      ],
+      "tags": [
+        "linear-algebra"
+      ]
+    },
+    {
+      "name": "torch.optim.Optimizer.step",
+      "aliases": [
+        "optimizer.step",
+        "step"
+      ],
+      "kind": "method",
+      "module": "torch.optim",
+      "signature": "Optimizer.step(closure=None)",
+      "summary": "Performs one parameter update using the gradients currently stored in .grad.",
+      "notes": [
+        "Call after loss.backward()."
+      ],
+      "tags": [
+        "optimizer",
+        "training-loop"
+      ]
+    },
+    {
+      "name": "torch.optim.Optimizer.zero_grad",
+      "aliases": [
+        "optimizer.zero_grad",
+        "zero_grad"
+      ],
+      "kind": "method",
+      "module": "torch.optim",
+      "signature": "Optimizer.zero_grad(set_to_none=True)",
+      "summary": "Resets the gradients of all tensors the optimizer manages.",
+      "parameters": [
+        {
+          "name": "set_to_none",
+          "type": "bool",
+          "default": "True",
+          "description": "Set .grad to None instead of filling with zeros (faster, less memory)."
+        }
+      ],
+      "notes": [
+        "Gradients ACCUMULATE across backward() calls; call this once per step, before backward()."
+      ],
+      "see_also": [
+        "torch.Tensor.backward"
+      ],
+      "tags": [
+        "optimizer",
+        "training-loop"
+      ]
+    },
+    {
+      "name": "torch.tensor",
+      "aliases": [
+        "tensor"
+      ],
+      "kind": "function",
+      "module": "torch",
+      "summary": "Builds a new tensor by COPYING data (list, scalar, NumPy array, ...). The dtype is inferred unless given.",
+      "signature": "torch.tensor(data, *, dtype=None, device=None, requires_grad=False)",
+      "parameters": [
+        {
+          "name": "data",
+          "type": "list | scalar | ndarray | Tensor",
+          "description": "Initial values."
+        },
+        {
+          "name": "dtype",
+          "type": "torch.dtype",
+          "default": "None",
+          "description": "Force a dtype, e.g. torch.float32. Default: inferred (Python floats -> float32, ints -> int64)."
+        },
+        {
+          "name": "device",
+          "type": "torch.device",
+          "default": "None",
+          "description": "Where to allocate the tensor."
+        },
+        {
+          "name": "requires_grad",
+          "type": "bool",
+          "default": "False",
+          "description": "Track operations for autograd."
+        }
+      ],
+      "returns": "A new Tensor that does not share memory with data.",
+      "example": "a = np.array([1, 2, 3])\nt = torch.tensor(a, dtype=torch.float32)\na[0] = 99\nprint(t)  # tensor([1., 2., 3.]) - unaffected",
+      "notes": [
+        "Always copies; use torch.from_numpy / torch.as_tensor if you want to share memory.",
+        "torch.tensor(some_tensor) warns - use some_tensor.detach().clone() instead."
+      ],
+      "see_also": [
+        "torch.from_numpy",
+        "torch.as_tensor"
+      ],
+      "tags": [
+        "creation",
+        "dtype",
+        "numpy"
+      ]
+    }
+  ]
+}

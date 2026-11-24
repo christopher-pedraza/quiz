@@ -1,0 +1,18 @@
+{
+  "$schema": "../../schema/manifest.schema.json",
+  "schemaVersion": 1,
+  "title": "Deep Learning Basics (sample quiz)",
+  "description": "A small built-in sample that shows every question type. Part of it was converted from the legacy PyTorch practice bank (fill-in-the-blank, find-the-bug, calculations, randomized numbers); the rest was written to show off ordering, matching, categorizing, drag-and-drop blanks and short answers.",
+  "author": "quiz platform",
+  "version": "1",
+  "topics": [
+    { "id": "tensors", "title": "Tensors & NumPy", "description": "PyTorch tensor manipulation" },
+    { "id": "fundamentals", "title": "Fundamentals", "description": "Convolutions, softmax, parameter counting" },
+    { "id": "randomized", "title": "Randomized practice", "description": "Numbers are re-drawn every time" },
+    { "id": "training", "title": "Training concepts", "description": "Optimisation, regularisation, activations" }
+  ],
+  "questions": ["questions/tensors.json", "questions/fundamentals.json", "questions/randomized.json", "questions/new-types.json"],
+  "reference": "reference.json",
+  "theme": "theme.json",
+  "exam": { "count": 12, "minutes": 20 }
+}

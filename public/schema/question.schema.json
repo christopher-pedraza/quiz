@@ -1,0 +1,1185 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "question.schema.json",
+  "title": "Quiz question",
+  "type": "object",
+  "$defs": {
+    "distractor": {
+      "anyOf": [
+        {
+          "type": "string",
+          "minLength": 1
+        },
+        {
+          "type": "object",
+          "properties": {
+            "text": {
+              "type": "string",
+              "minLength": 1
+            },
+            "why": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "text"
+          ],
+          "additionalProperties": false
+        }
+      ],
+      "description": "a string, or {\"text\": \"...\", \"why\": \"why it is wrong\"}"
+    },
+    "blank": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_.:-]+$",
+          "minLength": 1,
+          "maxLength": 120
+        },
+        "answers": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "description": "every accepted answer"
+        },
+        "patterns": {
+          "type": "array",
+          "minItems": 0,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "description": "regular expressions (anchored) that are also accepted"
+        },
+        "label": {
+          "type": "string"
+        },
+        "placeholder": {
+          "type": "string"
+        },
+        "multiline": {
+          "type": "boolean"
+        },
+        "caseSensitive": {
+          "type": "boolean"
+        },
+        "mode": {
+          "enum": [
+            "text",
+            "choice"
+          ]
+        },
+        "options": {
+          "type": "array",
+          "minItems": 2,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "description": "choice mode: a fixed list of options (must include every answer you want shown)"
+        },
+        "distractors": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/distractor"
+          },
+          "description": "choice mode: wrong options sampled per showing"
+        },
+        "show": {
+          "type": "integer",
+          "minimum": 2,
+          "description": "choice mode with distractors: number of options shown"
+        }
+      },
+      "required": [
+        "id",
+        "answers"
+      ],
+      "additionalProperties": false
+    },
+    "codeError": {
+      "type": "object",
+      "properties": {
+        "line": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "1-based line number in `code`"
+        },
+        "fixes": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "description": "every accepted replacement for the line"
+        },
+        "options": {
+          "type": "array",
+          "minItems": 2,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "description": "if present the learner picks the fix from these instead of typing it"
+        },
+        "explanation": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "line",
+        "fixes"
+      ],
+      "additionalProperties": false
+    },
+    "choiceOption": {
+      "type": "object",
+      "properties": {
+        "text": {
+          "type": "string",
+          "minLength": 1
+        },
+        "correct": {
+          "type": "boolean"
+        },
+        "explanation": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "text",
+        "correct"
+      ],
+      "additionalProperties": false
+    },
+    "tolerance": {
+      "anyOf": [
+        {
+          "type": "number",
+          "minimum": 0
+        },
+        {
+          "type": "object",
+          "properties": {
+            "abs": {
+              "type": "number",
+              "minimum": 0
+            },
+            "rel": {
+              "type": "number",
+              "minimum": 0
+            }
+          },
+          "required": [],
+          "additionalProperties": false
+        }
+      ],
+      "description": "a number (absolute) or {\"abs\": n, \"rel\": fraction}"
+    },
+    "calcPart": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_.:-]+$",
+          "minLength": 1,
+          "maxLength": 120
+        },
+        "label": {
+          "type": "string"
+        },
+        "value": {
+          "type": "number"
+        },
+        "formula": {
+          "type": "string",
+          "minLength": 1
+        },
+        "tolerance": {
+          "$ref": "#/$defs/tolerance"
+        },
+        "unit": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id"
+      ],
+      "additionalProperties": false
+    },
+    "variable": {
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "choices": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "number"
+              }
+            }
+          },
+          "required": [
+            "choices"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "min": {
+              "type": "number"
+            },
+            "max": {
+              "type": "number"
+            },
+            "step": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            }
+          },
+          "required": [
+            "min",
+            "max"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "formula": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "formula"
+          ],
+          "additionalProperties": false
+        }
+      ],
+      "description": "{\"choices\": [..]}, {\"min\": a, \"max\": b, \"step\": s} or {\"formula\": \"...\"}"
+    }
+  },
+  "discriminator": {
+    "propertyName": "type"
+  },
+  "oneOf": [
+    {
+      "type": "object",
+      "properties": {
+        "type": {
+          "const": "fill-blank"
+        },
+        "id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_.:-]+$",
+          "minLength": 1,
+          "maxLength": 120
+        },
+        "topic": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_.:-]+$",
+          "minLength": 1,
+          "maxLength": 120
+        },
+        "title": {
+          "type": "string"
+        },
+        "difficulty": {
+          "enum": [
+            "easy",
+            "medium",
+            "hard"
+          ]
+        },
+        "tags": {
+          "type": "array",
+          "minItems": 0,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "hints": {
+          "type": "array",
+          "minItems": 0,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "explanation": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Markdown shown after answering"
+        },
+        "points": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "reference": {
+          "type": "array",
+          "minItems": 0,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "prompt": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Markdown (with $math$) shown above the answer area"
+        },
+        "template": {
+          "type": "string",
+          "minLength": 1,
+          "description": "text containing <<BLANK:id>> markers"
+        },
+        "language": {
+          "type": "string",
+          "description": "if set, the template is code"
+        },
+        "mode": {
+          "enum": [
+            "text",
+            "choice",
+            "drag"
+          ]
+        },
+        "blanks": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/blank"
+          }
+        },
+        "distractors": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/distractor"
+          },
+          "description": "drag mode: extra chips that fit no blank"
+        }
+      },
+      "required": [
+        "type",
+        "id",
+        "topic",
+        "template",
+        "blanks"
+      ],
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "properties": {
+        "type": {
+          "const": "code-debug"
+        },
+        "id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_.:-]+$",
+          "minLength": 1,
+          "maxLength": 120
+        },
+        "topic": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_.:-]+$",
+          "minLength": 1,
+          "maxLength": 120
+        },
+        "title": {
+          "type": "string"
+        },
+        "difficulty": {
+          "enum": [
+            "easy",
+            "medium",
+            "hard"
+          ]
+        },
+        "tags": {
+          "type": "array",
+          "minItems": 0,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "hints": {
+          "type": "array",
+          "minItems": 0,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "explanation": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Markdown shown after answering"
+        },
+        "points": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "reference": {
+          "type": "array",
+          "minItems": 0,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "prompt": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Markdown (with $math$) shown above the answer area"
+        },
+        "language": {
+          "type": "string"
+        },
+        "code": {
+          "type": "string",
+          "minLength": 1
+        },
+        "errors": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/codeError"
+          }
+        }
+      },
+      "required": [
+        "type",
+        "id",
+        "topic",
+        "prompt",
+        "code",
+        "errors"
+      ],
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "properties": {
+        "type": {
+          "const": "mcq"
+        },
+        "id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_.:-]+$",
+          "minLength": 1,
+          "maxLength": 120
+        },
+        "topic": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_.:-]+$",
+          "minLength": 1,
+          "maxLength": 120
+        },
+        "title": {
+          "type": "string"
+        },
+        "difficulty": {
+          "enum": [
+            "easy",
+            "medium",
+            "hard"
+          ]
+        },
+        "tags": {
+          "type": "array",
+          "minItems": 0,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "hints": {
+          "type": "array",
+          "minItems": 0,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "explanation": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Markdown shown after answering"
+        },
+        "points": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "reference": {
+          "type": "array",
+          "minItems": 0,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "prompt": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Markdown (with $math$) shown above the answer area"
+        },
+        "options": {
+          "type": "array",
+          "minItems": 2,
+          "items": {
+            "$ref": "#/$defs/choiceOption"
+          }
+        },
+        "shuffle": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "type",
+        "id",
+        "topic",
+        "prompt",
+        "options"
+      ],
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "properties": {
+        "type": {
+          "const": "multi-select"
+        },
+        "id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_.:-]+$",
+          "minLength": 1,
+          "maxLength": 120
+        },
+        "topic": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_.:-]+$",
+          "minLength": 1,
+          "maxLength": 120
+        },
+        "title": {
+          "type": "string"
+        },
+        "difficulty": {
+          "enum": [
+            "easy",
+            "medium",
+            "hard"
+          ]
+        },
+        "tags": {
+          "type": "array",
+          "minItems": 0,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "hints": {
+          "type": "array",
+          "minItems": 0,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "explanation": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Markdown shown after answering"
+        },
+        "points": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "reference": {
+          "type": "array",
+          "minItems": 0,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "prompt": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Markdown (with $math$) shown above the answer area"
+        },
+        "options": {
+          "type": "array",
+          "minItems": 2,
+          "items": {
+            "$ref": "#/$defs/choiceOption"
+          }
+        },
+        "grading": {
+          "enum": [
+            "all-or-nothing",
+            "partial"
+          ]
+        },
+        "shuffle": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "type",
+        "id",
+        "topic",
+        "prompt",
+        "options"
+      ],
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "properties": {
+        "type": {
+          "const": "calculation"
+        },
+        "id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_.:-]+$",
+          "minLength": 1,
+          "maxLength": 120
+        },
+        "topic": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_.:-]+$",
+          "minLength": 1,
+          "maxLength": 120
+        },
+        "title": {
+          "type": "string"
+        },
+        "difficulty": {
+          "enum": [
+            "easy",
+            "medium",
+            "hard"
+          ]
+        },
+        "tags": {
+          "type": "array",
+          "minItems": 0,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "hints": {
+          "type": "array",
+          "minItems": 0,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "explanation": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Markdown shown after answering"
+        },
+        "points": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "reference": {
+          "type": "array",
+          "minItems": 0,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "prompt": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Markdown (with $math$) shown above the answer area"
+        },
+        "code": {
+          "type": "string"
+        },
+        "language": {
+          "type": "string"
+        },
+        "parts": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/calcPart"
+          }
+        },
+        "variables": {
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/$defs/variable"
+          }
+        },
+        "constraints": {
+          "type": "array",
+          "minItems": 0,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "required": [
+        "type",
+        "id",
+        "topic",
+        "prompt",
+        "parts"
+      ],
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "properties": {
+        "type": {
+          "const": "ordering"
+        },
+        "id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_.:-]+$",
+          "minLength": 1,
+          "maxLength": 120
+        },
+        "topic": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_.:-]+$",
+          "minLength": 1,
+          "maxLength": 120
+        },
+        "title": {
+          "type": "string"
+        },
+        "difficulty": {
+          "enum": [
+            "easy",
+            "medium",
+            "hard"
+          ]
+        },
+        "tags": {
+          "type": "array",
+          "minItems": 0,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "hints": {
+          "type": "array",
+          "minItems": 0,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "explanation": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Markdown shown after answering"
+        },
+        "points": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "reference": {
+          "type": "array",
+          "minItems": 0,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "prompt": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Markdown (with $math$) shown above the answer area"
+        },
+        "items": {
+          "type": "array",
+          "minItems": 2,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "description": "in the CORRECT order; shuffled when shown"
+        },
+        "language": {
+          "type": "string"
+        },
+        "grading": {
+          "enum": [
+            "exact",
+            "partial"
+          ]
+        }
+      },
+      "required": [
+        "type",
+        "id",
+        "topic",
+        "prompt",
+        "items"
+      ],
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "properties": {
+        "type": {
+          "const": "matching"
+        },
+        "id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_.:-]+$",
+          "minLength": 1,
+          "maxLength": 120
+        },
+        "topic": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_.:-]+$",
+          "minLength": 1,
+          "maxLength": 120
+        },
+        "title": {
+          "type": "string"
+        },
+        "difficulty": {
+          "enum": [
+            "easy",
+            "medium",
+            "hard"
+          ]
+        },
+        "tags": {
+          "type": "array",
+          "minItems": 0,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "hints": {
+          "type": "array",
+          "minItems": 0,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "explanation": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Markdown shown after answering"
+        },
+        "points": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "reference": {
+          "type": "array",
+          "minItems": 0,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "prompt": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Markdown (with $math$) shown above the answer area"
+        },
+        "pairs": {
+          "type": "array",
+          "minItems": 2,
+          "items": {
+            "type": "object",
+            "properties": {
+              "left": {
+                "type": "string",
+                "minLength": 1
+              },
+              "right": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "left",
+              "right"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "distractors": {
+          "type": "array",
+          "minItems": 0,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "grading": {
+          "enum": [
+            "all-or-nothing",
+            "partial"
+          ]
+        }
+      },
+      "required": [
+        "type",
+        "id",
+        "topic",
+        "prompt",
+        "pairs"
+      ],
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "properties": {
+        "type": {
+          "const": "categorize"
+        },
+        "id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_.:-]+$",
+          "minLength": 1,
+          "maxLength": 120
+        },
+        "topic": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_.:-]+$",
+          "minLength": 1,
+          "maxLength": 120
+        },
+        "title": {
+          "type": "string"
+        },
+        "difficulty": {
+          "enum": [
+            "easy",
+            "medium",
+            "hard"
+          ]
+        },
+        "tags": {
+          "type": "array",
+          "minItems": 0,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "hints": {
+          "type": "array",
+          "minItems": 0,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "explanation": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Markdown shown after answering"
+        },
+        "points": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "reference": {
+          "type": "array",
+          "minItems": 0,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "prompt": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Markdown (with $math$) shown above the answer area"
+        },
+        "categories": {
+          "type": "array",
+          "minItems": 2,
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[A-Za-z0-9_.:-]+$",
+                "minLength": 1,
+                "maxLength": 120
+              },
+              "title": {
+                "type": "string",
+                "minLength": 1
+              },
+              "items": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              }
+            },
+            "required": [
+              "id",
+              "title",
+              "items"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "distractors": {
+          "type": "array",
+          "minItems": 0,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "distractorPenalty": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        }
+      },
+      "required": [
+        "type",
+        "id",
+        "topic",
+        "prompt",
+        "categories"
+      ],
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "properties": {
+        "type": {
+          "const": "short-answer"
+        },
+        "id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_.:-]+$",
+          "minLength": 1,
+          "maxLength": 120
+        },
+        "topic": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_.:-]+$",
+          "minLength": 1,
+          "maxLength": 120
+        },
+        "title": {
+          "type": "string"
+        },
+        "difficulty": {
+          "enum": [
+            "easy",
+            "medium",
+            "hard"
+          ]
+        },
+        "tags": {
+          "type": "array",
+          "minItems": 0,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "hints": {
+          "type": "array",
+          "minItems": 0,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "explanation": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Markdown shown after answering"
+        },
+        "points": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "reference": {
+          "type": "array",
+          "minItems": 0,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "prompt": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Markdown (with $math$) shown above the answer area"
+        },
+        "modelAnswer": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Markdown shown after the learner has answered"
+        },
+        "rubric": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "properties": {
+              "text": {
+                "type": "string",
+                "minLength": 1
+              },
+              "points": {
+                "type": "number",
+                "exclusiveMinimum": 0
+              }
+            },
+            "required": [
+              "text"
+            ],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": [
+        "type",
+        "id",
+        "topic",
+        "prompt",
+        "modelAnswer",
+        "rubric"
+      ],
+      "additionalProperties": false
+    }
+  ]
+}
